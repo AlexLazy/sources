@@ -1,0 +1,181 @@
+<section class="s-contacts" style="background-image:url(img/wall-bg.png)">
+    <div class="container">
+        <div class="row">
+            <ul class="breadcrumb">
+                <li><a href="/">Главная</a><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+                <li><a href="/catalog.html">Каталог</a></li>
+            </ul>
+        </div>
+        <h2>Каталог</h2>
+        <div id="info">
+            <div class="item map">
+                <img src="img/c-map.png" alt="">
+                <span>Адрес:</span>
+                <p>109429, г. Москва, 16-й км МКАД, БЦ «Мобил»</p>
+            </div>
+            <div class="item phone">
+                <img src="img/c-phone.png" alt="">
+                <span>Телефоны:</span>
+                <p>+7 495 778 52 23</p>
+                <p>+7 495 778 56 86</p>
+            </div>
+            <div class="item mail">
+                <img src="img/c-mail.png" alt="">
+                <span>E-mail:</span>
+                <p>info@biela.ru</p>
+            </div>
+        </div>
+        <div id="address">
+            <a class="contacts-btn contacts-btn_address" role="button" data-toggle="collapse" href="#region">
+              Выберите свой регион
+            </a>
+            <div class="collapse" id="region">
+                <div class="wrap">
+                    <ul>
+                        <li>
+                            <input id="region-1" type="radio" name="region" value="1" checked="checked">
+                            <label for="region-1">Вологодская область</label>
+                        </li>
+                        <li>
+                            <input id="region-2" type="radio" name="region" value="1" checked="checked">
+                            <label for="region-2">Кабардино-Балкарская республика</label>
+                        </li>
+                        <li>
+                            <input id="region-3" type="radio" name="region" value="1" checked="checked">
+                            <label for="region-3">Карачаево-Черкесская Республика</label>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <input id="region-4" type="radio" name="region" value="1" checked="checked">
+                            <label for="region-4">Республика Северная Осетия — Алания</label>
+                        </li>
+                        <li>
+                            <input id="region-5" type="radio" name="region" value="1" checked="checked">
+                            <label for="region-5">Вологодская область</label>
+                        </li>
+                        <li>
+                            <input id="region-6" type="radio" name="region" value="1" checked="checked">
+                            <label for="region-6">Республика Ингушетия</label>
+                        </li>
+                    </ul>
+                </div>
+                <a class="contacts-btn contacts-btn_town" role="button" data-toggle="collapse" href="#town">
+                  Выберите свой город
+                </a>
+                <div class="collapse" id="town">
+                    <div class="wrap">
+                        <ul>
+                            <li>
+                                <input id="region-1" type="radio" name="region" value="1" checked="checked">
+                                <label for="region-1">Вологодская область</label>
+                            </li>
+                            <li>
+                                <input id="region-2" type="radio" name="region" value="1" checked="checked">
+                                <label for="region-2">Республика Северная Осетия — Алания</label>
+                            </li>
+                            <li>
+                                <input id="region-3" type="radio" name="region" value="1" checked="checked">
+                                <label for="region-3">Вологодская область</label>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <input id="region-4" type="radio" name="region" value="1" checked="checked">
+                                <label for="region-4">Республика</label>
+                            </li>
+                            <li>
+                                <input id="region-5" type="radio" name="region" value="1" checked="checked">
+                                <label for="region-5">Вологодская область</label>
+                            </li>
+                            <li>
+                                <input id="region-6" type="radio" name="region" value="1" checked="checked">
+                                <label for="region-6">Вологодская область</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="map"></div>
+    <form>
+        <div class="container">
+            <h3>возникли вопросы или есть предложения?</h3>
+            <p>Отправьте заявку и наш специалист свяжется с Вами в ближайшее время</p>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 col-md-offset-2">
+                    <div class="form-group">
+                        <label class="control-label" for="input-phone"><i class="fa fa-user" aria-hidden="true"></i></label>
+                        <input type="text" name="phone" value=""  id="input-phone" class="form-control" placeholder="Телефон*">
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="form-group">
+                        <label class="control-label" for="input-phone"><i class="fa fa-mobile" aria-hidden="true"></i></label>
+                        <input type="tel" name="phone" value=""  id="input-phone" class="form-control" placeholder="Телефон*">
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="btn"><i class="fa fa-phone" aria-hidden="true"></i>Заказать обратный звонок</button>
+        </div>
+    </form>
+</section>
+<script src="//api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+<script>
+$('#address>a').on('click', function(){
+    if($('#region').hasClass('in')) {
+        setTimeout(function(){
+            $('#address').removeClass('on');
+        }, 400);
+    }else{
+        $('#address').addClass('on')
+    }
+});
+
+ymaps.ready(function () {
+    var map = new ymaps.Map('map', {
+            center: [55.751574, 37.573856],
+            zoom: 9,
+            behaviors: ['default', 'scrollZoom']
+        },{
+            searchControlProvider: 'yandex#search'
+        });
+
+    var Placemark = (function() {
+            return function(point, place, time, phone, caption) {
+                return new ymaps.Placemark(point, {
+                    place: place,
+                    time: time,
+                    phone: phone,
+                    iconCaption: caption
+                },{
+                    balloonLayout: ymaps.templateLayoutFactory.createClass(
+                            '<div class="balloon">'+
+                                '$[[options.contentLayout observeSize minWidth=235 maxWidth=235 maxHeight=350]]' +
+                            '</div>'),
+                    balloonContentLayout: ymaps.templateLayoutFactory.createClass(
+                            '<p><i class="fa fa-map-marker" aria-hidden="true"></i>{{properties.place}}</p>' +
+                            '<p><i class="fa fa-clock-o" aria-hidden="true"></i>{{properties.time}}</p>' +
+                            '<p><i class="fa fa-phone" aria-hidden="true"></i>{{properties.phone}}</p>'),
+                    balloonPanelMaxMapArea: 0,
+                    hideIconOnBalloonOpen: false,
+                    preset: 'islands#blueCircleDotIconWithCaption'
+                });
+            }
+        })();
+
+    var pm = new Placemark([55.250625, 37.62708], '109429, г. Москва, 16-й км МКАД, БЦ «Мобил»', 'с 8.00 до 18.00',
+'+7 495 778 52 23', 'Бизнес-центр Mobil');
+
+    $('#aa').click(function() {
+        map.setCenter([55.250625, 37.62708]);
+        map.geoObjects.add(pm);
+    });
+    $('#bb').click(function() {
+        map.setCenter([52.250625, 37.62708]);
+        map.geoObjects.remove(pm);
+    });
+
+});
+</script>

@@ -1,0 +1,1401 @@
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1370px)
+
+  .contacts-phones,
+  .contacts-mail
+    font-size: rem(16)
+    &::before
+      margin-right: rem(4.7)
+      transform: scale(.67)
+  .contacts-mail
+    line-height: rem(14)
+
+
+  .btn
+    padding: rem(8.5) rem(37)
+    font-size: rem(11.5)
+    &::after
+      height: rem(7)
+    &:active
+      top: rem(14)
+
+
+  input
+    width: calc(100% - 13px)
+    font-size: rem(12)
+    &::placeholder
+      color: #cacaca
+      font-size: rem(10.7)
+
+
+  .approval
+    margin-top: rem(16.7)
+    font-size: rem(8)
+    line-height: rem(8)
+    .checkbox
+      label
+        width: rem(12)
+        height: rem(12)
+      input[type=checkbox]
+        &:checked + label::after
+          top: rem(1)
+          left: 0
+          transform: scale(.67)
+    p
+      padding-left: rem(10)
+
+
+  .section-header
+    &::before
+      top: 7px
+      width: rem(70)
+      height: rem(4)
+    h2
+      padding-top: rem(43.5)
+      font-size: rem(13.4)
+      letter-spacing: rem(13.4)
+      span
+        font-size: rem(24)
+        line-height: rem(26.8)
+        letter-spacing: rem(1.8)
+
+
+  .modal
+    &.technology
+      min-width: rem(900)
+    a.close-modal
+      top: rem(17)
+      right: rem(10)
+
+
+  .technology
+    padding: rem(33.5) rem(33.5) rem(53.5)
+    h3
+      margin-bottom: rem(13)
+      font-size: rem(17.5)
+    article
+      figure
+        width: rem(258)
+        height: rem(238)
+        margin-top: rem(3)
+        margin-right: rem(40)
+        border-width: rem(3)
+      p
+        margin-bottom: rem(13)
+        font-size: rem(12)
+    .gallery
+      margin-top: rem(33.5)
+      h4
+        margin-bottom: rem(13)
+        font-size: rem(13)
+      a
+        img
+          margin-bottom: rem(13)
+
+
+  .prj-modal.modal
+    max-width: rem(804)
+    padding-top: rem(30)
+    padding-bottom: rem(47)
+    .prev,
+    .next
+      top: rem(150)
+      transform: scale(.67)
+    .prev
+      left: rem(19)
+    .next
+      right: rem(19)
+    a.close-modal
+      top: rem(23.5)
+      right: rem(22)
+    h3
+      margin-bottom: rem(13)
+      font-size: rem(17.5)
+      letter-spacing: rem(1.2)
+    .projects-slider
+      img
+        width: 100%
+    aside
+      padding: rem(20) rem(30)
+      border-width: rem(3)
+      p
+        font-size: rem(12)
+        line-height: rem(19)
+        letter-spacing: rem(.4)
+      span
+        margin-bottom: rem(3)
+        font-size: rem(19.5)
+        letter-spacing: rem(1.2)
+        &.floor,
+        &.bedroom
+        &.floor::after
+          transform: scale(.67)
+          top: rem(4.5)
+          right: rem(-21.5)
+        &.bedroom::after
+          transform: scale(.67)
+          top: rem(9)
+          right: rem(-30)
+    .btn
+      margin-top: rem(27)
+      padding-left: rem(46)
+      padding-right: rem(46)
+    .count
+      margin-top: rem(4.5)
+    h4
+      margin-top: rem(23.5)
+      margin-bottom: rem(13)
+      font-size: rem(13)
+    .gallery
+      a
+        margin-right: rem(17)
+        margin-bottom: rem(13)
+        img
+          width: rem(280)
+    ol
+      margin-bottom: rem(7)
+      font-size: rem(12)
+    p
+      margin-bottom: rem(3)
+      letter-spacing: rem(.25)
+      font-size: rem(12)
+
+
+  #callback
+    top: rem(13)
+    width: rem(275)
+    padding: rem(40) rem(11) rem(27)
+    &::after
+      top: rem(-23.5)
+      left: rem(-23.5)
+      width: calc(100% + 47px)
+      height: calc(100% + 47px)
+      border-width: rem(8)
+    .form-header
+      h3
+        font-size: rem(20)
+        letter-spacing: rem(1.2)
+        line-height: rem(23.5)
+      p
+        width: rem(200)
+        font-size: rem(12)
+        line-height: rem(15)
+    form
+      margin-top: rem(23.5)
+      label
+        font-size: rem(12)
+      input[type="tel"]
+        margin-top: rem(13)
+    .btn
+      margin: rem(27) auto
+
+
+  #success
+    top: rem(13)
+    width: rem(502)
+    padding: rem(40) rem(11) rem(53.5)
+    &::after
+      top: rem(-23.5)
+      left: rem(-23.5)
+      width: calc(100% + 47px)
+      height: calc(100% + 47px)
+      border-width: rem(8)
+    h3
+      margin-top: rem(13)
+      font-size: rem(24)
+      letter-spacing: rem(1.2)
+      line-height: rem(23)
+    p
+      margin-top: rem(13)
+      font-size: rem(15)
+      line-height: rem(14.5)
+
+
+  #main
+    max-height: rem(570)
+    padding-top: rem(27)
+    .main-header
+      margin-bottom: rem(95)
+      .logo
+        width: rem(189)
+    .offer
+      span
+        font-size: rem(17)
+        letter-spacing: rem(17)
+        &::after
+          right: rem(-74)
+          width: rem(67)
+          height: rem(4)
+          transform: translateY(-50%)
+      h1
+        margin-top: rem(3)
+        font-size: rem(38)
+        line-height: rem(50)
+      p
+        font-size: rem(27)
+        letter-spacing: rem(-1)
+        line-height: rem(37.5)
+      sup
+        font-size: rem(17.5)
+    form
+      top: rem(13.5)
+      width: rem(335)
+      padding: rem(11.5)
+      &::after
+        top: rem(-11.5)
+        left: rem(-11.5)
+        width: calc(100% + 23px)
+        height: calc(100% + 23px)
+        border-width: rem(13.5)
+      &::before
+        bottom: rem(-20)
+        left: rem(-228)
+        width: rem(325)
+        height: rem(278)
+        background-size: contain
+      .form-container
+        padding: rem(27) rem(20) rem(7)
+        header
+          img
+            top: rem(7)
+            width: rem(41)
+          span,
+          p
+            margin-left: rem(53.5)
+            font-size: rem(23.5)
+            line-height: rem(28)
+          span
+            font-size: rem(13.5)
+            letter-spacing: rem(13.5)
+        h3
+          margin-top: rem(13.5)
+          font-size: rem(23.5)
+      .form-content
+        margin-top: rem(13.5)
+        padding: rem(20) rem(7)
+        border-width: rem(1.5)
+        .form-content-header
+          margin-bottom: rem(13.5)
+          font-size: rem(12)
+          letter-spacing: rem(.7)
+          &.mail
+            margin-top: rem(20)
+            margin-bottom: rem(7)
+        .form-control
+          padding-bottom: rem(7)
+          & + .form-control
+            padding-left: rem(7)
+          p
+            font-size: rem(12)
+          label
+            width: rem(53)
+            height: rem(23)
+            padding-top: rem(4.6)
+            font-size: rem(8)
+            outline: rem(.7) solid #e8e8e8
+            sup
+              font-size: rem(5.5)
+          sup
+            font-size: rem(8)
+        .btn
+          margin: rem(23) auto
+
+
+  #technology
+    padding-top: rem(53.5)
+    padding-bottom: rem(53.5)
+    .container
+      &::before
+        top: rem(-7)
+        width: rem(234.5)
+        height: rem(4)
+      &::after
+        top: rem(33.5)
+        left: rem(-107)
+        width: rem(193)
+        height: rem(205)
+        background-size: contain
+    h2
+      margin-bottom: rem(27)
+      padding-top: rem(167.5)
+      font-size: rem(24)
+      line-height: rem(27)
+      letter-spacing: rem(1.2)
+      span
+        font-size: rem(13.5)
+        letter-spacing: rem(13.5)
+    .row
+      background-position: 0 rem(100)
+      .item
+        p
+          font-size: rem(16)
+        img
+          width: rem(230)
+          margin-bottom: rem(27)
+
+
+  #projects
+    padding-bottom: rem(33.5)
+    h2
+      margin-bottom: rem(20)
+      padding-top: rem(33.5)
+      font-size: rem(24)
+      letter-spacing: rem(1.6)
+      span
+        font-size: rem(26.8)
+    .tabs-menu
+      li
+        &.current
+          a
+            border-width: rem(1.5)
+        a
+          padding: rem(5) rem(33.5)
+          font-size: rem(16)
+    .tab
+      margin-top: rem(33.5)
+      .tab-content
+        .item
+          margin-bottom: rem(20)
+          figure
+            img
+            .img-descr
+              bottom: rem(9)
+              padding-top: rem(5)
+              padding-bottom: rem(5)
+              p
+                margin-left: rem(20)
+                font-size: rem(12.7)
+                letter-spacing: rem(.8)
+              a
+                margin-right: rem(13.5)
+                font-size: rem(8.7)
+                letter-spacing: rem(.4)
+          .descr
+            padding-top: rem(7)
+            padding-bottom: rem(7)
+            h3
+              font-size: rem(10)
+              letter-spacing: rem(.8)
+            p
+              font-size: rem(8.7)
+              letter-spacing: rem(.8)
+              &::before
+                top: rem(1.5)
+                left: rem(-20)
+            .square
+              margin-right: rem(33.5)
+            .square::before,
+            .area::before
+              top: rem(-1)
+              transform: scale(.67)
+    .btn
+      margin-top: rem(13.4)
+      padding-left: rem(26.8)
+      padding-right: rem(26.8)
+
+
+  #estimate
+    padding-top: rem(40)
+    padding-bottom: rem(73.7)
+    .section-header
+      margin-bottom: rem(26.8)
+      h2
+        padding-top: rem(40)
+        font-size: rem(24)
+        span
+          font-size: rem(35.5)
+          line-height: rem(42)
+    p
+      font-size: rem(16)
+      letter-spacing: rem(.9)
+    .btn
+      padding-left: rem(50)
+      padding-right: rem(50)
+      margin-top: rem(40)
+      letter-spacing: rem(1)
+    .item
+      width: rem(174)
+      height: rem(161)
+      margin: rem(73.7) auto
+      padding: rem(18) rem(20)
+      border-width: rem(8)
+      img
+        transform: scale(.67)
+      a
+        margin-top: rem(4)
+        margin-left: rem(10)
+        font-size: rem(8.7)
+        letter-spacing: rem(.8)
+        vertical-align: top
+        &::after
+          bottom: rem(-1.5)
+          width: rem(87)
+        &:hover
+          &::after
+            left: rem(43.5)
+
+
+  #ind-proposal
+    padding-top: rem(47)
+    padding-bottom: rem(70)
+    .container
+      background-position: calc(50% + 20px) 0
+      background-size: contain
+    .section-header
+      &::before
+        width: rem(107)
+      h2
+        padding-top: rem(33.5)
+        font-size: rem(24)
+        letter-spacing: rem(1.1)
+      p
+        font-size: rem(16)
+        line-height: rem(25.5)
+    .btn
+      margin-top: rem(345)
+      padding-left: rem(26.8)
+      padding-right: rem(26.8)
+
+
+  #our-works
+    padding-top: rem(33.5)
+    padding-bottom: rem(47)
+    h2
+      margin-bottom: rem(40)
+      font-size: rem(24)
+      letter-spacing: rem(1.1)
+    .prev,
+    .next
+      top: rem(187.5)
+      transform: scale(.67)
+    .prev
+      left: rem(-37)
+    .next
+      right: rem(-37)
+    #our-works-slider
+      .full
+        margin-bottom: rem(7)
+        img
+          width: 100%
+      .thumb
+        & + .thumb
+          margin-left: rem(12)
+        img
+          width: rem(80)
+      article
+        &::before
+          top: rem(24)
+          left: rem(-53.5)
+          width: calc(100% + 40px)
+          height: 100%
+          border-width: rem(7)
+        h3,
+        p
+          font-size: rem(12)
+        h3
+          margin-bottom: rem(20)
+          letter-spacing: rem(1.3)
+        p
+          letter-spacing: rem(1.35)
+          line-height: rem(20)
+      .btn
+        margin-top: rem(73.5)
+        margin-bottom: rem(10)
+        padding-left: rem(47)
+        padding-right: rem(47)
+
+
+  #proposal
+    padding-top: rem(94)
+    padding-bottom: rem(73.5)
+    .section-header
+      margin-bottom: rem(60)
+      margin-left: rem(261)
+      &::after
+        top: rem(-47)
+        left: rem(-301)
+        width: rem(281.5)
+        height: rem(218)
+        background-size: contain
+      h2
+        padding-top: rem(53.5)
+    .item
+      width: rem(120.5)
+      margin-bottom: rem(13.5)
+      img
+        width: 100%
+      p
+        font-size: rem(13.5)
+        line-height: rem(16)
+
+
+  #team
+    height: auto
+    padding-top: rem(40)
+    padding-bottom: rem(40)
+    h2
+      margin-bottom: rem(40)
+      font-size: rem(24)
+      letter-spacing: rem(1.2)
+    .slide-img
+      border-width: rem(7)
+    article
+      header
+        margin-bottom: rem(17)
+        h3
+          font-size: rem(20)
+          letter-spacing: rem(1)
+        p
+          font-size: rem(12)
+          line-height: rem(18.7)
+      p
+        font-size: rem(12)
+    .lSPager.lSGallery
+      li
+        &.active,
+        &:hover
+          img
+            margin-top: rem(3)
+            border-width: rem(1)
+        img
+          width: auto
+          margin-top: rem(2.5)
+          margin-left: rem(2.5)
+    .lSSlideWrapper
+      height: auto
+    #team-slider-thumbs
+      position: inherit
+      width: auto
+      margin-top: rem(10)
+      top: rem(-137)
+      left: rem(268)
+      p
+        margin-top: rem(10)
+        font-size: rem(14)
+        line-height: rem(10.7)
+      span
+        font-size: rem(12)
+        vertical-align: top
+
+
+  #questions
+    padding-top: rem(90.5)
+    padding-bottom: rem(80.5)
+    .section-header
+      p
+        margin-top: rem(7)
+    p
+      margin-bottom: rem(40)
+      font-size: rem(16)
+      line-height: rem(19)
+      letter-spacing: rem(1.2)
+    .btn
+      margin-top: rem(7)
+      padding-top: rem(11)
+      padding-bottom: rem(11)
+      letter-spacing: rem(.8)
+
+
+  #certificates
+    padding-top: rem(47)
+    padding-bottom: rem(13.5)
+    .section-header
+      margin-bottom: rem(13.5)
+    .item
+      span
+        &.big
+          width: rem(211)
+          height: rem(281)
+          img
+            top: rem(26.5)
+            left: rem(-16.5)
+            width: rem(150)
+        &.small
+          width: rem(150.5)
+          height: rem(214)
+          img
+            top: rem(30)
+            left: rem(-10)
+            width: rem(110)
+
+
+  footer
+    padding-top: rem(10)
+    padding-bottom: rem(10)
+    .logo
+      transform: scale(.67)
+    .text-right
+      padding-top: rem(12)
+    .contacts-phones,
+    .contacts-mail
+      font-size: rem(12)
+    .contacts-phones
+      &::before
+        @include sprite($phone-footer)
+    .contacts-mail
+      &::before
+        @include sprite($mail-footer)
+    .socials
+      margin-top: 0
+      a
+        transform: scale(.67)
+        & + a
+          margin-left: rem(17)
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+  .prj-modal.modal
+    .prev,
+    .next
+      top: calc(50% - 30px)
+
+
+  #success
+    width: calc(100% - 50px)
+
+
+  .modal
+    &.technology
+      min-width: 700px
+      padding-bottom: rem(30)
+      article
+        figure
+          width: rem(150)
+          height: rem(150)
+          margin-right: rem(20)
+      .gallery
+        margin-top: rem(10)
+
+
+  #main
+    position: relative
+    max-height: inherit
+    padding-bottom: rem(60)
+    .col
+      flex-basis: auto
+    &::after
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background-color: rgba(255,255,255,.7)
+    .contacts-mail,
+    .contacts-phones,
+    .main-header,
+    .offer
+      position: relative
+      z-index: 5
+    .main-header
+      margin-bottom: rem(40)
+      .logo
+        width: auto
+    .contacts-phones,
+    .contacts-mail
+      text-align: left
+    .contacts-phones
+      margin-top: rem(20)
+    form
+      top: 0
+      margin-top: rem(40)
+
+
+  #technology
+    .container
+      &::before,
+      &::after
+        display: none
+    h2
+      margin-bottom: 0
+      padding-top: 0
+    .row
+      background-image: none
+    .item
+      margin-top: rem(50)
+
+
+  #projects
+    .tab
+      .tab-content
+        .item
+          .descr
+            p
+              &::before
+                left: rem(-20)
+            .square
+              margin-right: rem(30)
+
+
+  #estimate
+    padding-bottom: 0
+    .item
+      width: auto
+      height: auto
+      margin-top: rem(20)
+      margin-bottom: rem(70)
+      margin-left: 0
+      padding: 0
+      border: none
+      img
+        display: none
+
+
+  #ind-proposal
+    padding-top: rem(40)
+    padding-bottom: rem(60)
+    .section-header
+      h2
+        margin-bottom: rem(15)
+        padding-top: rem(30)
+        line-height: rem(38)
+      p
+        line-height: rem(24)
+    .btn
+      margin-top: rem(150)
+
+
+  #our-works
+    h2
+      margin-bottom: rem(30)
+    .prev,
+    .next
+      display: none
+    #our-works-slider
+      .full
+        img
+          width: 100%
+      .thumb
+        img
+          width: rem(160)
+      article
+        margin-top: rem(30)
+        &::before
+          top: 0
+          left: 0
+          width: 100%
+          height: calc(100% + 30px)
+
+
+  #proposal
+    padding-top: rem(60)
+    .section-header
+      margin-left: 0
+      &::after
+        display: none
+      h2
+        padding-top: rem(50)
+
+
+  #team
+    height: auto
+    padding-bottom: rem(40)
+    #team-slider-thumbs
+      position: inherit
+      width: auto
+      margin-top: rem(20)
+    .lSSlideWrapper
+      height: auto
+    .lSPager.lSGallery
+      li
+        img
+          width: auto
+
+
+  #questions
+    padding-top: rem(70)
+    padding-bottom: rem(90)
+    .section-header
+      h2
+        padding-top: rem(50)
+
+
+  #certificates
+    padding-bottom: rem(70)
+    .item
+      span
+        &.big,
+        &.small
+          width: auto
+          height: auto
+          padding: rem(25)
+          img
+            top: 0
+            left: rem(-10)
+            width: 100%
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+  .btn
+    position: initial
+    &::after
+      display: none
+
+
+  #success
+   h3
+     font-size: rem(26)
+
+
+  #main
+    .contacts-phones
+    .main-header
+      margin-bottom: rem(50)
+
+
+  #technology
+    .col
+      flex-basis: auto
+
+
+  .modal
+    &.technology
+      min-width: rem(530)
+      article
+        figure
+          display: none
+
+
+  #projects
+    .tabs-menu
+      li
+        padding-left: rem(10)
+        padding-right: rem(10)
+        a
+          padding-left: rem(10)
+          padding-right: rem(10)
+    .tab
+      margin-top: rem(30)
+
+
+  #our-works
+    #our-works-slider
+      .thumb
+        img
+          width: rem(115)
+
+
+  #ind-proposal
+    background-image: url(../img/ind-proposal-bg.jpg)
+    background-repeat: no-repeat
+    background-position: left rem(-20)
+    background-size: cover
+    .container
+      background-image: none
+    .section-header
+      p
+        font-size: rem(18)
+    .btn
+      margin-top: rem(210)
+
+
+  footer
+    padding-top: rem(30)
+    padding-bottom: rem(20)
+    .logo
+      margin-bottom: 0
+      transform: none
+    .text-right
+      text-align: left
+    img
+      margin-bottom: rem(20)
+    .contacts-phones
+      white-space: initial
+
+
+  #questions,
+  #proposal,
+  #certificates
+    padding-top: rem(80)
+    padding-bottom: rem(80)
+    .section-header
+      h2
+        padding-top: rem(50)
+      span
+        font-size: rem(28)
+
+
+  #team
+    .slide-img
+      display: none
+    h2
+      margin-bottom: rem(20)
+
+  #proposal
+    .section-header
+      margin-bottom: rem(30)
+
+
+  #certificates
+    .item
+      flex: 0 0 50%
+      max-width: 50%
+      span
+        &.big,
+        &.small
+          padding: rem(35)
+          img
+            left: rem(-15)
+            width: 100%
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 600px)
+  #our-works
+    h2
+      line-height: rem(38)
+    #our-works-slider
+      .thumb
+        & + .thumb
+          margin-left: rem(13)
+        img
+          width: 20%
+      article
+        padding: 0
+        &::before
+          display: none
+        h3
+          margin-bottom: rem(15)
+      .btn
+        margin-top: rem(40)
+        padding-left: rem(40)
+        padding-right: rem(40)
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 576px)
+
+  .modal
+    &.technology
+      min-width: 100%
+      padding-bottom: rem(10)
+      padding-left: rem(15)
+      padding-right: rem(15)
+      .gallery
+        h4
+          line-height: rem(22)
+
+
+  #menu-btn
+    position: fixed
+    display: inline-block
+    top: rem(20)
+    left: rem(20)
+    overflow: hidden
+    margin: 0
+    padding: 14px 10px 7px
+    cursor: pointer
+    transition-timing-function: linear
+    transition-duration: .15s
+    transition-property: opacity,filter
+    text-transform: none
+    color: inherit
+    border: 0
+    background-color: rgba($accent,.9)
+    .hamburger-box
+      position: relative
+      display: inline-block
+      width: 40px
+      height: 24px
+      .hamburger-inner
+        position: absolute
+        width: 40px
+        height: 4px
+        top: 50%
+        display: block
+        margin-top: -2px
+        border-radius: 4px
+        background-color: #fff
+        transition: background-color .125s ease-in .175s
+        &::before,
+        &::after
+          display: block
+          content: ""
+          position: absolute
+          width: 40px
+          height: 4px
+          transition-timing-function: ease
+          transition-duration: .15s
+          transition-property: transform
+          border-radius: 4px
+          background-color: #fff
+          left: 0
+          transition: transform .125s cubic-bezier(.6,.04,.98,.335),top .05s linear .125s,left .125s ease-in .175s
+        &::before
+          top: rem(-10)
+        &::after
+          top: rem(10)
+    &.on
+      .hamburger-inner
+        transition-delay: 0s
+        transition-timing-function: ease-out
+        background-color: transparent
+        &::before
+          top: -80px
+          left: -80px
+          transition: left .125s ease-out,top .05s linear .125s,transform .125s cubic-bezier(.075,.82,.165,1) .175s
+          transform: translate3d(80px,80px,0) rotate(45deg)
+        &::after
+          top: -80px
+          right: -80px
+          transition: right .125s ease-out,top .05s linear .125s,transform .125s cubic-bezier(.075,.82,.165,1) .175s
+          transform: translate3d(0,80px,0) rotate(-45deg)
+
+
+  #menu.on
+    left: 0
+
+
+  #main
+    padding-bottom: rem(60)
+    .contacts-phones,
+    .contacts-mail
+      &::before
+        display: none
+    .contacts-phones
+      // font-size: rem(22)
+      span
+        display: block
+        &:first-child
+          display: none
+    .offer
+      span
+        font-size: rem(16)
+        &::after
+          display: none
+      h1
+        font-size: rem(38)
+        line-height: rem(38)
+      p
+        font-size: rem(22)
+        line-height: rem(26)
+        sup
+          font-size: rem(16)
+    form
+      top: 0
+      width: 100%
+      margin-top: rem(50)
+      margin-left: 0
+      padding: 0
+      &::after,
+      &::before
+        display: none
+      .form-container
+        padding: rem(20) rem(15)
+        header
+          img
+            display: none
+          p,
+          span
+            margin-left: 0
+          span
+            font-size: rem(16)
+          p
+            font-size: rem(32)
+        h3
+          margin-top: 0
+          font-size: rem(26)
+      .form-content
+        .form-content-header
+          margin-bottom: rem(5)
+        .form-group-wrapper
+          display: block
+          .form-group
+            display: inline-block
+          .form-control
+            display: inline-block
+            &:first-of-type
+              display: block
+            label
+              width: rem(65)
+
+
+  #technology
+    padding-top: rem(50)
+    .item
+      img
+        width: 100%
+
+
+  #projects
+    h2
+      span
+        display: block
+
+
+  #estimate,
+  #proposal,
+  #team,
+  #questions,
+  #certificates
+    padding-top: rem(50)
+
+
+  #estimate
+    .section-header
+      h2
+        padding-top: rem(20)
+
+
+  #ind-proposal
+    padding-top: rem(20)
+
+
+  #proposal
+    .col-sm-6
+      flex: 0 0 50%
+      max-width: 50%
+    .section-header
+      h2
+        padding-top: rem(20)
+
+
+  #team
+    h2
+      line-height: rem(26)
+
+
+  #questions
+    .section-header
+      h2
+        padding-top: rem(20)
+
+
+  #certificates
+    .section-header
+      h2
+        padding-top: rem(20)
+    .item
+      flex: 0 0 100%
+      max-width: 100%
+      span
+        &.big,
+        &.small
+          width: rem(300)
+          padding: rem(45)
+          margin: auto
+          img
+            left: rem(-20)
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+
+  #callback
+    width: 100%
+    padding-bottom: rem(30)
+    &::after
+      display: none
+    .form-header
+      h3
+        font-size: rem(18)
+        line-height: rem(22)
+      p
+        width: 100%
+        font-size: rem(16)
+        line-height: rem(16)
+
+  #success
+    width: 100%
+    padding-top: rem(30)
+    padding-bottom: rem(40)
+    &::after
+      display: none
+    h3
+      font-size: rem(24)
+      line-height: rem(26)
+    p
+      font-size: rem(22)
+
+
+  #main
+    .offer
+      h1
+        font-size: rem(32)
+    form
+      .form-container
+        header
+          p
+            font-size: rem(26)
+        h3
+          font-size: rem(22)
+      .form-content .form-group-wrapper .form-group
+        width: 100%
+
+
+  .prj-modal.modal
+    width: 100%
+    padding-bottom: rem(30)
+    padding-left: 0
+    padding-right: 0
+    .next,
+    .prev
+      display: none
+    .gallery
+      .thumb
+        img
+          width: 100%
+
+
+  #technology
+    h2
+      font-size: rem(24)
+      line-height: rem(24)
+      span
+        margin-bottom: rem(15)
+
+
+  #projects
+    h2
+      font-size: rem(24)
+    .tabs-menu
+      li
+        padding-left: 0
+        padding-right: 0
+        a
+          font-size: rem(16)
+    .tab
+      .tab-content
+        .item
+          figure
+            .img-descr
+              p
+                margin-left: rem(15)
+                // font-size: rem(16)
+          .descr
+            display: block
+            padding: 0
+            text-align: left
+            h3
+              display: block
+            p
+              display: inline-block
+            .square
+              margin-left: rem(20)
+
+
+
+  #estimate
+    .section-header
+      h2
+        font-size: rem(18)
+        span
+          font-size: rem(24)
+          line-height: rem(24)
+    p
+      line-height: rem(28)
+    .btn
+      padding-left: rem(40)
+      padding-right: rem(40)
+
+
+  #ind-proposal
+    padding-top: 0
+    .section-header
+      &::before
+        display: none
+      h2
+        font-size: rem(24)
+        line-height: rem(28)
+      p
+        font-size: rem(16)
+        line-height: rem(18)
+
+
+  #our-works
+    h2
+      // font-size: rem(24)
+      line-height: rem(28)
+    // #our-works-slider
+    //   .full
+    //     img
+    //       width: 100%
+
+
+  #team
+    h2
+      font-size: rem(24)
+      line-height: rem(28)
+    article
+      header
+        h3
+          font-size: rem(22)
+          font-weight: 600
+
+
+  #proposal
+    .section-header
+      h2
+        // font-size: rem(18)
+        span
+          // font-size: rem(24)
+          line-height: rem(26)
+
+
+  #questions
+    .section-header
+      h2
+        font-size: rem(18)
+        span
+          font-size: rem(24)
+          line-height: rem(26)
+    p
+      margin-bottom: rem(40)
+      font-size: rem(20)
+    .btn
+      padding-left: rem(10)
+      padding-right: rem(10)
+
+
+  #certificates
+    .section-header
+      h2
+        font-size: rem(18)
+        span
+          font-size: rem(24)
+          line-height: rem(24)
+
+
+  footer
+    .contacts-mail::before
+      display: none
+    .contacts-phones
+      &::before
+        display: none
+      span
+        display: block
+        &:first-child
+          display: none
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 400px)
+  #proposal
+    .col-sm-6
+      flex: 0 0 100%
+      max-width: 100%
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/

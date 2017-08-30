@@ -1,0 +1,2261 @@
+@import "base"
+.yellow
+    color: #ffcc01
+
+i.fa
+    &.left
+        margin-left: 10px
+    &.right
+        margin-right: 10px
+
+.overflow-y-hidden
+    overflow-y: hidden
+    &::before
+        content: ''
+        position: fixed
+        left: 0
+        right: 0
+        width: 100%
+        height: 100%
+        background-color: rgba(48,48,48,.63)
+        z-index: 9998
+
+h1, h2
+    position: relative
+    margin: 0
+    font-family: "Exo2.0"
+    font-size: em(26)
+    line-height: em(16)
+    font-weight: 700
+    text-transform: uppercase
+    text-align: center
+    &::after
+        content: ''
+        position: absolute
+        bottom: -15px
+        left: 50%
+        width: 75px
+        height: 1px
+        transform: translateX(-50%)
+
+.table
+    display: table
+    width: 100%
+    .thead
+        display: table-header-group
+    .tbody
+        display: table-row-group
+    .trow
+        display: table-row
+        .tcell
+            display: table-cell
+
+
+.btn
+    display: inline-block
+    padding: 16px 30px
+    color: #262626
+    font-size: em(14)
+    font-weight: 700
+    text-transform: uppercase
+    background-color: #e3e3e3
+    border-bottom: 2px solid #c9c9c9
+    transition: 300ms
+    &:hover,
+    &:active
+        color: #dc1f3e
+        background-color: #262626
+    &:hover
+        border-color: #000
+    &:active
+        border-bottom-color: #c9c9c9
+    i
+        margin-right: 10px
+
+
+.btn-invert
+    color: #969696
+    background-color: transparent
+    border: 1px solid #969696
+
+
+.breadcrumb
+    float: left
+    display: inline-block
+    margin-left: 15px
+    li
+        display: inline
+        &:last-child
+            a
+                color: #7c7c7c
+                text-decoration: none
+        a
+            color: #383838
+            font-size: em(14)
+            text-decoration: underline
+            &:hover
+                text-decoration: none
+        i
+            margin-left: 5px
+
+
+.login
+    float: right
+    display: inline-block
+    margin-top: 15px
+    margin-right: 15px
+    padding: 7px 17px
+    border: 1px solid #000
+    color: #262626
+    font-size: em(13)
+    text-transform: uppercase
+    i
+        font-size: em(21)
+    a
+        position: relative
+        padding-left: 4px
+        padding-right: 4px
+        transition: opacity 300ms
+        &:hover
+            opacity: .7
+        &+a::before
+            content: ''
+            position: absolute
+            top: calc(50% - 5px)
+            left: -1px
+            width: 1px
+            height: 10px
+            background-color: #000
+
+
+.popover
+  position: absolute
+  top: 0
+  left: 0
+  z-index: 1060
+  display: none
+  max-width: 276px
+  padding: 1px
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+  font-style: normal
+  font-weight: normal
+  letter-spacing: normal
+  line-break: auto
+  line-height: 1.42857143
+  text-align: left
+  text-align: start
+  text-decoration: none
+  text-shadow: none
+  text-transform: none
+  white-space: normal
+  word-break: normal
+  word-spacing: normal
+  word-wrap: normal
+  font-size: 14px
+  background-color: #ffffff
+  -webkit-background-clip: padding-box
+          background-clip: padding-box
+  border: 1px solid #cccccc
+  border: 1px solid rgba(0, 0, 0, 0.2)
+  border-radius: 6px
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2)
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2)
+
+.popover.top
+  margin-top: -10px
+
+.popover.right
+  margin-left: 10px
+
+.popover.bottom
+  margin-top: 10px
+
+.popover.left
+  margin-left: -10px
+
+.popover-title
+  margin: 0
+  padding: 8px 14px
+  font-size: 14px
+  background-color: #f7f7f7
+  border-bottom: 1px solid #ebebeb
+  border-radius: 5px 5px 0 0
+
+.popover-content
+  padding: 9px 14px
+
+.popover > .arrow,
+.popover > .arrow:after
+  position: absolute
+  display: block
+  width: 0
+  height: 0
+  border-color: transparent
+  border-style: solid
+
+.popover > .arrow
+  border-width: 11px
+
+.popover > .arrow:after
+  border-width: 10px
+  content: ""
+
+.popover.top > .arrow
+  left: 50%
+  margin-left: -11px
+  border-bottom-width: 0
+  border-top-color: #999999
+  border-top-color: rgba(0, 0, 0, 0.25)
+  bottom: -11px
+
+.popover.top > .arrow:after
+  content: " "
+  bottom: 1px
+  margin-left: -10px
+  border-bottom-width: 0
+  border-top-color: #ffffff
+
+.popover.right > .arrow
+  top: 50%
+  left: -11px
+  margin-top: -11px
+  border-left-width: 0
+  border-right-color: #999999
+  border-right-color: rgba(0, 0, 0, 0.25)
+
+.popover.right > .arrow:after
+  content: " "
+  left: 1px
+  bottom: -10px
+  border-left-width: 0
+  border-right-color: #ffffff
+
+.popover.bottom > .arrow
+  left: 50%
+  margin-left: -11px
+  border-top-width: 0
+  border-bottom-color: #999999
+  border-bottom-color: rgba(0, 0, 0, 0.25)
+  top: -11px
+
+.popover.bottom > .arrow:after
+  content: " "
+  top: 1px
+  margin-left: -10px
+  border-top-width: 0
+  border-bottom-color: #ffffff
+
+.popover.left > .arrow
+  top: 50%
+  right: -11px
+  margin-top: -11px
+  border-right-width: 0
+  border-left-color: #999999
+  border-left-color: rgba(0, 0, 0, 0.25)
+
+.popover.left > .arrow:after
+  content: " "
+  right: 1px
+  border-right-width: 0
+  border-left-color: #ffffff
+  bottom: -10px
+
+
+.collapsing
+  position: relative
+  height: 0
+  overflow: hidden
+  transition-timing-function: ease
+  transition-duration: .35s
+  transition-property: height,visibility
+.collapse
+  display: none
+  &.in
+      display: block
+
+
+.owl-prev,
+.owl-next
+    position: absolute
+    top: 125px
+    padding: 12px 22px
+    background-color: rgba(255,255,255,.45)
+    transition: 300ms
+    &:hover
+        background-color: rgba(255,255,255,.67)
+    &:active
+        background-color: rgba(255,255,255,.8)
+    i
+        color: #4e4e4e
+        font-size: em(33)
+.owl-prev
+    right: -55px
+.owl-next
+    left: -55px
+.owl-dots
+    margin-top: 110px
+    .owl-dot
+        display: inline-block
+        width: 17px
+        height: 17px
+        border: 1px solid #fff
+        &+.owl-dot
+            margin-left: 4px
+        &.active
+            background-color: #dc1f3e
+            border-color: #dc1f3e
+
+
+.tab-pane
+    display: none
+    &.active
+        display: block
+
+
+.modal
+    position: fixed
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    z-index: 1050
+    display: none
+    overflow: hidden
+    -webkit-overflow-scrolling: touch
+    outline: 0
+    &.fade
+        .modal-dialog
+            transition: transform .3s ease-out
+            transform: translate(0,-25%)
+    &.in
+        .modal-dialog
+            transform: translate(0,0)
+    .nav-tabs
+        margin-bottom: 30px
+        li
+            width: 50%
+            background-color: #ededed
+            a
+                display: inline-block
+                width: 100%
+                padding-top: 10px
+                padding-bottom: 10px
+            &.active
+                background-color: #fff
+
+#success
+    .modal-body
+        i
+            color: #ffcc01
+            font-size: em(36)
+        p
+            color: #494949
+            font-size: em(20)
+            font-weight: 600
+
+.fade
+    opacity: 0
+    transition: opacity 150ms linear
+    &.in
+        opacity: 1
+
+.modal-open
+    overflow: hidden
+    .modal
+        overflow-x: hidden
+        overflow-y: auto
+
+.modal-dialog
+    width: auto
+    position: relative
+    margin: 10px
+
+.modal-content
+    position: relative
+    background-color: #fff
+    -webkit-background-clip: padding-box
+    background-clip: padding-box
+    outline: 0
+    text-align: center
+    .modal-header
+        text-align: right
+        .close
+            margin-top: 12px
+            margin-right: 13px
+            color: #d3d3d3
+            font-size: em(17)
+            transition: opacity 300ms
+            &:hover
+                opacity: .7
+    .modal-body
+        position: relative
+        padding: 0 45px 50px
+        h4
+            margin-top: 0
+            color: #494949
+            font-size: em(18)
+            font-weight: 600
+            text-transform: uppercase
+form
+    .form-group
+        position: relative
+        margin-bottom: 10px
+        label
+            position: absolute
+            left: 30px
+            top: 10px
+        .form-control
+            width: 100%
+            height: 45px
+            padding-left: 50px
+            border: 1px solid #d7d7d7
+            transition: border 300ms
+            &::placeholder
+                color: #989898
+            &:focus
+                outline: none
+                border-color: #ffcc01
+            &.has-error
+                border-color: red
+    .error
+        color: red
+    .btn
+        width: 100%
+        padding: 14px
+        i
+            font-size: 15px
+    .forgotten
+        display: inline-block
+        margin-top: 10px
+        color: #8c8c8c
+        font-size: em(14)
+        text-decoration: underline
+        &:hover
+            text-decoration: none
+.modal-backdrop
+    position: fixed
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    z-index: 1040
+    background-color: #000
+    &.fade
+        opacity: 0
+    &.in
+        opacity: .5
+#sign
+    .modal-header
+        position: relative
+        .close
+            position: absolute
+            top: -35px
+            right: 10px
+            margin: 0
+    .modal-dialog
+        margin-top: 50px
+    .modal-body
+        padding-bottom: 30px
+        p
+            margin-bottom: 20px
+            color: #8c8c8c
+            font-size: em(14)
+            line-height: em(16)
+        #register
+            input
+                padding-left: 55px
+
+#forgotten
+    p
+        margin-top: 0
+        color: #494949
+        font-size: em(16)
+        font-weight: 600
+        line-height: em(18)
+
+.product-card
+    display: inline-block
+    width: 100%
+    margin-bottom: 30px
+    padding-bottom: 35px
+    text-align: left
+    background-color: #fff
+    box-shadow: 1px 2px 4.7px 0.3px rgba(62, 69, 77, 0.25)
+    transition: box-shadow 300ms
+    &:hover
+        box-shadow: 0px 0px 22.56px 1.44px rgba(59, 59, 59, 0.33)
+    .img-wrap
+        position: relative
+        width: 100%
+        height: 178px
+        overflow: hidden
+        img
+            width: 100%
+            height: 100%
+        button
+            position: absolute
+            right: 20px
+            bottom: 15px
+            width: 27px
+            height: 27px
+            border: none
+            background-image: url(../img/product-card-button.png)
+            background-color: transparent
+            transition: opacity 200ms
+            &:hover
+                opacity: .8
+            &:focus
+                outline: none
+    hr
+        margin: 0
+    h3
+        margin-top: 25px
+        margin-bottom: 5px
+        margin-left: 25px
+        text-transform: uppercase
+        color: #000
+        font-size: em(15)
+        font-weight: 200
+        b
+            display: inline-block
+    .table
+        padding-left: 25px
+        padding-right: 25px
+        .trow
+            .tcell
+                position: relative
+                color: #000
+                font-size: em(15)
+                &:first-child
+                    color: #6c6c6c
+                    font-weight: 200
+            &.footer
+                .tcell
+                    color: #000
+                    font-size: em(17)
+                    font-weight: 700
+                    &:first-child
+                        font-weight: 200
+            &.hr
+                .tcell
+                    padding-top: 10px
+                    &::before
+                        content: ''
+                        position: absolute
+                        top: 5px
+                        left: -25px
+                        height: 1px
+                        width: calc(100% + 50px)
+                        background-color: #e3e3e3
+
+    .btn
+        margin-top: 15px
+        margin-left: 25px
+        padding-left: 60px
+        padding-right: 60px
+        i
+            font-size: 17px
+    .product-card-slider
+        width: 920px
+        height: 620px
+        border: 2px solid #dbdbdb
+        box-shadow: 2px 1px 4.7px 0.3px rgba(15, 17, 20, 0.48)
+        .owl-next,
+        .owl-prev
+            top: 50%
+            padding: 14px 23px
+            transform: translateY(-50%)
+            background-color: rgba(0,0,0,.41)
+            i
+                color: #d7d7d7
+                font-size: em(23)
+            &:hover
+                background-color: rgba(0,0,0,.60)
+        .owl-next
+            left: 0
+        .owl-prev
+            right: 0
+        .product-card-slider-btn
+            position: absolute
+            top: 0
+            right: 0
+            padding: 10px 25px
+            color: #d3d3d3
+            font-size: em(14)
+            background-color: rgba(38,38,38,.41)
+            transition: 300ms
+            z-index: 5
+            &:hover
+                background-color: rgba(0,0,0,.60)
+        .item
+            position: relative
+            height: 616px
+            overflow: hidden
+            img
+                width: 100%
+            .descr
+                position: absolute
+                left: 0
+                bottom: 0
+                width: 100%
+                height: 150px
+                text-align: center
+                background-color: rgba(0,0,0,.71)
+                h3
+                    color: #fff
+                    font-size: em(18)
+                .btn
+                    margin-top: 10px
+                    margin-left: 0
+                    padding-left: 30px
+                    padding-right: 30px
+
+
+.plain-text
+    text-align: left!important
+    ul:not(.breadcrumb)
+        padding-left: 40px
+        list-style-type: disc!important
+        li
+            display: list-item!important
+
+
+@keyframes slideUp
+    from
+        top: -100%
+    to
+        top: 0
+
+
+
+
+header.main-header
+    position: absolute
+    top: 0
+    width: 100%
+    background-color: rgba(255,255,255,.76)
+    text-align: center
+    z-index: 999
+    &.fixed
+        position: fixed
+        left: 0
+        background-color: rgba(255,255,255,.87)
+        animation: slideUp 500ms ease-in-out
+        .logo
+            margin-top: 25px
+        nav
+            .top-nav
+                display: inline-block
+                margin-top: 10px
+                margin-bottom: 0
+                li
+                    a
+                        padding: 5px 10px
+                        color: #6a6a6a
+                        font-size: em(13)
+                        font-weight: 700
+                        text-transform: uppercase
+                        transition: opacity 300ms
+                        &:hover
+                            opacity: .7
+            .bottom-nav
+                margin-top: 0
+        #basket
+            padding-top: 18px
+            padding-bottom: 17px
+    .logo
+        display: inline-block
+        margin-top: 12px
+    .top-line
+        padding-top: 12px
+        font-family: "PFDinTextPro"
+        font-size: em(17)
+        font-weight: 600
+        >a
+            margin-right: 55px
+            color: #3c3c3c
+            i
+                margin-right: 5px
+                color: $accent
+    .socials
+        display: inline-block
+        a
+            display: inline-block
+            width: 27px
+            height: 27px
+            border: 1px solid $accent
+            transition: 150ms
+            &+a
+                margin-left: 8px
+            &:hover
+                border-color: #909ec6
+                i
+                    color: #909ec6
+            i
+                margin-right: 0
+                color: $accent
+                transition: 150ms
+    nav
+        z-index: 9999
+        .top-nav
+            display: none
+        .bottom-nav
+            margin-top: 10px
+            margin-bottom: 0
+            li
+                position: relative
+                &+li::before
+                    content: ''
+                    position: absolute
+                    top: 50%
+                    left: 0
+                    width: 1px
+                    height: 32px
+                    background-color: #c2c2c2
+                    transform: translateY(-50%)
+                &:hover
+                    background-color: #262626
+                    &::before
+                        display: none
+                    a
+                        color: #ffcc01
+                a
+                    display: inline-block
+                    width: 245px
+                    padding: 17px 0
+                    color: #383838
+                    font-size: em(14)
+                    font-weight: 700
+                    text-transform: uppercase
+                    transition: color 300ms
+            .socials
+                display: none
+    #basket
+        display: inline-block
+        width: 100%
+        padding-top: 5px
+        padding-bottom: 5px
+        background-color: rgba(245,245,245,.65)
+        transition: background-color 300ms
+        &:hover
+            background-color: rgba(255,255,255,.65)
+        i
+            display: block
+            color: $accent
+            font-size: 34px
+        b
+            color: #dc1f3e
+            font-size: em(13)
+            text-transform: uppercase
+        p
+            margin: 0
+            color: #3d3d3d
+            font-size: em(15)
+            line-height: em(13)
+        span
+            color: #3d3d3d
+            font-size: em(16)
+            font-weight: 600
+
+
+
+
+.main-slider
+    position: relative
+    padding-top: 30px
+    background-image: url("../img/main-slider-bg.jpg")
+    background-size: cover
+    background-position: center bottom
+    .background-video
+        background-position: top center
+        background-repeat: no-repeat
+        bottom: 0
+        left: 0
+        overflow: hidden
+        position: fixed
+        right: 0
+        top: 0
+    .blocker
+        padding: 0!important
+        z-index: 90!important
+    video,
+    source
+        bottom: 0
+        left: 0
+        min-height: 100%
+        min-width: 100%
+        position: absolute
+    .loaded .ytplayer-container
+        display: block
+    .loaded .placeholder-image
+        opacity: 0
+    .ytplayer-container
+        bottom: 0
+        height: 100%
+        left: 0
+        min-width: 100%
+        overflow: hidden
+        position: absolute
+        right: 0
+        top: 0
+        z-index: 1
+    .placeholder-image
+        height: 100%
+        left: 0
+        height: 100%
+        width: 100%
+        position: fixed
+        top: 0
+        z-index: 1
+    .ytplayer-shield
+        height: 100%
+        left: 0
+        position: absolute
+        top: 0
+        width: 100%
+        background-image: url(../img/main-slider-pattern.png)
+        background-blend-mode: multiply
+        z-index: 2
+    .ytplayer-player
+        position: absolute
+    .video-wrap
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        overflow: hidden
+        &:not(.play)
+            .ytplayer-shield
+                background-image: url(../img/main-slider-bg.jpg)
+                background-position: center
+                background-size: cover
+    .owl-carousel
+        margin-top: 270px
+        text-align: center
+        z-index: 99
+        .item
+            position: relative
+            p
+                display: inline-block
+                padding: 30px 80px 50px
+                color: #fff
+                font-family: "Exo2.0"
+                font-size: em(52)
+                font-weight: 600
+                line-height: em(18)
+                letter-spacing: em(.5)
+                text-transform: uppercase
+                border: 2px solid #fff
+                box-shadow: 2px 2px 4.7px 0.3px rgba(15, 17, 20, 0.3), inset 2px 2px 4.7px 0.3px rgba(15, 17, 20, 0.3)
+                z-index: -1
+            .btn
+                position: absolute
+                bottom: 25px
+                left: 50%
+                transform: translateX(-50%)
+                z-index: 55
+                i
+                    font-size: em(17)
+    nav
+        position: relative
+        margin-top: 30px
+        text-align: center
+        background-color: rgba(255,255,255,.75)
+        z-index: 99
+        ul
+            margin: 0
+            li
+                position: relative
+                &+li::before
+                    content: ''
+                    position: absolute
+                    top: 50%
+                    left: 0
+                    width: 1px
+                    height: 32px
+                    background-color: #c2c2c2
+                    transform: translateY(-50%)
+                &:hover
+                    background-color: #262626
+                    &::before
+                        display: none
+                    a
+                        color: #ffcc01
+                a
+                    display: inline-block
+                    padding: 17px 25px
+                    color: #383838
+                    font-size: em(14)
+                    font-weight: 700
+                    text-transform: uppercase
+                    transition: color 300ms
+
+
+
+.advantages
+    padding-top: 60px
+    padding-bottom: 110px
+    background-image: url(../img/wall-bg.png)
+    h2
+        margin-bottom: 75px
+        letter-spacing: em(.6)
+        &::after
+            background-color: #242424
+        span
+            display: block
+            font-weight: 400
+    aside
+        img
+            margin-bottom: 10px
+            box-shadow: 2px 2px 4.7px 0.3px rgba(15, 17, 20, 0.3)
+    #accordion
+        width: 600px
+        a
+            display: -webkit-flex
+            display: -ms-flex
+            display: flex
+            alain-items: center
+            margin-top: 0
+            margin-bottom: 10px
+            color: #4f597c
+            font-size: em(19)
+            line-height: em(16)
+            background-color: #fff
+            box-shadow: 2px 2px 4.7px 0.3px rgba(15, 17, 20, 0.15)
+            vertical-align: middle
+            &:hover
+                cursor: pointer
+                .fa-angle-right
+                    transform: rotate(90deg)
+            &:focus
+                outline: none
+            &.ui-state-active
+                .fa-angle-right
+                    transform: rotate(-90deg)
+            p
+                align-self: center
+                margin: 0
+                padding: 5px 0
+            .check
+                position: relative
+                flex: 0 0 50px
+                width: 50px
+                min-height: 48px
+                margin-right: 10px
+                background-image: url(../img/advantages-check-bg.png)
+                background-size: cover
+                vertical-align: middle
+                text-align: center
+                .fa-check
+                    position: absolute
+                    top: 50%
+                    left: 50%
+                    align-self: center
+                    color: #fff
+                    font-size: em(14)
+                    transform: translate(-50%, -50%)
+            .fa-angle-right
+                margin-top: auto
+                margin-bottom: auto
+                margin-left: auto
+                margin-right: 25px
+                transition: 300ms
+        .panel-collapse
+            p
+                margin: 0
+                padding-top: 20px
+                padding-bottom: 30px
+                padding-left: 65px
+                padding-right: 65px
+
+
+
+.technology
+    text-align: center
+    header
+        position: relative
+        padding-top: 40px
+        padding-bottom: 45px
+        background-image: url(../img/technology-top-bg.png)
+        background-size: cover
+        z-index: 5
+        &::before
+            content: ''
+            position: absolute
+            bottom: -13px
+            left: calc(50% - 11.5px)
+            width: 23px
+            height: 13px
+            background-image: url(../img/technology-top-triangle.png)
+            background-repeat: no-repeat
+            z-index: 5
+        h2
+            color: #fff
+            &::after
+                background-color: #fff
+    .wrapper
+        padding-top: 50px
+        padding-bottom: 80px
+        background-image: url(../img/technology-bg.png)
+        .container
+            img
+                margin-bottom: 15px
+                vertical-align: bottom
+                box-shadow: 2px 2px 4.7px 0.3px rgba(15, 17, 20, 0.56)
+            .technology-left,
+            .technology-right
+                display: inline-block
+                .item
+                    position: relative
+                    display: table
+                    width: 300px
+                    height: 94px
+                    margin-top: 19px
+                    padding: 0 25px
+                    background-repeat: no-repeat
+                    color: #242424
+                    font-size: em(17)
+                    line-height: em(16)
+                    font-weight: 600
+                    p
+                        display: table-cell
+                        vertical-align: middle
+                    &:hover
+                        color: #fff
+            .technology-left
+                padding-right: 20px
+                text-align: left
+                .item
+                    background-image: url(../img/technology-item-left.png)
+                    &:hover
+                        background-image: url(../img/technology-item-left-hover.png)
+            .technology-right
+                padding-left: 20px
+                text-align: right
+                .item
+                    background-image: url(../img/technology-item-right.png)
+                    &:hover
+                        background-image: url(../img/technology-item-right-hover.png)
+        .btn
+            margin-top: 25px
+            i
+                margin-right: 10px
+
+
+
+
+.properties
+    padding-top: 65px
+    padding-bottom: 130px
+    background-image: url(../img/properties-bg.jpg)
+    background-position: center bottom
+    background-size: cover
+    h2
+        margin-bottom: 90px
+        color: #fff
+        &::after
+            background-color: #fff
+    .container
+        display: -webkit-flex
+        display: -ms-flex
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        .item
+            width: 170px
+            margin-bottom: 70px
+            margin-left: 10px
+            margin-right: 10px
+            text-align: center
+            .img-wrap
+                position: relative
+                display: inline-block
+                width: 80px
+                height: 80px
+                border: 1px solid #fff
+                box-shadow: 2px 2px 4.7px 0.3px rgba(15, 17, 20, 0.3), inset 2px 2px 4.7px 0.3px rgba(15, 17, 20, 0.3)
+                &::before
+                    content: ''
+                    position: absolute
+                    top: 0
+                    left: 0
+                    width: 80px
+                    height: 80px
+                    background-color: $accent
+                    border: 1px solid #fff
+                    background: linear-gradient(to top left, rgba(59,87,166,1) 0%,rgba(95,122,201,1) 100%)
+                    transform: rotate(45deg)
+                img
+                    position: absolute
+                    top: 50%
+                    left: 50%
+                    transform: translate(-50%, -50%)
+            p
+                margin-top: 25px
+                margin-bottom: 0
+                color: #fff
+                font-weight: 600
+                line-height: em(16)
+                span
+                    display: none
+
+
+
+
+.inner
+    padding-top: 130px
+    section
+        text-align: center
+    header.main-header
+        background-color: rgba(255,255,255,.87)
+        box-shadow: 1px 2px 4.985px 0.015px rgba(15, 17, 20, 0.13)
+        &.fixed
+            animation: slideUp 500ms ease-in-out
+        .logo
+            margin-top: 25px
+        nav
+            .top-nav
+                display: inline-block
+                margin-top: 10px
+                margin-bottom: 0
+                li
+                    a
+                        padding: 5px 10px
+                        color: #6a6a6a
+                        font-size: em(13)
+                        font-weight: 700
+                        text-transform: uppercase
+                        transition: opacity 300ms
+                        &:hover
+                            opacity: .7
+            .bottom-nav
+                margin-top: 0
+        #basket
+            padding-top: 18px
+            padding-bottom: 17px
+        &.fixed
+            position: fixed
+            &::before
+                content: ''
+                position: absolute
+                display: block
+                top: 0
+                width: 100%
+                height: 130px
+    footer
+        position: inherit
+        background-image: url(../img/footer-inner-bg.png)
+
+
+
+
+.about
+    padding-bottom: 75px
+    background-size: cover
+    text-align: center
+    h2
+        margin-bottom: 75px
+        &::after
+            background-color: #000
+    article
+        padding: 35px 70px
+        color: #4b4b4b
+        font-size: em(19)
+        background-color: rgba(255,255,255,.8)
+        text-align: left
+        p
+            width: 460px
+            margin-bottom: 30px
+        .right
+            p
+                padding-left: 70px
+    .btn
+        margin-top: 50px
+
+
+
+
+.know,
+.partners
+    padding-bottom: 80px
+    h2
+        margin-top: 45px
+        margin-bottom: 75px
+        color: #242424
+        &::after
+            background-color: #242424
+    article
+        padding: 40px 130px 75px
+        text-align: left
+        background-color: #fff
+        border-top: 5px solid #515c7f
+        p
+            margin-bottom: 30px
+        .btn
+            display: table
+            margin-top: 45px
+            margin-left: auto
+            margin-right: auto
+            padding-left: 45px
+            padding-right: 45px
+            i
+                margin-left: 10px
+                margin-right: 0
+
+
+
+
+.partners
+    .tabs
+        ul
+            display: -webkit-flex
+            display: -ms-flex
+            display: flex
+            justify-content: space-between
+            margin: 0
+            li
+                width: calc(50% - 4px)
+                height: 50px
+                background-color: #e2e5ee
+                &.active
+                    background-image: url(../img/technology-top-bg.png)
+                    a
+                        color: #fff
+                a
+                    display: inline-block
+                    width: 100%
+                    height: 50px
+                    color: #515151
+                    font-size: em(19)
+                    line-height: em(44)
+                    text-transform: capitalize
+        h3
+            margin-top: 20px
+            margin-bottom: 10px
+            font-size: em(24)
+            line-height: em(18)
+            text-align: center
+            font-weight: 400
+            span
+                text-transform: uppercase
+        p
+            margin-top: 0
+            margin-bottom: 0
+            font-size: em(18)
+        b
+            display: block
+            font-size: em(18)
+        ol
+            margin-top: 0
+            margin-bottom: 0
+            padding-left: 0
+            list-style-position: inside
+            li
+                line-height: em(28)
+        .wrap
+            text-align: center
+            vertical-align: top
+        .btn
+            display: inline-block
+            width: 315px
+            height: 55px
+            margin-top: 10px
+            margin-left: 10px
+            margin-right: 10px
+            padding-left: 0
+            padding-right: 0
+        .btn-invert
+            i
+                margin-right: 10px
+                margin-left: 0
+
+
+
+
+.team
+    padding-top: 80px
+    padding-bottom: 80px
+    box-shadow: 0px 0px 4.7px 0.3px rgba(52, 35, 7, 0.27)
+    h2
+        margin-bottom: 70px
+        color: #242424
+        &::after
+            background-color: #242424
+    .item
+        display: inline-block
+        width: 265px
+        height: 460px
+        margin-left: 40px
+        margin-right: 40px
+        box-shadow: 2px 1px 4.7px 0.3px rgba(15, 17, 20, 0.25)
+        background-color: #fff
+        .img-wrap
+            width: 100%
+            height: 350px
+            overflow: hidden
+            img
+                width: 100%
+        h3
+            margin-top: 14px
+            margin-bottom: 0
+            color: #000
+            font-size: em(18)
+            text-transform: uppercase
+        p
+            margin-top: 0
+            font-size: em(17)
+
+
+
+
+.certificates
+    padding-top: 80px
+    padding-bottom: 80px
+    h2
+        margin-bottom: 75px
+        color: #242424
+        &::after
+            background-color: #242424
+    .item
+        position: relative
+        display: inline-block
+        width: 160px
+        height: 250px
+        &:hover::after
+            content: '\f00e'
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            padding-top: 110px
+            color: #d6d6d6
+            font-family: FontAwesome
+            font-size: em(27)
+            vertical-align: middle
+            background-color: rgba(0,0,0,.32)
+        img
+            width: 100%
+            height: 100%
+    .owl-nav
+        .owl-prev,
+        .owl-next
+            top: 50%
+            padding: 9px 18px
+            background-color: rgba(223,233,233,.45)
+            transform: translateY(-50%)
+            &:hover
+                background-color: rgba(223,233,233,.67)
+                i
+                    color: #4e4e4e
+            i
+                color: #b7b7b7
+                font-size: em(23)
+        .owl-prev
+            right: -65px
+        .owl-next
+            left: -65px
+
+
+
+
+.catalog
+    padding-bottom: 50px
+    .container
+        position: relative
+        margin-left: auto
+        margin-right: auto
+        padding-right: 15px
+        padding-left: 15px
+        .row
+            display: flex
+            flex-wrap: wrap
+            margin-right: -15px
+            margin-left: -15px
+    h2
+        margin-bottom: 35px
+        color: #242424
+        &::after
+            background-color: #242424
+    .category-mnu
+        margin-bottom: 20px
+        .btn-group
+            position: relative
+            display: inline-block
+            margin: 10px 15px
+            vertical-align: middle
+            &.open
+                .category-mnu-btn
+                    background-color: #ececec
+                >.dropdown-menu
+                    display: block
+                    box-shadow: 0 10px 10px rgba(0,0,0,.3)
+            .dropdown-menu
+                position: absolute
+                display: none
+                top: 100%
+                left: 0
+                width: 100%
+                margin: 0
+                background-color: #fff
+                z-index: 500
+                li
+                    border-top: 1px solid #ccc
+                & .btn-group
+                    margin: 0
+            .category-mnu-btn
+                width: 225px
+                height: 45px
+                color: #2a2a2a
+                background-color: #e3e3e3
+                transition: 300ms
+                user-select: none
+                &.active
+                    color: #b9b9b9
+                    background-color: #fff
+                    outline: 1px solid rgba(206, 206, 206, .56)
+                &:hover
+                    color: #f8c54b
+                    background-color: #1f1f1f
+            .dropdown-toggle
+                position: absolute
+                top: 0
+                right: 0
+                width: 30px
+                height: 100%
+                background-color: #e3e3e3
+                border-left: 1px solid #ccc
+                &+.category-mnu-btn
+                    padding-right: 30px
+    .products
+        position: relative
+        .loading
+            position: absolute
+            top: 0
+            left: 15px
+            display: flex
+            height: calc(100% - 28px)
+            width: calc(100% - 30px)
+            background-color: rgba(0,0,0,.1)
+            z-index: 9
+            i
+                margin: auto
+
+
+
+
+.inner.product
+    padding-top: 0
+    header.main-header
+        position: absolute
+        &.fixed
+            position: fixed
+    .product-content
+        padding-top: 130px
+        padding-bottom: 125px
+        text-align: left
+        background-size: cover
+        .breadcrumb
+            li
+                &:last-child
+                    a
+                        color: #fff
+                a,
+                i
+                    color: #dfdfdf
+        h2
+            display: inline-block
+            margin-top: 40px
+            margin-bottom: 30px
+            color: #f5f5f5
+            font-size: em(20)
+            text-align: left
+            &::after
+                display: none
+        #product-slider-full
+            margin-bottom: 10px
+            border: solid 2px #e9e9e9
+            box-shadow: 1px 2px 3.8px 0.2px rgba(62, 69, 77, 0.25)
+            .owl-next,
+            .owl-prev
+                background-color: transparent
+                transition: opacity 300ms
+                &:hover
+                    opacity: .7
+                i
+                    color: #fff
+        #product-slider-thumb
+            margin-bottom: 45px
+            .owl-item
+                border: 1px solid #e9e9e9
+                box-shadow: 1px 2px 3.8px 0.2px rgba(62, 69, 77, 0.25)
+                opacity: .8
+                transition: opacity 300ms
+                &:hover
+                    cursor: pointer
+                    opacity: 1
+                &.current
+                    opacity: 1
+        .laying
+            margin-bottom: 50px
+            padding: 7px 24px 40px
+            border: solid 2px #e9e9e9
+            p
+                color: #fff
+                font-size: em(18)
+                font-weight: 700
+            .wrap
+                display: flex
+                flex-wrap: wrap
+                img
+                    margin: 3px
+                    border: 1px solid #959595
+        .product-advantages
+            display: flex
+            justify-content: space-between
+            padding: 60px 45px 15px
+            border: solid 2px #e9e9e9
+            text-align: center
+            .item
+                vertical-align: top
+                p
+                    margin-top: 10px
+                    color: #eeeeee
+                    line-height: em(18)
+        .product-info
+            margin-left: 15px
+            padding-top: 25px
+            padding-bottom: 45px
+            padding-left: 20px
+            padding-right: 20px
+            background-color: rgba(255, 255, 255, .9)
+            table
+                width: calc(100% - 50px)
+                margin-left: 25px
+                td
+                    width: 50%
+                    font-size: em(18)
+                    line-height: em(27)
+                    vertical-align: top
+                    &:first-child
+                        color: #6c6c6c
+                        font-weight: 200
+                    &:last-child
+                        color: #000
+                .price
+                    margin-top: 10px
+                    margin-bottom: 10px
+                    padding: 13px 0 13px 40px
+                    background-color: #7b8dc1
+                    color: #fff
+                    font-size: em(17)
+                    font-weight: 600
+                    text-transform: uppercase
+                    b
+                        font-size: em(24)
+                    span
+                        font-size: em(14)
+                        text-transform: none
+            .product-question
+                color: #3b57a6
+            .calculator
+                position: relative
+                margin-top: 20px
+                padding-top: 15px
+                padding-bottom: 35px
+                padding-left: 45px
+                padding-right: 45px
+                background-color: #f9f9f9
+                border: 2px solid #676767
+                z-index: 1
+                &::before
+                    content: ''
+                    position: absolute
+                    top: -10px
+                    left: -10px
+                    width: calc(100% + 20px)
+                    height: calc(100% + 20px)
+                    border: 2px solid #9a9a9a
+                    z-index: -1
+                h3
+                    position: relative
+                    margin-top: 0
+                    margin-bottom: 15px
+                    color: #414141
+                    font-weight: 400
+                    text-transform: uppercase
+                    &::before
+                        content: "\f1ec"
+                        position: absolute
+                        top: 3px
+                        left: -19px
+                        color: #757575
+                        font-size: 14px
+                        font-family: FontAwesome
+                .raspberry
+                    margin-top: 12px
+                    margin-bottom: 8px
+                    color: #dc1f3e
+                .input-group
+                    position: relative
+                    display: inline-block
+                    width: 75px
+                    margin-bottom: 5px
+                    label
+                        display: block
+                        color: #5b5b5b
+                        font-size: em(13)
+                    input
+                        width: 100%
+                        height: 35px
+                        padding-left: 15px
+                        background-color: #efefef
+                        border: 1px solid #c8c8c8
+                        transition: border-color 300ms
+                        &:focus
+                            outline: none
+                            border-color: #000
+                    p
+                        position: absolute
+                        top: 15px
+                        right: -27px
+                .input-group-divider
+                    margin-left: 13px
+                    margin-right: 13px
+                    color: #5b5b5b
+                    font-size: em(13)
+                    font-style: normal
+                p
+                    color: #333333
+                    font-size: em(14)
+            .stock
+                position: relative
+                margin-left: 22px
+                margin-bottom: 10px
+                padding-bottom: 15px
+                &::after
+                    content: ''
+                    position: absolute
+                    bottom: 0
+                    left: -22px
+                    width: 100%
+                    height: 1px
+                    background-color: #cdcdcd
+                input[type=radio]:not(old)
+                    display: none
+                    & + label
+                        position: relative
+                        display: block
+                        width: 50px
+                        cursor: pointer
+                        &::before,
+                        &::after
+                            content: ''
+                            position: absolute
+                            top: 12px
+                            left: -14px
+                            width: 1px
+                            height: 1px
+                            transition: 300ms
+                        &::before
+                            top: 4px
+                            left: -22px
+                            width: 17px
+                            height: 17px
+                            border: 1px solid #a5a5a5
+                    &:checked + label::after
+                        top: 7px
+                        left: -19px
+                        width: 11px
+                        height: 11px
+                        background-color: #a5a5a5
+            .total
+                margin-bottom: 15px
+                color: #272727
+                text-transform: uppercase
+                input
+                    width: 75px
+                    height: 35px
+                    margin-left: 20px
+                    padding-left: 15px
+                    background-color: #efefef
+                    border: 1px solid #c8c8c8
+                    transition: border-color 300ms
+                    &:focus
+                        outline: none
+                        border-color: #000
+                p
+                    display: inline-block
+                    margin-left: 20px
+                    text-transform: none
+            .btn
+                padding-left: 50px
+                padding-right: 50px
+            .product-info-footer
+                padding-left: 25px
+                padding-right: 25px
+                p
+                    margin-top: 30px
+                    color: #343434
+                    font-weight: 600
+                .btn
+                    padding-left: 30px
+                    padding-right: 30px
+
+    #lock,
+    #chamfer
+        h4
+            margin-bottom: 17px
+        span
+            display: block
+            margin-top: 16px
+            color: #7b8dc1
+            font-weight: 700
+            font-size: em(18)
+        p
+            margin-top: 0
+            margin-bottom: 10px
+            color: #363636
+            font-size: em(18)
+            line-height: em(16)
+
+    .previously-slider
+        padding-top: 75px
+        padding-bottom: 50px
+        h2
+            margin-bottom: 75px
+            color: #000
+            &::after
+                background-color: #000
+        .product-card
+            .img-wrap
+                button
+                    display: none
+        .owl-next,
+        .owl-prev
+            top: 50%
+            padding: 11px 18px
+            transform: translateY(-50%)
+            &:hover
+                background-color: #cecece
+            i
+                font-size: em(24)
+        .owl-next
+            left: auto
+            right: -55px
+        .owl-prev
+            right: auto
+            left: -55px
+
+
+
+
+.basket
+    padding-bottom: 70px
+    h2
+        margin-top: 25px
+        margin-bottom: 75px
+        color: #242424
+        &::after
+            background-color: #242424
+    .table
+        position: relative
+        border-top: 1px solid #b4b4b4
+        border-right: 1px solid #b4b4b4
+        .thead
+            .trow
+                .tcell
+                    color: #242424
+                    padding-top: 15px
+                    padding-bottom: 15px
+                    background-color: #91a3d6
+                    font-size: em(15)
+                    font-weight: 600
+                    text-transform: uppercase
+        .trow
+            .tcell
+                border-left: 1px solid #b4b4b4
+                border-bottom: 1px solid #b4b4b4
+                background-color: #fdfdfd
+                color: #000
+                font-weight: 200
+            .thumb
+                padding-top: 2px
+                padding-bottom: 2px
+            .title
+                transition: color 300ms
+                &:hover
+                    color: #dc1f3e
+            .quantity
+                input
+                    width: 42px
+                    height: 28px
+                    text-align: center
+                    border: 1px solid #b3b3b3
+                    border-left: none
+                    border-right: none
+                    &:focus
+                        outline: none
+                .button
+                    vertical-align: bottom
+                    width: 22px
+                    height: 28px
+                    border: 1px solid #b3b3b3
+                    transition: color 300ms
+                    &:last-of-type
+                        border-left-color: #7a7a7a
+                    &:first-of-type
+                        border-right-color: #7a7a7a
+                    &:hover
+                        color: #dc1f3e
+            .one-price
+                color: #000
+                font-weight: 600
+            .quantity-price
+                color: #ecbd00
+                font-weight: 600
+            .del
+                button
+                    width: 23px
+                    height: 24px
+                    margin-left: 13px
+                    margin-right: 13px
+                    background-image: url('../img/trash.png')
+                    vertical-align: middle
+                    &:hover
+                        background-image: url('../img/trash-hover.png')
+    .tfooter
+        width: 100%
+        margin-bottom: 135px
+        padding: 20px 50px
+        border-left: 1px solid #b4b4b4
+        border-right: 1px solid #b4b4b4
+        border-bottom: 1px solid #b4b4b4
+        background-color: #fdfdfd
+        text-align: right
+        color: #dc1f3e
+        font-weight: 600
+        text-transform: uppercase
+        span
+            margin-left: 60px
+            font-size: em(18)
+            text-transform: none
+    .basket-form
+        background-color: #fff
+        h3
+            padding-top: 14px
+            padding-bottom: 14px
+            color: #242424
+            font-size: em(15)
+            font-weight: 600
+            text-transform: uppercase
+            background-color: #91a3d6
+        .form-content
+            padding: 10px 35px 35px
+            .form-group
+                margin-top: 40px
+                &:last-child
+                    margin-top: 15px
+                .form-control
+                    padding-left: 20px
+                label
+                    top: -27px
+                    left: 0
+                    i
+                        margin-right: 10px
+                textarea
+                    height: 145px
+                    resize: none
+                .btn
+                    width: auto
+                    padding-left: 70px
+                    padding-right: 70px
+
+
+
+.lk,
+.basket,
+.catalog
+    min-height: calc(100vh - 240px)
+.lk
+    padding-bottom: 80px
+    h2
+        margin-top: 30px
+        margin-bottom: 85px
+        &::after
+            background-color: #242424
+    .tabs
+        box-shadow: 1px 2px 4.7px 0.3px rgba(62, 69, 77, 0.25)
+        text-align: left
+        ul
+            margin: 0
+        li
+            position: relative
+            display: block
+            height: 55px
+            margin-bottom: 1px
+            padding-left: 45px
+            padding-right: 25px
+            background-color: #fff
+            color: #242424
+            font-size: em(15)
+            font-weight: 600
+            text-transform: uppercase
+            transition: color 300ms
+            &:hover
+                color: #757575
+            &.active
+                color: #ffcc01
+            &:nth-child(1) a::before
+                content: '1. '
+                position: absolute
+                left: -20px
+            &:nth-child(2) a::before
+                content: '2. '
+                position: absolute
+                left: -20px
+            &:nth-child(3) a::before
+                content: '3. '
+                position: absolute
+                left: -20px
+            a
+                position: absolute
+                top: 50%
+                display: inline-block
+                transform: translateY(-50%)
+                user-select: none
+    .tab-pane
+        padding: 10px 45px 85px
+        background-color: #fff
+        &#lk-tab1
+            padding-bottom: 45px
+        h3
+            position: relative
+            margin-bottom: 40px
+            color: #363636
+            font-size: em(18)
+            font-weight: 600
+            text-align: left
+            &::after
+                content: ''
+                position: absolute
+                bottom: -10px
+                left: 0
+                width: 100%
+                height: 1px
+                background-color: #e1e1e1
+    #lk-tab2 .table,
+    #lk-tab3 .table
+        .trow:nth-child(2n)
+            .tcell
+                background-color: #f4f4f4
+    .table
+        position: relative
+        display: table
+        width: 100%
+        border-top: 1px solid #b4b4b4
+        border-right: 1px solid #b4b4b4
+        .thead
+            display: table-header-group
+            .trow
+                .tcell
+                    color: #242424
+                    padding-top: 15px
+                    padding-bottom: 15px
+                    background-color: #dee6ff
+                    font-size: em(15)
+                    font-weight: 600
+                    text-transform: uppercase
+        .tbody
+            display: table-row-group
+        .trow
+            display: table-row
+            .tcell
+                display: table-cell
+                padding-top: 15px
+                padding-bottom: 15px
+                border-left: 1px solid #b4b4b4
+                border-bottom: 1px solid #b4b4b4
+                vertical-align: middle
+                a
+                    color: #3b57a6
+                    text-decoration: underline
+                    &:hover
+                        text-decoration: none
+    form
+        width: 470px
+        .table,
+        .table .trow .tcell
+            border: none
+        .table
+            .trow
+                .tcell
+                    padding: 0
+                    border-bottom: 1px solid #e1e1e1
+                    text-align: left
+                    &:last-child
+                        color: #454545
+                        font-weight: 700
+        .form-group
+            margin-bottom: 0
+            input[readonly]
+                background-color: #fff
+                border: none
+            input
+                width: calc(100% - 35px)
+                padding-left: 35px
+            button
+                color: #9c9c9c
+                transition: color 300ms
+                &:hover
+                    color: #ffcc01
+        .btn
+            width: auto
+            margin-top: 30px
+            padding-left: 60px
+            padding-right: 60px
+
+
+
+
+.s-contacts
+    h2
+        margin-top: 25px
+        margin-bottom: 80px
+        &::after
+            background-color: #000
+    #info
+        display: none
+        .item
+            display: inline-block
+            width: 230px
+            margin-left: 35px
+            margin-right: 35px
+            vertical-align: top
+            span
+                display: block
+                margin-top: 15px
+                color: #7b8dc1
+                font-size: em(20)
+                font-weight: 600
+            p
+                margin: 0
+                color: #000
+                font-size: em(19)
+                line-height: em(22)
+    #address
+        margin-top: 70px
+        padding-top: 20px
+        padding-bottom: 20px
+        box-shadow: 0px 0px 3.88px 0.12px rgba(70, 70, 70, 0.28)
+        background-color: rgba(255,255,255,.9)
+        &.on
+            position: relative
+        .collapsing,
+        .collapse.in
+            position: absolute
+            width: 100%
+            margin-top: 20px
+            background-color: rgba(255,255,255,.96)
+            z-index: 5
+        .collapse
+            position: absolute
+            width: 100%
+            margin-top: 20px
+            padding-bottom: 20px
+            background-color: rgba(255,255,255,.96)
+        .contacts-btn
+            position: relative
+            color: #505050
+            font-size: em(18)
+            font-weight: 600
+            border-bottom: 2px dotted #505050
+            transition: 300ms
+            &::before,
+            &::after
+                position: absolute
+                top: -3px
+                font-family: FontAwesome
+                font-weight: 400
+            &::before
+                content: '\f124'
+                left: -25px
+                color: #dc1f3e
+                font-size: em(16)
+            &::after
+                content: '\f107'
+                right: -25px
+                transform: rotate(-180deg)
+                transition: 300ms
+            &.collapsed::after
+                transform: rotate(0)
+            &:hover
+                color: #dc1f3e
+            &.contacts-btn_town
+                &::before
+                    content: '\f041'
+        .wrap
+            margin-top: 30px
+            margin-bottom: 10px
+            padding-left: 180px
+            padding-right: 180px
+        ul
+            display: inline-block
+            width: 49%
+            vertical-align: top
+            &:last-child
+                padding-left: 65px
+            li
+                display: block
+                margin-bottom: 5px
+                padding-left: 25px
+                text-align: left
+        input[type=radio]
+            display: none
+            & + label
+                position: relative
+                display: block
+                cursor: pointer
+                transition: 300ms
+                &::before,
+                &::after
+                    content: ''
+                    position: absolute
+                    top: 11.5px
+                    left: -14.5px
+                    width: 1px
+                    height: 1px
+                    border-radius: 50%
+                    transition: 300ms
+                &::before
+                    top: 4px
+                    left: -22px
+                    width: 15px
+                    height: 15px
+                    border: 1px solid #a5a5a5
+                &:hover
+                    color: #dc1f3e
+            &:checked + label
+                text-decoration: underline
+                color: #949494
+                &::after
+                    top: 6px
+                    left: -20px
+                    width: 11px
+                    height: 11px
+                    background-color: #676767
+                    border: 1px solid #a9a9a9
+                    border-radius: 50%
+    #map
+        width: 100%
+        height: 620px
+        box-shadow: 0px 0px 9.2px 0.8px rgba(70, 70, 70, 0.25)
+        .balloon
+            position: absolute
+            padding-top: 20px
+            padding-bottom: 20px
+            padding-left: 20px
+            padding-right: 15px
+            transform: translateX(calc(-50% + 60px)) translateY(calc(-100% - 40px))
+            background-color: rgba(0,0,0,.76)
+            &::after
+                content: ''
+                position: absolute
+                bottom: -16px
+                right: 50%
+                border-bottom: 10px solid transparent
+                border-left: 10px solid transparent
+                border-top: 6px solid rgba(0,0,0,.76)
+                border-right: 15px solid rgba(0,0,0,.76)
+            p
+                margin-top: 0
+                margin-bottom: 5px
+                color: #e1e1e1
+                line-height: em(21)
+                i
+                    margin-right: 10px
+                    color: #dc1f3e
+    form
+        padding-top: 65px
+        background-image: url('../img/contact-form-bg.jpg')
+        background-size: cover
+        text-align: center
+        h3
+            margin: 0
+            color: #fff
+            font-family: "Exo2.0"
+            font-size: em(26)
+            font-weight: 700
+            text-transform: uppercase
+            letter-spacing: em(.65)
+        p
+            display: inline-block
+            width: 490px
+            margin-top: 5px
+            margin-bottom: 25px
+            color: #fff
+            font-family: "Exo2.0"
+            font-size: em(18)
+            line-height: em(24)
+        .form-group
+            label
+                top: 18px
+                color: #747474
+            input
+                height: 60px
+        .btn
+            width: auto
+            margin-top: 20px
+            margin-bottom: 75px
+            padding-left: 35px
+            padding-right: 35px
+
+
+
+
+
+footer
+    position: absolute
+    bottom: 0
+    left: 0
+    width: 100%
+    padding-top: 30px
+    padding-bottom: 30px
+    color: #d2d2d2
+    font-size: em(13)
+    background-color: rgba(0,0,0,.73)
+    text-transform: uppercase
+    .logo
+        img
+            width: 130px
+    .copyright
+        display: inline-block
+        margin-top: 5px
+        margin-bottom: 0
+        margin-left: 60px
+        vertical-align: middle
+    ul
+        display: inline-block
+        margin: 0
+        vertical-align: top
+        &:first-child
+            margin-right: 80px
+        li
+            display: block
+            a:hover
+                color: $accent
+                transition: 300ms
+    .contacts
+        margin: 0
+        text-align: right
+        vertical-align: top
+        font-size: em(17)
+        font-weight: 700
+        a
+            display: block
+            text-transform: none
+            i
+                margin-right: 5px
+                color: $accent
+@import "media"

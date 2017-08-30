@@ -1,0 +1,51 @@
+@import "libs"
+@import "vars"
+@import "fonts"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+ul
+	padding-left: 0
+	li
+		display: inline-block
+a
+	color: inherit
+	&:hover,
+	&:focus
+		color: inherit
+		text-decoration: none
+		outline: none
+
+button
+	background-color: transparent
+	border: none
+	&:focus
+		outline: none
+
+body
+	font-size: 16px
+	min-width: 320px
+	min-height: 100vh
+	position: relative
+	line-height: 1.6
+	font-family: $default-font
+	font-style: normal
+	overflow-y: scroll
+	opacity: 1
+	color: #4b4b4b
+	background-color: transparent
+	letter-spacing: em(.5)

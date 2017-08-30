@@ -1,0 +1,484 @@
+@import "bourbon"
+@import "sass/fonts"
+@import "sass/vars"
+@import "sass/base"
+
+.preloader
+	display: block
+	margin: 10px auto
+.fixed
+	position: fixed
+.mail,
+.phone
+	position: relative
+	display: inline-block
+	margin: 0 70px 0 0
+	font-size: em(21px)
+	font-weight: 700
+	&::before
+		content: ''
+		position: absolute
+		left: -40px
+		width: 30px
+		height: 30px
+		background-image: url("img/sprite.png")
+.mail::before
+	background-position: -24px 6px
+.phone::before
+	background-position: -18px -24px
+.btn
+	position: relative
+	display: inline-block
+	padding: 23px 84px 21px 25px
+	color: #000
+	border-radius: 40px
+	background-color: #f58d41
+	border: 2px solid #b1b0b0
+	font-size: em(15px)
+	font-weight: 700
+	text-transform: uppercase
+	transition: background-color .3s
+	&:hover
+		color: #000
+		text-decoration: none
+		background-color: #ffac71
+	&:active,
+	&:focus
+		color: #000
+		text-decoration: none
+		background-color: #f58d41
+	&:active
+		&::before
+			border-color: transparent
+			transition:  border-color .3s
+	&::before
+		content: ''
+		position: absolute
+		display: inline-block
+		top: -8px
+		bottom: -8px
+		right: -8px
+		left: -8px
+		border-radius: 40px
+		border: 8px solid rgba(255, 255, 255, .43)
+	i
+		position: relative
+		top: -6px
+		left: 15px
+		display: inline-block
+		&::before
+			content: ''
+			position: absolute
+			left: 0
+			top: 50%
+			width: 60px
+			height: 60px
+			background-image: url("img/sprite.png")
+			background-position: -11px -63px
+			background-color: rgba(255, 255, 255, .25)
+			border-radius: 50%
+			transform: translateY(-50%)
+#main
+	position: relative
+	height: 100vh
+	min-height: 900px
+	padding-bottom: 300px
+	text-align: center
+	&::before
+		content: ''
+		position: absolute
+		display: block
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background-color: rgba(0, 0, 0, .34)
+		z-index: 10
+	header
+		position: relative
+		z-index: 100
+		.navbar
+			position: fixed
+			top: 0
+			left: 0
+			right: 0
+			margin-bottom: 0
+			padding-top: 10px
+			padding-bottom: 10px
+			background-color: rgba(255, 255, 255, .55)
+			border: none
+			border-radius: 0
+			z-index: 1000
+			&.logo-static
+				background-color: #fff
+				box-shadow: 0 2px 5px rgba(0,0,0,.3)
+				.main-nav
+					&::after
+						background-color: #ff913d
+					li
+						&::after
+							background-color: #ff913d
+				.navbar-brand
+					h1
+						&::before
+							top: -20px
+							left: -70px
+							width: 57px
+							height: 75px
+							background-image: url("img/logo.png")
+			.navbar-brand
+				margin-top: 10px
+				h1
+					position: relative
+					display: inline-block
+					left: 60px
+					margin: 0
+					color: #5f5f5f
+					font-family: "PFDinDisplayPro"
+					font-size: em(45px)
+					line-height: em(10px)
+					text-transform: uppercase
+					letter-spacing: .5px
+					&::before
+						content: ''
+						position: absolute
+						display: block
+						top: -25px
+						left: -85px
+						width: 90px
+						height: 90px
+						background-image: url("img/logo.gif")
+						background-size: contain
+					span
+						display: block
+						font-size: 12px
+						text-transform: none
+						letter-spacing: .7px
+			.top-line
+				padding-right: 280px
+				text-align: right
+				.social
+					display: none
+			.social
+				display: inline-block
+				margin-top: 10px
+				margin-left: 60px
+				text-align: right
+				vertical-align: top
+				li
+					display: inline-block
+					& + li
+					 margin-left: 8px
+					a
+						color: #fff
+						font-size: em(18px)
+						i
+							width: 40px
+							height: 40px
+							border-radius: 4px
+							text-align: center
+							line-height: em(38px)
+							transition: .3s
+						.fa-vk
+							background-color: #5b7aa8
+							&:hover
+								background-color: #7190bf
+							&:active
+								background-color: #395783
+						.fa-facebook
+							background-color: #3b579d
+							&:hover
+								background-color: #5571b7
+							&:active
+								background-color: #1f3775
+						.fa-odnoklassniki
+							background-color: #fa860d
+							&:hover
+								background-color: #fb9933
+							&:active
+								background-color: #de770c
+			.main-nav
+				position: relative
+				display: inline-block
+				margin: 15px 0 0
+				padding: 0 5px
+				text-align: center
+				&::after
+					content: ''
+					position: absolute
+					display: block
+					bottom: -8px
+					left: 0
+					width: 100%
+					height: 1px
+					background-color: #FFF
+				li
+					position: relative
+					bottom: 0
+					display: inline-block
+					&::after
+						content: ''
+						position: absolute
+						display: block
+						bottom: -9px
+						left: 50%
+						width: 3px
+						height: 3px
+						background-color: #FFF
+						border-radius: 50%
+						transform: translateX(-50%)
+						transition: .15s
+					& + li
+						margin-left: 15px
+					&.active,
+					&:hover
+						&::after
+							bottom: -10.5px
+							width: 6px
+							height: 6px
+							background-color: #ff913d
+							z-index: 2
+						a
+							bottom: 5px
+							color: #c2641d
+							text-decoration: none
+					a
+						position: relative
+						bottom: 0
+						padding-bottom: 20px
+						color: #000
+						font-size: em(15px)
+						transition: .15s
+						&:focus
+							text-decoration: none
+		.offer
+			padding-top: 370px
+			.owl-carousel
+				margin-bottom: 50px
+				text-align: center
+				&.owl-loaded
+					.item
+						display: block
+				.item
+					display: none
+					h2
+						margin: 0
+						color: #fff
+						text-shadow: 2px 2px 9px rgba(0, 0, 0, .5)
+						font-size: em(43px)
+						font-weight: 700
+					span
+						color: #fff
+						text-shadow: 2px 2px 9px rgba(0, 0, 0, .5)
+						font-size: em(24px)
+						font-weight: 200
+
+	.video-wrap
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		overflow: hidden
+		video
+			position: absolute
+			bottom: 0
+			left: 50%
+			width: auto
+			height: auto
+			min-width: 100%
+			min-height: 100%
+			transform: translateX(-50%)
+			z-index: 5
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	#main
+		header
+			.navbar
+				padding-bottom: 0
+				.navbar-brand
+					margin-top: 33px
+				.top-line
+					padding-right: 130px
+				.mail,
+				.phone
+					margin-right: 50px
+				.social
+					margin-top: 25px
+					margin-left: 0
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	#main
+		header
+			.navbar,
+			.navbar.logo-static
+				padding-top: 10px
+				padding-bottom: 15px
+				.navbar-brand
+					margin-top: 0
+					h1
+						&::before
+							top: -15px
+				.top-line
+					padding-right: 0
+					text-align: left
+					.contacts
+						display: inline-block
+						margin-top: 8px
+						margin-right: 40px
+						.mail,
+						.phone
+							display: block
+							margin-left: 50px
+							margin-right: 0
+					.social
+						display: inline-block
+
+			.navbar-collapse
+				border: none
+				.social
+					display: none
+			.navbar-toggle
+				position: fixed
+				display: block
+				top: 25px
+				right: 20px
+				margin: 0
+				padding: 16px 15px
+				border-radius: 50%
+				border: 1px solid #000
+				background-color: transparent
+				z-index: 9999
+				.icon-bar
+					height: 4px
+					background-color: #000
+					border-radius: 5px
+			.navbar
+				.navbar-collapse.collapse.in
+					overflow-x: visible
+					overflow-y: visible
+				.main-nav
+					position: fixed
+					top: -100%
+					left: 0
+					width: 100%
+					margin-top: 0
+					padding-top: 15px
+					padding-bottom: 15px
+					padding-left: 0
+					padding-right: 0
+					background-color: rgba(250, 134, 13, .9)
+					transition: .3s
+					z-index: 555
+					&::after
+						display: none
+					li
+						display: block
+						&::after
+							display: none
+						& + li
+							margin-left: 0
+						&.active,
+						&:hover
+							background-color: #ffac5a
+							a
+								bottom: 0
+						a
+							display: block
+							padding-top: 12px
+							padding-bottom: 12px
+							color: #000
+							text-transform: uppercase
+							font-size: em(16px)
+							font-weight: 700
+							transition: background-color .3s
+							&:hover,
+							&:focus
+								bottom: 0
+								text-decoration: none
+				.navbar-collapse.in
+					.main-nav
+						top: 0
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	#main
+		background-image: url("img/mob-main-bg.jpg")
+		background-position: center!important
+		background-repeat: no-repeat
+		background-size: cover
+		header
+			.navbar
+				position: relative
+				.navbar-brand
+					display: inline
+					margin-top: 10px
+					float: none
+					h1
+						top: 10px
+						left: 30px
+						&::before
+							top: -20px
+							left: -70px
+							width: 57px
+							height: 75px
+							background-image: url("img/logo.png")
+				.top-line
+					width: 100vw
+					padding: 0
+					.contacts
+						position: relative
+						left: 50%
+						margin-top: 25px
+						margin-right: 0
+						transform: translateX(-50%)
+						.mail,
+						.phone
+							display: block
+							margin-left: 50px
+							margin-right: 0
+					.social
+						display: none
+				.main-nav
+					padding-bottom: 90px
+					&::after
+						display: none
+				.navbar-collapse
+					.social
+						position: fixed
+						display: block
+						top: -320px
+						left: 50%
+						margin-top: 0
+						transform: translateX(-50%)
+						transition: .3s
+						z-index: 555
+				.navbar-collapse.in
+					.social
+						top: 320px
+			.offer
+				padding-top: 150px
+		.video-wrap
+			display: none
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	#main
+		min-height: 730px
+		header
+			.offer
+				padding-top: 100px
+				.owl-carousel
+					margin-bottom: 20px
+					h2
+						font-size: em(32px) !important
+						line-height: em(22px) !important
+					span
+						font-size: em(18px) !important
+				.btn
+					padding: 24px 78px 21px 18px
+					font-size: em(13px)

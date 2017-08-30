@@ -1,0 +1,654 @@
+@import "vars"
+@import "base"
+@import "vendors"
+@import "fonts"
+@import "sprite"
+@import "shared"
+
+html
+  position: inherit
+
+
+#main
+  max-height: rem(800)
+  padding-top: rem(40)
+  background-size: cover
+  background-position: center
+  .main-header
+    margin-bottom: rem(100)
+  .offer
+    flex-grow: 2
+    color: #2a1f25
+    span
+      position: relative
+      font-size: rem(25)
+      font-weight: 900
+      text-transform: uppercase
+      letter-spacing: rem(25)
+      &::after
+        content: ''
+        position: absolute
+        top: 50%
+        right: rem(-110)
+        width: rem(100)
+        height: rem(6)
+        background-color: $accent
+        transform: translateY(-50%)
+    h1
+      margin-top: rem(5)
+      font-size: rem(60)
+      font-weight: 900
+      line-height: rem(74)
+      text-transform: uppercase
+    p
+      font-size: rem(40)
+      font-weight: 700
+      letter-spacing: rem(-1)
+      line-height: rem(56)
+    sup
+      font-size: rem(26)
+      font-weight: 500
+  form
+    position: relative
+    top: rem(20)
+    width: rem(500)
+    padding: rem(17)
+    z-index: 1
+    &::after
+      content: ''
+      position: absolute
+      top: rem(-17)
+      left: rem(-17)
+      width: calc(100% + 34px)
+      height: calc(100% + 34px)
+      border: rem(20) solid $accent
+      z-index: 2
+    &::before
+      content: ''
+      position: absolute
+      bottom: rem(-30)
+      left: rem(-340)
+      width: rem(485)
+      height: rem(415)
+      background-image: url(../img/main-form-bg.png)
+      z-index: 1
+    .form-container
+      padding: rem(40) rem(30) rem(10)
+      background-color: #fff
+      header
+        position: relative
+        img
+          position: absolute
+          top: rem(10)
+        span,
+        p
+          margin-left: rem(80)
+          color: #313131
+          font-weight: 900
+          font-size: rem(35)
+          line-height: rem(42)
+          letter-spacing: rem(0)
+          text-transform: uppercase
+        span
+          font-size: rem(20)
+          letter-spacing: rem(20)
+      h3
+        margin-top: rem(20)
+        color: $accent
+        font-size: rem(35)
+        font-weight: 900
+        text-transform: uppercase
+        letter-spacing: rem(0)
+    .form-content
+      position: relative
+      margin-top: rem(20)
+      padding: rem(30) rem(10)
+      background-color: #fff
+      border: rem(2) solid #cfcdce
+      z-index: 3
+      .form-content-header
+        margin-bottom: rem(20)
+        color: #989898
+        font-size: rem(18)
+        font-weight: 400
+        letter-spacing: rem(1)
+        &.mail
+          margin-top: rem(30)
+          margin-bottom: rem(10)
+      .form-group-wrapper
+        display: table
+      .form-group
+        display: table-row
+      .form-control
+        position: relative
+        display: table-cell
+        padding-bottom: rem(10)
+        vertical-align: top
+        color: #313131
+        & + .form-control
+          padding-left: rem(10)
+        p
+          font-size: rem(18)
+          font-weight: 500
+        label
+          display: block
+          width: rem(80)
+          height: rem(35)
+          padding-top: rem(7)
+          font-size: rem(12)
+          font-weight: 300
+          text-align: center
+          background-color: #f5f5f5
+          outline: rem(1) solid #e8e8e8
+          cursor: pointer
+          user-select: none
+          transition: 300ms
+          sup
+            font-size: rem(8)
+        sup
+          font-size: rem(12)
+        input[type=radio]
+          position: absolute
+          left: 0
+          top: 0
+          visibility: hidden
+          &:checked + label
+            background-color: $accent
+            outline: none
+            font-weight: 500
+      .btn
+        display: block
+        margin: rem(35) auto
+
+
+#technology
+  padding-top: rem(80)
+  padding-bottom: rem(80)
+  .container
+    &::before,
+    &::after
+      content: ''
+      position: absolute
+    &::before
+      top: rem(-10)
+      width: rem(350)
+      height: rem(6)
+      background-color: #e8e8e8
+    &::after
+      top: rem(50)
+      left: rem(-160)
+      width: rem(288)
+      height: rem(306)
+      background-image: url(../img/technology-top-bg.png)
+  h2
+    margin-bottom: rem(40)
+    padding-top: rem(250)
+    color: #313131
+    font-size: rem(36)
+    font-weight: 900
+    line-height: rem(40)
+    text-transform: uppercase
+    letter-spacing: rem(1.8)
+    span
+      display: block
+      color: #999999
+      font-size: rem(20)
+      text-transform: uppercase
+      letter-spacing: rem(20)
+  .row
+    background-image: url(../img/technology-bg.png)
+    background-repeat: no-repeat
+    background-size: contain
+    background-position: 0 rem(150)
+    .item
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      align-items: center
+      p
+        color: #0e0e0e
+        font-size: rem(24)
+        font-weight: 300
+      img
+        margin-bottom: rem(40)
+      .btn
+        margin-top: auto
+        display: initial
+
+
+#projects
+  padding-bottom: rem(50)
+  text-align: center
+  h2
+    margin-bottom: rem(30)
+    padding-top: rem(50)
+    text-align: left
+    color: #313131
+    font-size: rem(36)
+    letter-spacing: rem(1.8)
+    span
+      display: inline-block
+      color: $accent
+      font-size: rem(40)
+  .tabs-menu
+    text-align: left
+    li
+      display: inline-block
+      &.current
+        a
+          border: rem(2) solid $accent
+          border-radius: rem(20)
+      a
+        padding: rem(7) rem(50)
+        color: #0e0e0e
+        font-size: rem(24)
+        transition: 300ms border-color
+  .tab
+    margin-top: rem(50)
+    .tab-content
+      display: none
+      .item
+        margin-bottom: rem(30)
+        figure
+          position: relative
+          img
+            width: 100%
+          .img-descr
+            position: absolute
+            display: flex
+            bottom: rem(10)
+            left: 0
+            width: 100%
+            padding-top: rem(5)
+            padding-bottom: rem(5)
+            background-color: rgba(0,0,0,.75)
+            p
+              margin: auto
+              margin-left: rem(30)
+              color: #fff
+              font-size: rem(19)
+              font-weight: 900
+              letter-spacing: rem(.8)
+            a
+              margin: auto
+              margin-right: rem(20)
+              color: $accent
+              font-size: rem(13)
+              font-weight: 900
+              text-transform: uppercase
+              letter-spacing: rem(.4)
+              transition: 300ms color
+              &:hover
+                color: #fff
+        .descr
+          display: flex
+          padding-top: rem(10)
+          padding-bottom: rem(10)
+          h3
+            font-size: rem(15)
+            letter-spacing: rem(.8)
+          p
+            position: relative
+            color: #0e0e0e
+            font-size: rem(13)
+            letter-spacing: rem(.8)
+            &::before
+              content: ''
+              position: absolute
+              top: rem(2)
+              left: rem(-30)
+          .square
+            margin: auto
+            margin-right: rem(50)
+            &::before
+              @include sprite($square)
+          .area::before
+              @include sprite($area)
+  .btn
+    margin-top: rem(20)
+    padding-left: rem(40)
+    padding-right: rem(40)
+
+
+#estimate
+  padding-top: rem(60)
+  padding-bottom: rem(110)
+  background-image: url(../img/estimate-bg.png)
+  background-position: center
+  background-size: cover
+  .section-header
+    margin-bottom: rem(40)
+    h2
+      padding-top: rem(60)
+      color: #fff
+      font-size: rem(36)
+      letter-spacing: normal
+      span
+        color: $accent
+        font-size: rem(53)
+        line-height: rem(63)
+        letter-spacing: normal
+  p
+    color: #fff
+    font-size: rem(24)
+    font-weight: 300
+    letter-spacing: rem(1.1)
+  .btn
+    padding-left: rem(75)
+    padding-right: rem(75)
+    margin-top: rem(60)
+    letter-spacing: rem(1)
+  .item
+    width: rem(260)
+    height: rem(240)
+    margin: rem(110) auto
+    padding: rem(40) rem(30)
+    border: rem(12) solid $accent
+    a
+      position: relative
+      display: inline-block
+      margin-top: rem(20)
+      margin-left: rem(15)
+      color: #fff
+      font-size: rem(13)
+      font-weight: 900
+      text-transform: uppercase
+      letter-spacing: rem(.8)
+      transition: 300ms
+      &::after
+        content: ''
+        position: absolute
+        bottom: rem(-2)
+        left: 0
+        width: rem(130)
+        height: rem(1)
+        background-color: #fff
+        transition: 300ms
+      &:hover
+        color: $accent
+        &::after
+          left: rem(65)
+          width: 0
+
+
+#ind-proposal
+  padding-top: rem(70)
+  padding-bottom: rem(100)
+  .container
+    background-image: url(../img/ind-proposal-bg.jpg)
+    background-repeat: no-repeat
+    background-position: calc(50% + 30px) 0
+  .section-header
+    &::before
+      width: rem(160)
+    h2
+      padding-top: rem(50)
+      color: #3b3b3b
+      font-size: rem(36)
+      letter-spacing: rem(1.7)
+    p
+      color: #0e0e0e
+      font-size: rem(24)
+      font-weight: 300
+      line-height: rem(38)
+  .btn
+    margin-top: rem(515)
+    padding-left: rem(40)
+    padding-right: rem(40)
+
+
+#our-works
+  padding-top: rem(50)
+  padding-bottom: rem(70)
+  background-image: url(../img/our-works-bg.png)
+  background-size: cover
+  h2
+    margin-bottom: rem(60)
+    color: #fff
+    font-size: rem(36)
+    font-weight: 900
+    text-transform: uppercase
+    letter-spacing: rem(1.7)
+  .prev,
+  .next
+    position: absolute
+    top: rem(280)
+    background-color: transparent
+    border: none
+    transition: 300ms
+    &:hover
+      cursor: pointer
+      opacity: .8
+    &:focus
+      outline: none
+  .prev
+    @include sprite($arrow-left)
+    left: rem(-55)
+  .next
+    @include sprite($arrow-right)
+    right: rem(-55)
+  #our-works-slider
+    text-align: center
+    .full
+      display: block
+      margin-bottom: rem(10)
+    .thumb
+      & + .thumb
+        margin-left: rem(18)
+    article
+      text-align: left
+      &::after
+        content: ''
+        display: table
+        clear: both
+      h3,
+      p
+        color: #fff
+        font-size: rem(18)
+      h3
+        margin-bottom: rem(30)
+        font-weight: 700
+        letter-spacing: rem(1.3)
+      p
+        font-weight: 200
+        letter-spacing: rem(1.35)
+        line-height: rem(30)
+    .btn
+      margin-top: rem(110)
+      margin-bottom: rem(10)
+      padding-left: rem(70)
+      padding-right: rem(70)
+
+
+#proposal
+  padding-top: rem(140)
+  padding-bottom: rem(110)
+  .section-header
+    margin-bottom: rem(90)
+    margin-left: rem(390)
+    &::after
+      content: ''
+      position: absolute
+      top: rem(-70)
+      left: rem(-450)
+      width: rem(420)
+      height: rem(325)
+      background-image: url(../img/proposal-top-bg.png)
+    h2
+      padding-top: rem(80)
+      color: #313131
+      font-weight: 700
+      span
+        font-weight: 900
+  .item
+    width: rem(180)
+    margin-bottom: rem(20)
+    margin-left: auto
+    margin-right: auto
+    text-align: center
+    p
+      color: #302323
+      font-size: rem(20)
+      font-weight: 400
+      line-height: rem(24)
+
+
+#team
+  height: rem(770)
+  padding-top: rem(60)
+  background-color: #f3f3f3
+  h2
+    margin-bottom: rem(60)
+    color: #000
+    font-size: rem(36)
+    font-weight: 900
+    letter-spacing: rem(1.8)
+    text-transform: uppercase
+  .slide-img
+    width: inherit
+    border: rem(10) solid $accent
+  article
+    header
+      margin-bottom: rem(25)
+      h3
+        font-size: rem(30)
+        font-weight: 400
+        letter-spacing: rem(1.6)
+      p
+        font-size: rem(18)
+        line-height: rem(28)
+  .lSPager.lSGallery
+    li
+      &.active,
+      &:hover
+        img
+          margin-top: 0
+          margin-left: 0
+          border: rem(3) solid $accent
+      img
+        margin-top: rem(4)
+        margin-left: rem(4)
+        border: rem(1) solid #a5a5a5
+        transition: 100ms
+  .lSSlideWrapper
+    height: rem(505)
+  #team-slider-thumbs
+    position: relative
+    width: 66%
+    top: rem(-205)
+    left: rem(400)
+    overflow: hidden
+    z-index: 500
+    p
+      margin-top: rem(5)
+      font-size: rem(14)
+      font-weight: 600
+      line-height: rem(16)
+    span
+      display: inline-block
+      color: #6d6d6d
+      font-size: rem(12)
+      line-height: rem(16)
+
+
+#questions
+  padding-top: rem(135)
+  padding-bottom: rem(120)
+  background-image: url(../img/questions-bg.jpg)
+  background-size: cover
+  background-position: left
+  .section-header
+    h2,
+    span
+      color: #fff
+    p
+      margin-top: rem(10)
+  p
+    margin-bottom: rem(60)
+    color: #fff
+    font-size: rem(24)
+    font-weight: 100
+    line-height: rem(28)
+    letter-spacing: rem(1.2)
+    span
+      color: $accent
+      font-style: italic
+  .btn
+    margin-top: rem(10)
+    padding-top: rem(17)
+    padding-bottom: rem(17)
+    letter-spacing: rem(.8)
+
+
+
+#certificates
+  padding-top: rem(70)
+  padding-bottom: rem(20)
+  .section-header
+    margin-bottom: rem(20)
+  .row
+    align-items: center
+  .item
+    text-align: center
+    span
+      display: inline-block
+      background-image: url(../img/certificates-frame.png)
+      background-size: contain
+      background-position: 100% 100%
+      background-repeat: no-repeat
+      &.big
+        width: rem(315)
+        height: rem(420)
+        img
+          top: rem(40)
+          left: rem(-25)
+      &.small
+        width: rem(225)
+        height: rem(320)
+        img
+          top: rem(45)
+          left: rem(-15)
+      img
+        position: relative
+        top: 0
+
+
+footer
+  padding-top: rem(25)
+  padding-bottom: rem(15)
+  background-color: #2d2124
+  .contacts-phones,
+  .contacts-mail
+    color: #fff
+    font-size: rem(18)
+  .contacts-phones
+    font-weight: 700
+    white-space: nowrap
+    &::before
+      @include sprite($phone-footer)
+  .contacts-mail
+    font-weight: 400
+    &::before
+      @include sprite($mail-footer)
+  .socials
+    margin-top: rem(10)
+    list-style: none
+    a
+      display: inline-block
+      vertical-align: middle
+      transition: 300ms opacity
+      &:hover
+        opacity: .8
+      & + a
+        margin-left: rem(25)
+    .vk
+      @include sprite($vk)
+    .instagram
+      @include sprite($inst)
+    .fb
+      @include sprite($fb)
+    .skype
+      @include sprite($skype)
+
+
+@import "media"

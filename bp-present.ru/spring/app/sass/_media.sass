@@ -1,0 +1,642 @@
+@import "bourbon"
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1800px)
+	.second-screen
+		&::before,
+		&::after
+			transform: scale(.7)
+		&::before
+			top: -82px
+			left: -90px
+			box-shadow: inset 0 40px 0 #72c7d4
+		&::after
+			top: -94px
+			right: -80px
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	.second-screen .item.item_second .description .add,
+	.third-screen .item.item_second .description .add,
+	.third-screen .item.item_third .description .add
+		display: none
+	.first-screen
+		min-height: 950px
+		&::before,
+		&::after
+			z-index: -1
+		header
+			text-align: center
+			.logo
+				margin: 0
+			.contacts
+				li
+					margin-left: 10px
+					margin-right: 10px
+
+	.second-screen
+		&::before,
+		&::after
+			display: none
+		.item
+			.slider
+				.owl-carousel
+					width: 100%
+					height: auto
+					.owl-item
+						width: 455px
+						img
+							width: 100%
+			.description
+				margin-top: 0
+				margin-left: 0
+				.price
+					bottom: -80px
+					left: 0
+			&.item_second
+				.description
+					margin-left: 20px
+					.price
+						bottom: 0
+			&.item_third
+				.description
+					margin-left: 0
+					.price
+						bottom: -50px
+	.third-screen
+		.item
+			.slider
+				.owl-carousel
+					width: 100%
+					height: auto
+					.owl-item
+						width: 455px
+						img
+							width: 100%
+			.description
+				margin-top: 0
+				margin-left: 0
+				.price
+					bottom: -80px
+					left: 0
+			&.item_second
+				.description
+					margin-left: 20px
+					.price
+						bottom: 0
+			&.item_third
+				.description
+					margin-left: 0
+					.price
+						left: 0
+						bottom: -70px
+
+	.target-audience
+		.center
+			left: 430px
+		.item-wrap
+			.item
+				top: 80px
+				left: -20px
+				h3
+					top: 5px
+					left: 180px
+				ul
+					top: 100px
+					left: 185px
+			&:nth-child(2)
+				.item
+					top: 0
+					left: -40px
+					h3
+						left: 105px
+					ul
+						top: 155px
+						left: 70px
+			&:nth-child(3)
+				.item
+					top: 30px
+					left: 50px
+					h3
+						left: 105px
+					ul
+						top: 180px
+						left: 115px
+			&:nth-child(4)
+				.item
+					top: -30px
+					left: 35px
+					width: 450px
+					h3
+						top: 95px
+						left: 180px
+					ul
+						top: 200px
+						left: 180px
+
+	.advantages
+		.item-wrap
+			.item
+				margin-left: 110px
+			&:nth-child(2n)
+				.item
+					margin-left: 0	
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	.first-screen
+		min-height: 1050px
+		&::after
+			display: none
+		header
+			.logo
+				margin-bottom: 15px
+			.contacts
+				margin: 0
+				li
+					margin-bottom: 10px
+
+	.second-screen
+		.item
+			.description
+				margin-bottom: 40px
+				h3
+					margin: 0
+					&::before,
+					&::after
+						display: none
+				.price
+					bottom: -50px
+			&.item_second
+				.description
+					margin: 0
+					.price
+						bottom: 135px
+			&.item_third
+				.description
+					margin: 0
+					.price
+						bottom: 65px
+						left: 380px
+		.cloud-descr
+			margin-top: 50px
+	.third-screen
+		&::before,
+		&::after
+			display: none
+		.item
+			.description
+				margin-bottom: 40px
+				h3
+					margin: 0
+					&::before,
+					&::after
+						display: none
+				.price
+					bottom: -50px
+			&.item_second
+				.description
+					margin: 0
+					.price
+						bottom: 135px
+			&.item_third
+				.description
+					margin: 0
+					.price
+						bottom: 65px
+						left: -170px
+		.cloud-descr
+			margin-top: 50px
+			&.second
+				margin-top: 0
+
+
+	.target-audience
+		h2
+			margin-bottom: 40px
+			&::before,
+			&::after
+				display: none
+		.center
+			top: 250px
+			left: 310px
+		.item-wrap
+			.item
+				top: 73px
+				left: -20px
+				width: 370px
+				height: 343px
+				background-size: contain
+				h3
+					top: -10px
+					left: 110px
+				ul
+					top: 90px
+					left: 80px
+			&:nth-child(2)
+				.item
+					width: 290px
+					height: 360px
+					top: -13px
+					left: -35px
+					h3
+						left: 80px
+					ul
+						top: 155px
+						left: 60px
+			&:nth-child(3)
+				.item
+					width: 280px
+					height: 290px
+					top: 0
+					left: 40px
+					h3
+						left: 40px
+					ul
+						top: 145px
+						left: 115px
+			&:nth-child(4)
+				.item
+					width: 370px
+					height: 350px
+					top: -57px
+					left: -5px
+					h3
+						top: 80px
+						left: 150px
+					ul
+						top: 180px
+						left: 145px
+
+	.advantages
+		h2
+			&::before,
+			&::after
+				display: none
+		.item-wrap
+			.item
+				margin-left: 30px
+			&:nth-child(2n)
+				.item
+					margin-left: -30px	
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	.first-screen
+		min-height: 1150px
+		a.arrow
+		    left: calc(50% - 225px);	
+
+	.second-screen
+		h2
+			margin-top: 50px
+			margin-bottom: 0
+			&::before
+				display: none
+		.item
+			.description
+				margin-bottom: 80px
+				h3
+					margin: 0
+					&::before,
+					&::after
+						display: none
+				.price
+					bottom: -50px
+			&.item_second,
+			&.item_third
+				.description
+					margin-bottom: 80px
+					.price
+						bottom: -50px
+						left: 0
+		.cloud-descr
+			width: 400px
+			height: 247px
+			margin-top: 50px
+			background-size: cover
+			&.second
+				width: 340px
+				height: 254px
+		.btn
+			&::after
+				display: none
+		.divider
+			bottom: 495px
+	.third-screen
+		h2
+			margin-top: 80px
+			margin-bottom: 0
+			&::before
+				display: none
+		.item
+			.description
+				margin-bottom: 80px
+				h3
+					margin: 0
+					&::before,
+					&::after
+						display: none
+				.price
+					bottom: -50px
+			&.item_second,
+			&.item_third
+				.description
+					margin-bottom: 80px
+					.price
+						bottom: -50px
+						left: 0
+		.cloud-descr
+			width: 400px
+			height: 247px
+			margin-top: 50px
+			background-size: cover
+			&.second
+				width: 340px
+				height: 254px
+		.btn
+			&::after
+				display: none
+		.divider
+			bottom: 495px
+
+
+	.target-audience
+		h2
+			font-size: 38px
+			i
+				font-size: 48px
+		.center
+			display: none
+		.item-wrap
+			.item
+				top: 30px
+				left: 0!important
+				width: 300px!important
+				height: 343px
+				background-size: contain
+				i
+					font-size: 28px
+				h3
+					top: -10px
+					left: 100px
+					font-size: 22px
+				ul
+					top: 80px
+					left: 80px
+					font-size: 16px
+			&:nth-child(2)
+				.item
+					width: 290px
+					height: 360px
+					top: -40px
+					left: -35px
+					h3
+						top: 0
+						left: 80px
+					ul
+						top: 165px
+						left: 60px
+			&:nth-child(3)
+				.item
+					width: 280px
+					height: 290px
+					top: 0
+					left: 40px
+					h3
+						top: 10px
+						left: 90px
+					ul
+						top: 155px
+						left: 100px
+			&:nth-child(4)
+				.item
+					width: 390px
+					height: 350px
+					top: 0
+					left: -5px
+					h3
+						top: 55px
+						left: 110px
+					ul
+						top: 135px
+						left: 120px
+
+	.advantages
+		.item-wrap
+			.item
+				margin-left: 0
+			&:nth-child(2n)
+				.item
+					margin-left: 0
+		.line
+			display: none
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 650px)
+	#gratitude
+		width: 435px
+		padding: 17px 0
+
+
+@media only screen and (max-width : 615px)
+	.first-screen
+		.offer
+			img
+				width: 420px
+	.modal
+		padding: 30px 10px
+		form
+			width: 100%
+			input,
+			textarea
+				display: inline-block
+				width: 100%
+			i
+				display: none
+			.form-group
+				text-align: left
+			.btn
+				&::before,
+				&::after
+					display: none
+			.form-group
+				label.error
+					top: 10px
+					right: -5px
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	.first-screen
+		min-height: 980px
+		&::before
+			width: 100%
+		header
+			.contacts
+				li
+					font-size: 22px
+		.offer
+			img
+				width: 290px
+			h1
+				font-size: 41px
+				line-height: 52px
+		a.arrow
+			left: calc(50% - 140px)
+			img
+				width: 280px
+
+	.second-screen
+		h2
+			margin-top: 50px
+			margin-bottom: 0
+			&::before
+				display: none
+		.item
+			.description
+				margin-bottom: 80px
+				h3
+					margin: 0
+					&::before,
+					&::after
+						display: none
+				.price
+					bottom: -50px
+			&.item_second,
+			&.item_third
+				.description
+					margin-bottom: 80px
+					.price
+						bottom: -50px
+						left: 0
+		.cloud-descr
+			width: 290px
+			height: 178px
+			padding-top: 70px
+			font-size: 18px
+			&.second
+				width: 290px
+				height: 217px
+				padding-top: 70px
+				padding-left: 10px
+		.divider
+			bottom: 460px
+	.third-screen
+		h2
+			margin-top: 80px
+			margin-bottom: 0
+			&::before
+				display: none
+		.item
+			.description
+				margin-bottom: 80px
+				h3
+					margin: 0
+					&::before,
+					&::after
+						display: none
+				.price
+					bottom: -50px
+			&.item_second,
+			&.item_third
+				.description
+					margin-bottom: 80px
+					.price
+						bottom: -50px
+						left: 0
+		.cloud-descr
+			width: 290px
+			height: 178px
+			padding-top: 70px
+			&.second
+				width: 300px
+				height: 217px
+				padding-top: 75px
+				padding-left: 10px
+		.divider
+			bottom: 460px
+
+
+	.advantages
+		footer
+			h2
+				span
+					line-height: 26px
+				
+	.advantages
+		.item-wrap
+			.item
+				width: 300px!important
+				height: 280px!important
+				padding: 70px 20px 20px!important
+				background-size: contain
+				background-position: center
+				font-size: 16px
+			&:nth-child(1)
+				.item
+					padding-top: 80px!important
+			&:nth-child(3)
+				.item
+					padding-top: 55px!important
+
+	.blocker
+		padding: 0
+	.modal
+		padding: 30px 10px
+		form
+			width: 100%
+			input,
+			textarea
+				display: inline-block
+				width: 100%
+			i
+				display: none
+			.form-group
+				text-align: left
+			.btn
+				&::before,
+				&::after
+					display: none
+			.form-group
+				label.error
+					top: 10px
+					right: -5px
+
+	#gratitude
+		width: 100%
+		background-image: none
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 615px)
+	.modal
+		label
+			display: none
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+

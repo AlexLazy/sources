@@ -1,0 +1,1102 @@
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1300px)
+    .previously-slider
+        .container
+            padding-left: 50px
+            padding-right: 50px
+    .main-slider
+        .owl-carousel
+            .owl-prev
+                right: 0
+            .owl-next
+                left: 0
+
+
+    .certificates
+        .container
+            width: 970px
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1199px)
+    .previously-slider
+        .container
+            padding-left: 15px
+            padding-right: 15px
+    .product-card
+        padding-bottom: 25px
+        ul
+            &:nth-of-type(2)
+                margin-left: 60px
+            &:nth-of-type(4)
+                margin-left: 0
+        .btn
+            padding-right: 35px
+            padding-left: 35px
+    header.main-header
+        nav
+            .bottom-nav
+                li
+                    a
+                        width: auto
+                        padding-left: 15px
+                        padding-right: 15px
+
+
+    .main-slider
+        .owl-carousel
+            .item
+                p
+                    width: 690px
+                    padding-left: 0
+                    padding-right: 0
+
+
+    .advantages
+        aside
+            img
+                width: 100%
+        #accordion
+            width: 100%
+
+
+    .technology
+        .wrapper
+            .container
+                img
+                    display: none
+
+
+    .about
+        article
+            p
+                width: 100%
+            .right
+                p
+                    padding-left: 0
+
+
+    .team
+        .item
+            margin-left: 15px
+            margin-right: 15px
+
+
+    .inner.product
+        .product-content
+            .product-info
+                table
+                    .price
+                        padding-left: 10px
+                        font-size: em(16)
+                        b
+                            font-size: em(22)
+
+
+    .s-contacts
+        #address
+            .wrap
+                padding-left: 50px
+                padding-right: 50px
+
+
+    footer
+        ul
+            width: 110px
+            &:first-child
+                margin-right: 10px
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 1100px)
+    .product-card
+        .product-card-slider
+            width: 710px
+            .item
+                height: 474px
+    .previously-slider
+        .container
+            width: 100%
+            .owl-carousel::before,
+            .owl-carousel::after
+                content: ''
+                position: absolute
+                top: 0
+                height: calc(100% - 30px)
+                width: 15px
+                z-index: 555
+            .owl-carousel::before
+                left: 0
+                background: linear-gradient(to left,rgba(190,190,190,0) 0%,rgba(240,240,240,.7) 100%)
+            .owl-carousel::after
+                right: 0
+                background: linear-gradient(to right,rgba(190,190,190,0) 0%,rgba(240,240,240,.7) 100%)
+        .product-card-wrap
+            width: 370px
+    .certificates
+        .container
+            width: 800px
+@media only screen and (max-width : 991px)
+    .v-lg
+        display: none
+
+    .product-card
+        ul
+            &:nth-of-type(2)
+                margin-left: 110px
+            &:nth-of-type(4)
+                margin-left: 50px
+        .btn
+            padding-right: 60px
+            padding-left: 60px
+    header.main-header
+        &.fixed
+            .logo
+                margin-top: 12px
+            #basket
+                padding-top: 5px
+                padding-bottom: 5px
+            nav
+                .top-nav
+                    display: none
+        .top-line
+            >a
+                margin-right: 0
+                &+a
+                    margin-left: 15px
+        .socials
+            display: none
+        .btn-mob-menu
+            display: inline-block
+            width: 300px
+            margin-top: 16px
+            padding: 13px 0
+            border: none
+            color: #383838
+            background-color: #e3e3e3
+            font-size: em(16)
+            font-weight: 700
+            text-transform: uppercase
+            &:focus
+                outline: none
+            i
+                position: relative
+                display: inline-block
+                width: 24px
+                height: 3px
+                margin-bottom: 4px
+                margin-right: 10px
+                background-color: #383838
+                &::before,
+                &::after
+                    content: ''
+                    position: absolute
+                    left: 0
+                    width: 24px
+                    height: 3px
+                    background-color: #383838
+                &::before
+                    top: 7px
+                &::after
+                    top: -7px
+        nav
+            position: relative
+            left: 50%
+            width: 300px
+            transform: translateX(-50%)
+            .top-nav,
+            .bottom-nav
+                display: none
+            &.open
+                position: absolute
+                .top-nav,
+                .bottom-nav
+                    display: block
+                    margin: 0
+                    li
+                        display: block
+                        width: 100%
+                        margin-top: 1px
+                        &:hover
+                            background-color: none
+                        &::before
+                            display: none
+                        >a
+                            display: block
+                            padding: 15px 0
+                            color: #6a6a6a
+                            font-size: em(13)
+                            font-weight: 700
+                            background-color: #f4f4f4
+                            text-transform: uppercase
+                            &:hover
+                                background-color: #262626
+                                color: #ffcc01
+                    .socials
+                        display: inline-block
+                        padding-top: 5.5px
+                        padding-bottom: 5.5px
+                        background-color: #f4f4f4
+                        a
+                            display: inline-block
+                            width: 27px
+                            height: 27px
+                            padding: 0
+                            border: 1px solid $accent
+                            transition: 150ms
+                            &+a
+                                margin-left: 8px
+                            &:hover
+                                border-color: #909ec6
+                                i
+                                    color: #909ec6
+                            i
+                                margin-right: 0
+                                color: $accent
+                                transition: 150ms
+
+
+    .main-slider
+        .owl-carousel
+            .item
+                p
+                    width: 620px
+                    padding-left: 0
+                    padding-right: 0
+            .owl-prev,
+            .owl-next
+                top: 100px
+                padding: 2px 11px
+            .owl-prev
+                right: -10px
+            .owl-next
+                left: -10px
+            .owl-dots
+                margin-top: 0
+
+
+    .advantages
+        padding-bottom: 60px
+        text-align: center
+        aside
+            display: none
+        #accordion
+            text-align: left
+            .ui-accordion-content
+                p
+                    text-align: left
+        .btn
+            margin-top: 30px
+            text-align: center
+            i
+                margin-right: 10px
+
+
+    .properties
+        .container
+            .item
+                margin-left: 5px
+                margin-right: 5px
+
+
+    .inner
+        padding-top: 105px
+        header.main-header
+            nav
+                .top-nav
+                    display: none
+                &.open
+                    .top-nav
+                        display: block
+            .logo
+                margin-top: 12px
+            #basket
+                padding-top: 5px
+                padding-bottom: 5px
+
+
+    .partners
+        .container
+            width: 100%
+        article
+            padding-left: 50px
+            padding-right: 50px
+            span
+                display: inline-block
+
+
+    .team
+        .container
+            width: 100%
+            padding: 0
+        .item
+            width: 225px
+            height: 400px
+            &:first-child
+                margin-left: 0
+            &:last-child
+                margin-right: 0
+            .img-wrap
+                height: 295px
+
+
+    .certificates
+        .container
+            width: 600px
+
+    .inner.product
+        .product-content
+            .laying
+                margin-left: 20px
+                text-align: center
+                img
+                    width: 68px
+                    height: 68px
+            .product-advantages
+                flex-wrap: wrap
+                margin-left: 20px
+
+
+    .basket
+        padding-bottom: 60px
+        .table
+            display: block
+            background-color: #fff
+            border: none
+            .thead
+                display: none
+            .tbody
+                display: block
+            .trow
+                position: relative
+                display: block
+                padding-top: 35px
+                padding-bottom: 35px
+                text-align: left
+                border-bottom: 1px solid #b4b4b4
+                .tcell
+                    display: inline-block
+                    border: none
+                    vertical-align: top
+                    background-color: transparent
+                    p
+                        margin: 0
+                        color: #888888
+                        font-size: em(14)
+                        font-weight: 200
+                .metric,
+                .quantity,
+                .one-price,
+                .quantity-price
+                    position: absolute
+                    bottom: 35px
+                .thumb
+                    display: inline-block
+                    width: 165px
+                    margin-right: 30px
+                    i
+                        margin-left: 20px
+                        margin-right: 20px
+                        color: #696969
+                        font-size: em(14)
+                        font-style: normal
+                .title
+                    position: relative
+                    top: 0
+                .metric
+                    left: 200px
+                    line-height: em(14)
+                    p
+                        margin-bottom: 17px
+                .quantity
+                    left: 310px
+                .one-price
+                    left: 445px
+                    line-height: em(14)
+                    p
+                        margin-bottom: 17px
+                .quantity-price
+                    right: 65px
+                    padding: 6px 15px
+                    background-color: #f2f2f2
+                    text-align: center
+                    color: #000
+                .del
+                    position: absolute
+                    top: 50%
+                    right: 5px
+                    transform: translateY(-50%)
+        .tfooter
+            border: none
+            text-align: center
+            span
+                margin-left: 10px
+        .tfooter
+            margin-bottom: 30px
+        .basket-form
+            h3
+                margin: 0
+            .form-content
+                padding-bottom: 30px
+                .form-group
+                    input
+                        height: 35px
+                    textarea
+                        height: 70px
+                    .btn
+                        width: 100%
+                        padding-left: 15px
+                        padding-right: 15px
+
+
+    .lk
+        #lk-tab1
+            padding-left: 5px
+            padding-right: 5px
+            h3
+                padding-left: 25px
+            .tcell:first-child
+                padding-left: 25px
+        #lk-tab2.tab-pane,
+        #lk-tab3.tab-pane
+            padding-top: 0
+            padding-bottom: 20px
+            padding-left: 0
+            padding-right: 0
+            h3
+                display: none
+        #lk-tab2 .table,
+        #lk-tab3 .table
+            display: block
+            border: none
+            .thead
+                display: none
+            .tbody
+                display: block
+            .trow
+                position: relative
+                display: flex
+                flex-wrap: wrap
+                padding-top: 10px
+                padding-bottom: 10px
+                padding-left: 60px
+                border-bottom: 1px solid #b4b4b4
+                &:nth-child(2n)
+                    .tcell
+                        background-color: initial
+                .tcell
+                    flex: 0 0 33.333333%
+                    max-width: 33.333333%
+                    padding-top: 3px
+                    padding-bottom: 3px
+                    border: none
+                    text-align: left
+                    p
+                        margin: 0
+                        color: #888888
+                        font-size: em(14)
+                        font-weight: 200
+                .order-number
+                    i
+                        position: absolute
+                        top: 50%
+                        left: 25px
+                        transform: translateY(-50%)
+        form
+            width: auto
+
+
+    .s-contacts
+        #info
+            .item
+                margin: 0
+
+
+    footer
+        .logo
+            img
+                width: 120px
+        .copyright
+            margin-top: 0
+            margin-left: 5px
+            vertical-align: top
+        ul
+            width: 103px
+            &:first-child
+                margin-right: 10px
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px)
+    .catalog
+        .container
+            .row
+                display: block
+                text-align: center
+        .products
+            .loading
+                left: -15px
+                height: calc(100% - 28px)
+                width: calc(100% + 15px)
+    .product-card-wrap
+        display: inline-block
+        vertical-align: top
+    .product-card
+        width: 290px
+        ul
+            &:nth-of-type(2)
+                margin-left: 65px
+            &:nth-of-type(4)
+                margin-left: 5px
+        .img-wrap
+            button
+                display: none
+        .btn
+            padding-right: 35px
+            padding-left: 35px
+
+
+    .inner header.main-header,
+    .inner.product header.main-header,
+    header.main-header
+        &.fixed
+            position: absolute
+            background-color: rgba(255,255,255,.76)
+            #basket
+                padding-top: 11px
+                padding-bottom: 11px
+        .logo
+            width: 130px
+            img
+                width: 100%
+        .top-line
+            a
+                display: block
+                font-size: em(14)
+                letter-spacing: 0
+                &+a
+                    margin-left: 0
+                i
+                    margin-right: 2px
+        nav
+            display: none
+        .mobile-nav
+            float: left
+            display: inline-block
+            left: 0
+            width: 49.5%
+            transform: none
+            z-index: 999
+            &.open
+                left: 15px
+                top: 0
+                width: calc(49.5% - 15px)
+                .top-nav,
+                .bottom-nav
+                    width: 290px
+            &.fixed
+                position: fixed
+                top: 0
+                left: 50%
+                width: 290px
+                transform: translateX(-50%)
+                animation: slideUp 500ms ease-in-out
+                .btn-mob-menu
+                    width: 140px
+                    margin-top: 0
+                    background-color: rgba(227,227,227,.9)
+                    transition: width 300ms
+                .top-nav,
+                .bottom-nav
+                    position: relative
+                    left: 50%
+                    transform: translateX(-50%)
+            &.fixed.open
+                .btn-mob-menu
+                    width: 100%
+            .btn-mob-menu
+                width: 100%
+                height: 52px
+                margin-top: 30px
+        #basket
+            float: right
+            width: 49.5%
+            margin-top: 30px
+            padding-top: 11px
+            padding-bottom: 11px
+            background-color: #e3e3e3
+            b,
+            p
+                display: none
+            i
+                display: inline-block
+                color: #414141
+                font-size: em(24)
+
+
+    .main-slider
+        padding-bottom: 20px
+        .owl-carousel
+            .item
+                padding-bottom: 50px
+                p
+                    padding-bottom: 30px
+                    width: calc(100% - 30px)
+                .btn
+                    bottom: 30px
+        nav
+            display: none
+
+
+    .technology
+        display: none
+
+
+    .properties
+        .container
+            padding-bottom: 220px
+
+
+    .inner
+        padding-top: 150px
+
+
+    .know
+        padding-bottom: 60px
+        article
+            padding-left: 60px
+            padding-right: 60px
+
+
+    .team
+        display: none
+
+
+    .inner.product
+        .product-content
+            padding-top: 150px
+            .product-info
+                margin-left: 0
+            .laying,
+            .product-advantages,
+            .owl-nav
+                display: none
+
+
+    .previously-slider
+        display: none
+
+
+    .basket
+        .table
+            .trow
+                padding-top: 20px
+                padding-bottom: 20px
+                text-align: center
+                .thumb
+                    display: block
+                    margin-bottom: 25px
+                .title
+                    position: absolute
+                    top: 20px
+                    left: 170px
+                    padding-right: 40px
+                    text-align: left
+                .metric,
+                .quantity,
+                .one-price,
+                .quantity-price
+                    position: initial
+                .metric
+                    float: left
+                    margin-left: 20px
+                .quantity
+                     line-height: em(16)
+                     p
+                         margin-bottom: 5px
+                .one-price
+                    float: right
+                    margin-right: 20px
+                .quantity-price
+                    width: calc(100% - 20px)
+                    margin-top: 20px
+                    p
+                        display: inline-block
+                .del
+                    top: 20px
+                    right: 0
+                    transform: none
+        .basket-form
+            width: 400px
+            margin-left: auto
+            margin-right: auto
+
+
+    .lk
+        .tabs
+            text-align: center
+            li
+                padding: 0
+                a
+                    position: relative
+        .tab-pane
+            padding-top: 0
+            padding-bottom: 20px
+            padding-left: 0
+            padding-right: 0
+            h3
+                display: none
+        .table
+            display: block
+            border: none
+            .thead
+                display: none
+            .tbody
+                display: block
+            .trow
+                position: relative
+                display: flex
+                flex-wrap: wrap
+                padding-top: 10px
+                padding-bottom: 10px
+                padding-left: 60px
+                border-bottom: 1px solid #b4b4b4
+                .tcell
+                    flex: 0 0 33.333333%
+                    max-width: 33.333333%
+                    padding-top: 3px
+                    padding-bottom: 3px
+                    border: none
+                    text-align: left
+                    p
+                        margin: 0
+                        color: #888888
+                        font-size: em(14)
+                        font-weight: 200
+        form
+            .table
+                .trow
+                    padding-left: 5px
+                    .tcell
+                        flex: 0 0 100%
+                        max-width: 100%
+                        border: none
+                        &:first-child
+                            display: none
+                        p
+                            margin-left: 15px
+            .form-group
+                input
+                    padding-left: 15px
+
+
+    .s-contacts
+        h2
+            margin-bottom: 30px
+        #info
+            .item
+                img
+                    display: none
+        form
+            padding-left: 70px
+            padding-right: 70px
+            p
+                width: auto
+                padding-left: 50px
+                padding-right: 50px
+
+
+    footer
+        text-align: center
+        .logo
+            display: block
+            margin-bottom: 15px
+            img
+                width: 120px
+        .copyright
+            margin-bottom: 20px
+            margin-left: 0
+        ul
+            margin-bottom: 20px
+        .contacts
+            text-align: center
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 730px)
+    .certificates
+        .container
+            width: 375px
+
+
+    .s-contacts
+        #address
+            ul
+                width: 100%
+                &:last-child
+                    padding-left: 0
+        form
+            p
+                padding-left: 30px
+                padding-right: 30px
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+    .modal-content
+        .modal-body
+            padding-left: 15px
+            padding-right: 15px
+            padding-bottom: 30px
+    .login
+        float: left
+        width: calc(100% - 30px)
+        margin-top: 0
+        margin-right: 0
+        margin-left: 15px
+    .main-slider
+        .owl-carousel
+            .item
+                p
+                    font-size: em(30)
+                .btn
+                    width: 230px
+                    bottom: 10px
+
+
+    .advantages
+        #accordion
+            .ui-accordion-content
+                p
+                    padding-top: 10px
+                    padding-bottom: 20px
+                    padding-left: 0
+                    padding-right: 0
+                    text-align: center
+
+
+    .properties
+        padding-bottom: 250px
+        .container
+            padding: 0
+            .item
+                width: 130px
+                margin-left: 10px
+                margin-right: 10px
+                p
+                    span
+                        display: inline
+
+
+    .about
+        article
+            padding: 15px
+            font-size: em(16)
+            p
+                width: 100%
+            .right
+                p
+                    padding-left: 0
+
+
+    .know
+        article
+            padding-top: 20px
+            padding-bottom: 50px
+            padding-left: 15px
+            padding-right: 15px
+
+
+    .partners
+        h2
+            margin-top: 20px
+            margin-bottom: 30px
+        .tabs
+            ul
+                flex-wrap: wrap
+                li
+                    width: 100%
+                    margin-top: 10px
+            .btn
+                width: 100%
+                min-height: 50px
+                height: auto
+                margin-left: 0
+                margin-right: 0
+                padding-left: 15px
+                padding-right: 15px
+                vertical-align: middle
+            .btn-invert
+                padding-top: 10px
+                padding-bottom: 10px
+                br
+                    display: block!important
+        article
+            padding-top: 20px
+            padding-bottom: 50px
+            padding-left: 15px
+            padding-right: 15px
+
+
+    .certificates
+        .container
+            width: 180px
+
+
+    .catalog
+        .category-mnu
+            margin-bottom: 20px
+            .btn-group
+                margin: 2px 0
+
+
+    .inner.product
+        .product-content
+            padding-bottom: 55px
+            .product-info
+                padding-left: 5px
+                padding-right: 5px
+                table
+                    width: calc(100% - 10px)
+                    margin-left: 5px
+                .calculator
+                    padding-left: 20px
+                    padding-right: 20px
+                    &::before
+                        display: none
+                    h3
+                        margin-left: 20px
+                    .total
+                        p
+                            width: 65px
+                            margin-top: 10px
+                            margin-left: 10px
+                            line-height: em(18)
+                            vertical-align: middle
+                .product-info-footer
+                    padding: 0
+                    p
+                        padding-left: 20px
+                        padding-right: 20px
+                        line-height: em(18)
+                    .btn
+                        padding-left: 19px
+                        padding-right: 19px
+
+
+    .basket
+        .table
+            .trow
+                .thumb
+                    width: 135px
+                    i
+                        margin-left: 5px
+                        margin-right: 5px
+                .title
+                    left: 140px
+        .tfooter
+            padding-left: 0
+            padding-right: 0
+        .basket-form
+            width: 100%
+            .form-content
+                padding-left: 15px
+                padding-right: 15px
+
+
+    .lk
+        #lk-tab2 .table,
+        #lk-tab3 .table
+            .trow
+                .tcell
+                    flex: 0 0 50%
+                    max-width: 50%
+
+
+    .s-contacts
+        #address
+            .wrap
+                padding-left: 15px
+                padding-right: 15px
+        #map
+            height: 480px
+        form
+            padding-left: 0px
+            padding-right: 0px
+            .form-group
+                label
+                    top: 15px
+                input
+                    height: 55px
+            .btn
+                width: 100%
+                margin-top: 0
+                padding-top: 16px
+                padding-bottom: 16px
+                padding-left: 0
+                padding-right: 0
+
+
+    footer
+        ul
+            display: none
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+    header.main-header
+
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+    // .catalog
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+    .catalog
+        .row
+            display: block
+        .col-sm-6
+            -webkit-box-flex: 0
+            flex: 0 0 50%
+            max-width: 50%
+
+    .modal-dialog
+        width: 460px
+        margin: 30px auto
+
+    header.main-header
+        .mobile-nav
+            display: none
+
+    .advantages
+        .btn
+            display: none
+
+    form .table
+        .tcell p
+            display: none
+
+
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+    .catalog
+        .col-md-4
+            -webkit-box-flex: 0
+            flex: 0 0 33.33333%
+            max-width: 33.33333%
+    .v-sm
+        display: none
+
+    header.main-header
+        .btn-mob-menu
+            display: none
+
+    .table
+        .tcell:first-child i,
+        .tcell p
+            display: none
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+    header.main-header

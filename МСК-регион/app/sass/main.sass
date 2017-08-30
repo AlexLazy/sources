@@ -1,0 +1,605 @@
+@import "vars"
+@import "libs"
+
+.icon
+	background-image: url("../img/sprite.png")
+	background-repeat: no-repeat
+	display: block
+
+.icon-check
+	width: 40px
+	height: 40px
+	background-position: -43px -5px
+
+.icon-fb
+	width: 34px
+	height: 36px
+	background-position: -93px -5px
+
+.icon-vk
+	width: 35px
+	height: 36px
+	background-position: -93px -51px
+
+.icon-lock
+	width: 11px
+	height: 13px
+	background-position: -55px -61px
+
+.icon-to-top
+	width: 22px
+	height: 26px
+	background-position: -5px -51px
+
+.section-header
+	padding-left: 30px
+	border-left: 10px solid $accent
+	h2
+		font-family: RobotoSlab
+		font-size: em(45px)
+		font-weight: 700
+		text-transform: uppercase
+		letter-spacing: 1px
+section
+	padding-top: 90px
+	padding-bottom: 100px
+
+#to-top
+	position: fixed
+	bottom: 118px
+	right: 230px
+	width: 70px
+	height: 70px
+	padding-top: 23px
+	padding-left: 23px
+	cursor: pointer
+	border-radius: 3px
+	background-color: #fff
+	z-index: 9999
+	&:hover
+		transition: opacity .3s
+		opacity: .8
+
+#about
+	height: 785px
+	padding: 0
+	background-image: url("../img/about-bg.jpg")
+	background-position: center bottom
+	background-attachment: fixed
+	box-shadow: 0px 2px 9.7px 0.3px rgba(0, 0, 0, 0.22)
+	overflow: hidden
+	article
+		width: 720px
+		height: 785px
+		padding-top: 100px
+		padding-left: 40px
+		padding-right: 40px
+		background-color: rgba(255,255,255,.8)
+		box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.23)
+		.section-header
+			margin-bottom: 28px
+		p,
+		span
+			margin-left: 40px
+			letter-spacing: .5px
+		p
+			font-size: em(18px)
+			line-height: em(21px)
+		span
+			display: inline-block
+			margin-top: 10px
+			text-transform: uppercase
+			font-weight: 700
+			font-size: em(14px)
+		ul
+			margin-top: 18px
+			margin-left: 90px
+			margin-right: 80px
+			li
+				position: relative
+				margin-bottom: 10px
+				line-height: em(19px)
+				font-weight: 700
+				&::before
+					position: absolute
+					content: ""
+					display: block
+					top: 2px
+					left: -49px
+					width: 28px
+					height: 15px
+					background-image: url("../img/sprite.png")
+					background-position: -5px -5px
+					background-repeat: no-repeat
+		.btn
+			margin-top: 20px
+			margin-left: 40px
+			padding-left: 85px
+			padding-right: 85px
+
+
+
+
+
+#advantages
+	background-blend-mode: multiply
+	background-image: url("../img/advantages-pattern.png")
+	background-color: #f4f4f4
+	text-align: center
+	overflow: hidden
+	figure
+		position: relative
+		top: 75px
+		left: -20px
+		text-align: left
+		img
+			position: absolute
+		.img
+			top: 32px
+			left: 22px
+	.section-header
+		margin-right: -50px
+		margin-bottom: 75px
+		padding-right: 30px
+		border-left: none
+		border-right: 10px solid $accent
+		line-height: em(45px)
+	article
+		position: relative
+		padding-right: 20px
+		padding-left: 10px
+		text-align: right
+		z-index: 2
+		&::before
+			content: ""
+			position: absolute
+			display: block
+			top: -19px
+			right: -79px
+			width: 320px
+			height: 280px
+			background-image: url("../img/advantages-gear.png")
+			background-repeat: no-repeat
+			z-index: -1
+		p
+			margin-bottom: 5px
+	h3
+		display: inline-block
+		margin-top: 113px
+		margin-bottom: 55px
+		padding: 3px 60px
+		font-size: em(32px)
+		text-transform: uppercase
+		letter-spacing: em(0.3px)
+		background-color: #eee1e1
+		border-radius: 30px
+	ul
+		width: 410px
+		margin-left: 40px
+		text-align: left
+		li
+			display: flex;
+			align-items: center;
+			margin-bottom: 23px
+			height: 45px
+			i
+				min-width: 40px
+				margin-right: 40px
+			p
+				margin: 0
+	.btn
+		margin-top: 35px
+		padding-left: 50px
+		padding-right: 50px
+		letter-spacing: em(.3px)
+
+
+
+
+
+#arguments
+	position: relative
+	background-image: url("../img/arguments-bg.jpg")
+	background-repeat: no-repeat
+	background-position: bottom left
+	background-size: cover
+	overflow: hidden
+	z-index: 2
+	.section-header
+		width: 610px
+		margin-bottom: 50px
+		line-height: em(45px)
+	article
+		position: relative
+		width: 860px
+		margin: 0 auto 75px
+		padding-top: 70px
+		padding-bottom: 60px
+		padding-left: 80px
+		padding-right: 80px
+		text-align: center
+		line-height: em(21px)
+		box-shadow: 0px 0px 40px rgba(107, 107, 107, 0.23)
+		border-radius: 3px
+		background-color: #FFF
+		&::before,
+		&::after
+			content: ""
+			position: absolute
+			display: block
+			width: 350px
+			height: 275px
+			background-repeat: no-repeat
+			opacity: .99
+			z-index: -1
+		&::before
+			top: -90px
+			left: -135px
+			background-image: url("../img/arguments-msg-tl-bg.png")
+		&::after
+			bottom: -100px
+			right: -130px
+			background-image: url("../img/arguments-msg-br-bg.png")
+	.last
+		margin: auto
+	.item
+		position: relative
+		display: inline-block
+		height: 100px
+		margin-bottom: 40px
+		margin-left: 50px
+		padding-top: 30px
+		transition: .3s
+		&:hover
+			.top-frame,
+			.bottom-frame
+				left: 30px
+				width: calc(100% - 10px)
+		.top-frame,
+		.bottom-frame
+			position: absolute
+			left: 10px
+			width: 100px
+			height: 30px
+			border-left: 3px solid $accent
+			border-right: 3px solid $accent
+			transition: .3s
+		.top-frame
+			top: 0
+			border-top: 3px solid $accent
+			border-radius: 5px 5px 0 0
+		.bottom-frame
+			bottom: 0
+			border-bottom: 3px solid $accent
+			border-radius: 0 0 5px 5px
+		b, p
+			display: inline-block
+			text-transform: uppercase
+			letter-spacing: em(1.5px)
+			vertical-align: middle
+		b
+			margin-right: 10px
+			font-size: em(18px)
+		p
+			margin-bottom: 0
+			margin-left: 10px
+			font-weight: 700
+			line-height: em(19px)
+	.btn
+		display: flex
+		margin: 20px auto 0
+		padding-left: 100px
+		padding-right: 100px
+		letter-spacing: em(.3px)
+
+
+
+
+#feedback
+	background-image: url("../img/feedback-bg.jpg")
+	background-repeat: no-repeat
+	background-position: bottom center
+	background-size: cover
+	box-shadow: 0px 2px 9.7px 0.3px rgba(99, 138, 134, 0.22)
+	.section-header
+		margin-right: 0
+		margin-bottom: 75px
+		padding-right: 30px
+		border-left: none
+		border-right: 10px solid $accent
+		text-align: right
+		line-height: em(45px)
+	.owl-carousel
+		width: 860px
+		margin: auto
+		box-shadow: 0px 0px 40px 0px rgba(107, 107, 107, 0.23)
+	.owl-nav
+		position: absolute
+		top: 50%
+		width: 100%
+		transform: translateY(-50%)
+		.owl-prev,
+		.owl-next
+			position: absolute
+			top: -8px
+			.top-frame,
+			.bottom-frame
+				position: absolute
+				width: 58px
+				height: 20px
+				border-left: 2px solid $accent
+				border-right: 2px solid $accent
+				transition: .3s
+			.top-frame
+				top: -19px
+				border-top: 2px solid $accent
+				border-radius: 5px 5px 0 0
+			.bottom-frame
+				bottom: -3px
+				border-bottom: 2px solid $accent
+				border-radius: 0 0 5px 5px
+		.owl-prev
+			left: -90px
+			&:hover
+				.top-frame,
+				.bottom-frame
+					right: -10px
+			.top-frame,
+			.bottom-frame
+				right: 18px
+			.top-frame::before
+				content: ""
+				position: absolute
+				top: 16px
+				left: -2px
+				width: 2px
+				height: 20px
+				background-color: $accent
+		.owl-next
+			right: -90px
+			&:hover
+				.top-frame,
+				.bottom-frame
+					left: -8px
+			.top-frame,
+			.bottom-frame
+				left: 20px
+			.top-frame::before
+				content: ""
+				position: absolute
+				top: 16px
+				right: -2px
+				width: 2px
+				height: 20px
+				background-color: $accent
+		p
+			font-size: em(12px)
+			font-weight: 700
+			text-transform: uppercase
+	.owl-dots
+		position: absolute
+		bottom: -65px
+		left: 50%
+		transform: translateX(-50%)
+		.owl-dot
+			display: inline-block
+			width: 20px
+			height: 20px
+			margin-right: 5px
+			background-color: #FFF
+			border-radius: 3px
+			transition: .3s
+			&:hover,
+			&.active
+				background-color: $accent
+	.item
+		display: flex
+		background-color: rgba(255,255,255,.9)
+		border-radius: 3px
+		.img-wrap
+			display: inline-block
+			flex: 0 0 40%
+			max-width: 40%
+			height: auto
+			vertical-align: top
+			background-color: #FFF
+			overflow: hidden
+			flex-basis: 100%
+			img
+				width: 100%
+		article
+			display: inline-block
+			flex: 0 0 60%
+			max-width: 60%
+			padding: 55px
+			b
+				display: none
+			h4
+				font-size: em(14px)
+				text-transform: uppercase
+			p
+				margin-top: 20px
+				line-height: em(28px)
+	.btn
+		display: flex
+		margin: 120px auto 0
+		padding-left: 100px
+		padding-right: 100px
+		letter-spacing: em(.3px)
+
+
+
+
+#contacts
+	height: 600px
+	padding: 0
+	address
+		position: absolute
+		top: 0
+		left: 0
+		height: 600px
+		padding-top: 90px
+		padding-right: 60px
+		padding-left: 30px
+		background-color: rgba(255,255,255,.88)
+		z-index: 2
+		.section-header
+			margin-bottom: 30px
+			line-height: em(45px)
+		.item
+			margin-bottom: 20px
+			span
+				display: block
+				margin-bottom: 5px
+				color: $accent
+				font-size: em(20px)
+				font-weight: 700
+				text-transform: uppercase
+			p
+				font-size: em(18px)
+				line-height: em(10px)
+				font-weight: 700
+			a
+				display: inline-block
+				transition: .3s
+				&:hover
+					opacity: .8
+
+
+
+
+
+footer
+	padding-top: 20px
+	padding-bottom: 15px
+	background-color: #4c4c4c
+	.align-items-center
+		display: flex
+		align-items: center
+	p
+		display: inline-block
+		margin-left: 30px
+		margin-bottom: 0
+		color: #bebebe
+		font-size: em(19px)
+		font-weight: 700
+		text-transform: uppercase
+		line-height: em(28px)
+		b
+			font-size: em(20px)
+		span
+			display: block
+			font-size: em(14px)
+	.contacts
+		float: right
+		margin-top: 6px
+		line-height: em(28px)
+		text-align: right
+		text-transform: none
+
+#gratitude.modal,
+#callback.modal,
+#feedback-modal.modal
+	width: 480px
+	padding: 7px
+	background-color: rgba(255,255,255,.55)
+	box-shadow: none
+	a.close-modal
+		position: absolute
+		top: 25px
+		right: 25px
+		width: 30px
+		height: 30px
+		border: 1px solid #fff
+		border-radius: 50%
+		background: none
+		transition: opacity .3s
+		&::before,
+		&::after
+			content: ""
+			position: absolute
+			top: 12.5px
+			width: 10px
+			height: 1.5px
+			background-color: #fff
+		&::before
+			left: 9px
+			transform: rotate(45deg)
+		&::after
+			right: 9px
+			transform: rotate(-45deg)
+		&:hover
+			opacity: .7
+			cursor: pointer
+			&::before,
+			&::after
+				opacity: .7
+	form
+		text-align: center
+		border-radius: 3px
+		background-image: url("../img/modal-bg.jpg")
+		background-size: cover
+		.overlay
+			width: 100%
+			height: 100%
+			padding: 60px
+			border-radius: 3px
+			background-color: rgba(104,19,19,.90)
+		b
+			display: block
+			margin-bottom: 20px
+			color: #fff
+			font-family: RobotoSlab
+			z-index: 2
+		input
+			display: block
+			width: 100%
+			height: 60px
+			margin-bottom: 5px
+			padding-left: 30px
+			border: none
+			border-radius: 3px
+			z-index: 2
+			&:focus
+				outline-color: rgba(255,255,255,.55)
+		textarea
+			width: 100%
+			height: 150px
+			padding-left: 30px
+			border: none
+			border-radius: 3px
+			resize: none
+			z-index: 2
+			&:focus
+				outline-color: rgba(255,255,255,.55)
+		.btn
+			width: 100%
+			margin-top: 10px
+			margin-bottom: 20px
+			background-color: transparent
+			border: 2px solid #fff
+			transition: opacity .3s
+			z-index: 2
+			&:hover
+				opacity: .8
+		p
+			margin-bottom: 0
+			color: #ca8686
+			font-size: em(14px)
+			z-index: 2
+			i
+				display: inline-block
+				margin-right: 5px
+
+#gratitude.modal
+	form
+		background-position: center 350px
+		.overlay
+			padding-left: 50px
+			padding-right: 50px
+		b
+			margin-bottom: 10px
+			font-size: em(18px)
+
+
+@import "media"

@@ -1,0 +1,937 @@
+@import "bourbon"
+@import "vars"
+@import "libs"
+
+
+.modal
+	max-width: 770px
+	margin-top: 30px
+	padding: 60px 0
+	background-color: #fff
+	border-radius: 0
+	box-shadow: none
+	text-align: center
+	z-index: 9999
+	a.close-modal
+		top: -20px
+		right: 0
+		background-image: none
+		&::before,
+		&::after
+			content: ''
+			position: absolute
+			display: block
+			background-color: #FFF
+			width: 24px
+			height: 8px
+			transition: .3s
+		&::before
+			transform: rotate(45deg)
+		&::after
+			transform: rotate(-45deg)
+		&:hover::before,
+		&:hover::after
+			background-color: #e87e00
+	input,
+	textarea
+		width: 400px
+		height: 50px
+		margin-bottom: 15px
+		border: 1px solid rgba(0,0,0,.1)
+		box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.15)
+		text-indent: 10px
+		vertical-align: middle
+		&::placeholder
+			color: #a8a6a6
+		&:focus
+			outline: 1px solid rgba(0,0,0,.3)
+			box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.15)
+	textarea
+		height: 60px
+		padding: 8px 10px
+		text-indent: 0
+		resize: none
+	.btn
+		&:hover
+			&::before
+				transform: scale(1.1, 1)
+			&::after
+				transform: scale(-1.1, 1)
+		&::before,
+		&::after
+			transition: .2s
+			content: ''
+			position: absolute
+			display: block
+			top: -10px
+			width: 44px
+			height: 82px
+			background: url("../img/btn-bg.png") no-repeat
+		&::before
+			left: -60px
+		&::after
+			right: -60px
+			transform: scale(-1, 1)
+.btn
+	position: relative
+	display: inline-block
+	margin-top: 30px
+	padding: 20px 70px
+	background-color: $accent
+	color: #fff!important
+	border: none
+	outline: none
+	border-radius: 5px
+	box-shadow: 0 2px 3px rgba(0,0,0,.2)
+	font-family: "SegoePrintRegular", sans-serif
+	font-size: 19px
+	text-transform: uppercase
+	transition: .2s background-color
+	&::after
+		content: ""
+		position: absolute
+		top: 0
+		right: -175px
+		width: 140px
+		height: 105px
+		background-image: url("../img/btn-arrow.png")
+		background-repeat: no-repeat
+	&:hover
+		background-color: lighten($accent, 5%)
+	&:active
+		background-color: darken($accent, 5%)
+		outline: none
+		box-shadow: 0 0 0 rgba(0,0,0,.5)
+
+
+.blocker
+	background-color: rgba(0,0,0,.6)
+	z-index: 9999
+
+.owl-dots
+	position: absolute
+	bottom: -25px
+	right: 40px
+	.owl-dot
+		display: inline-block
+		width: 30px
+		height: 30px
+		background-color: #FFF
+		border-radius: 50%
+		box-shadow: 0 0 10px rgba(0,0,0,.2)
+		& + .owl-dot
+			margin-left: 10px
+		&.active
+			background-color: #dbc828
+.owl-carousel:hover
+	.owl-nav
+		display: block
+.owl-nav
+	position: absolute
+	display: none
+	top: 50%
+	width: 100%
+	&:hover
+		display: block
+	.owl-prev,
+	.owl-next
+		position: absolute
+		width: 36px
+		height: 34px
+		background-image: url("fancybox_sprite.png")
+	.owl-prev
+		left: 0
+		background-position: 0 -36px
+	.owl-next
+		right: 0
+		background-position: 0 -72px
+
+.fancybox-close
+	top: -45px
+	right: -20px
+.fancybox-skin
+	border-radius: 20px
+.fancybox-image
+	border-radius: 20px
+h2
+	position: relative
+	display: inline-block
+	margin: 0
+	color: #129260
+	font-family: "Totsam", sans-serif
+	font-size: 48px
+	z-index: 2
+	&::before
+		content: ''
+		position: absolute
+		display: block
+		top: 50%
+		left: 50%
+		width: 680px
+		height: 305px
+		background-image: url("../img/second-header-bg.png")
+		background-repeat: no-repeat
+		transform: translate(-50%, -50%)
+		z-index: -1
+.second-screen,
+.third-screen
+	position: relative
+	padding-bottom: 90px
+	background-image: repeating-linear-gradient(to right,#ebf9fe,#ebf9fe 50px,#ddf4f1 50px,#ddf4f1 110px)
+	background-size: cover
+	background-position: 100% 100%
+	border-top: 40px solid #72c7d4
+	z-index: 2
+	&::before,
+	&::after
+		content: ''
+		position: absolute
+		display: block
+		width: 590px
+		height: 360px
+		background: url("../img/second-t-bg.png") no-repeat top center
+		z-index: 2
+	&::before
+		top: -40px
+		left: 0
+		box-shadow: inset 0 40px 0 #72c7d4
+	&::after
+		top: -40px
+		right: 0
+	h2
+		margin-top: 145px
+		margin-bottom: 105px
+		z-index: 5
+	ul
+		li
+			position: relative
+			&::before
+				content: '-'
+				position: absolute
+				top: 0
+				left: -20px
+	.item
+		margin-top: 30px
+		text-align: left
+		.owl-carousel
+			float: right
+			width: 496px
+			height: 649px
+			img
+				border-radius: 20px
+		.description
+			position: relative
+			display: inline-block
+			margin-top: 74px
+			margin-left: 0
+			font-family: "Sensei", sans-serif
+			text-transform: uppercase
+			h3
+				position: relative
+				display: inline-block
+				margin: 0 0 0 66px
+				color: #bb3323
+				font-family: "Chocolate", sans-serif
+				font-size: 28px
+				line-height: 34px
+				text-align: left
+				&::before,
+				&::after
+					content: ''
+					position: absolute
+					display: block
+					top: 30px
+					width: 21px
+					height: 39px
+					background: url("../img/h3-bg.png") no-repeat
+				&::before
+					left: -35px
+				&::after
+					right: -35px
+					transform: scale(-1, 1)
+			h4
+				margin-top: 10px
+				margin-bottom: 16px
+				color: #023702
+				font-family: "Totsam", sans-serif
+				font-size: 28px
+				line-height: 30px
+			ul
+				margin-top: 5px
+				margin-bottom: 5px
+				margin-left: 25px
+				li
+					color: #3e1d01
+					font-family: "Totsam", sans-serif
+					font-size: 28px
+					line-height: 30px
+			p
+				margin-top: 12px
+				margin-bottom: 14px
+				color: #bb3323
+				font-family: "Totsam", sans-serif
+				font-size: 28px
+				line-height: 30px
+				text-transform: none
+			i
+				font-family: "Sensei", sans-serif
+				font-size: 35px
+				text-transform: uppercase
+				font-style: normal
+			span
+				color: #bb3323
+				font-family: "DomkratBold", sans-serif
+				font-size: 28px
+				text-transform: none
+			.price
+				position: absolute
+				display: inline-table
+				bottom: -100px
+				right: -180px
+				padding: 4px 8px 0
+				background-image: url("../img/price-wrap.png")
+				background-size: cover
+				background-position: center
+				color: #3b0b02
+				font-family: "DomkratBold", sans-serif
+				font-size: 30px
+				text-transform: lowercase
+				b
+					color: #da7119
+				&.small
+					padding: 0 10px 0
+		&.item_second
+			.owl-carousel
+				float: left
+			.description
+				margin-top: 23px
+				margin-left: 90px
+				h3
+					color: #023702
+					&::before
+						top: 0
+				ul
+					margin-top: 25px
+					margin-bottom: 5px
+					li
+						margin-bottom: 25px
+						color: #023702
+						span
+							display: block
+							color: #023702
+							font-family: "Totsam", sans-serif
+							font-size: 14px
+							line-height: 16px
+							text-transform: uppercase
+							i
+								font-size: 18px
+				i
+					color: #023702
+				span
+					color: #023702
+				.price
+					bottom: 70px
+					left: -150px
+				.add
+					position: absolute
+					top: 155px
+					left: -240px
+					z-index: 10
+		&.item_third
+			.owl-carousel
+				float: right
+			.description
+				margin-top: 74px
+				margin-left: 0
+				h3
+					&::before
+						top: 0
+						left: 10px
+					&::after
+						top: 0
+						right: 10px
+				h3,h4
+					color: #282115
+				ul
+					margin-top: 25px
+					margin-bottom: 5px
+					li
+						margin-bottom: 25px
+						color: #282115
+						span
+							display: block
+							color: #282115
+							font-family: "Totsam", sans-serif
+							font-size: 14px
+							line-height: 16px
+							text-transform: uppercase
+							i
+								font-size: 18px
+				i
+					color: #282115
+				span
+					color: #282115
+				.price
+					bottom: 0
+					right: -190px
+	.cloud-descr
+		width: 385px
+		height: 268px
+		margin-top: 190px
+		padding-top: 95px
+		padding-left: 0
+		background-image: url("../img/second-l-cloud.png")
+		background-repeat: no-repeat
+		color: #3f0101
+		font-family: "Sensei", sans-serif
+		font-size: 19px
+		line-height: 22px
+		text-transform: uppercase
+		&.second
+			float: right
+			width: 365px
+			height: 275px
+			padding-top: 100px
+			padding-right: 5px
+			background-image: url("../img/second-r-cloud.png")
+			transform: rotate(7deg)
+			span
+				color: #e87e00
+				font-size: 20px
+			i
+				font-size: 17px
+				font-style: normal
+				text-transform: none
+				b
+					color: #e87e00
+				span
+					color: inherit
+					font-size: 17px
+					text-transform: uppercase
+		span
+			color: #0dc159
+			font-size: 28px
+			text-transform: uppercase
+	.btn
+		margin-top: 35px
+	.divider
+		position: absolute
+		bottom: 550px
+		left: 0
+		width: 100%
+
+.third-screen
+	position: relative
+	padding-bottom: 160px
+	background-image: url("../img/third-bg.png")
+	background-size: auto
+	background-position: top
+	background-color: #fdfecb
+	border-top: none
+	&::before,
+	&::after
+		content: ''
+		position: absolute
+		display: block
+	&::before
+		top: 0
+		left: 0
+		width: 815px
+		height: 830px
+		background-image: url("../img/third-l-bg.png")
+		box-shadow: none
+	&::after
+		top: 20px
+		right: 0
+		width: 620px
+		height: 400px
+		background-image: url("../img/third-r-bg.png")
+	.bg-top
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 71px
+		background-image: url("../img/third-top-bg.png")
+		background-repeat: repeat-x
+		z-index: 5
+	h2
+		margin-top: 220px
+		margin-bottom: 130px
+		color: #c14ac1
+		&::before
+			content: ''
+			position: absolute
+			display: block
+			top: 50%
+			left: 50%
+			width: 592px
+			height: 305px
+			background-image: url("../img/third-header-bg.png")
+	.item
+		margin-top: 30px
+		text-align: left
+		.owl-carousel
+			float: left
+		.description
+			position: relative
+			display: inline-block
+			margin-top: 47px
+			margin-left: 100px
+			font-family: "Sensei", sans-serif
+			text-transform: uppercase
+			h3
+				position: relative
+				display: inline-block
+				margin: 0 0 0 66px
+				color: #b12189
+				font-family: "Chocolate", sans-serif
+				font-size: 28px
+				line-height: 34px
+				text-align: left
+				&::before,
+				&::after
+					top: 35px
+			h4
+				margin-top: 10px
+				margin-bottom: 16px
+				color: #cd590c
+				font-family: "Totsam", sans-serif
+				font-size: 28px
+				line-height: 30px
+			ul
+				margin-top: 5px
+				margin-bottom: 5px
+				margin-left: 25px
+				li
+					color: #3e1d01
+					font-family: "Totsam", sans-serif
+					font-size: 28px
+					line-height: 30px
+			p
+				margin-top: 12px
+				margin-bottom: 14px
+				color: #b12189
+				font-family: "Totsam", sans-serif
+				font-size: 28px
+				line-height: 30px
+				text-transform: none
+			i
+				font-family: "Sensei", sans-serif
+				font-size: 35px
+				text-transform: uppercase
+				font-style: normal
+			span
+				color: #b12189
+				font-family: "DomkratBold", sans-serif
+				font-size: 28px
+				text-transform: none
+			.price
+				position: absolute
+				display: inline-table
+				bottom: -152px
+				left: -170px
+				padding: 4px 8px 0
+				background-image: url("../img/price-wrap.png")
+				background-size: cover
+				background-position: center
+				color: #3b0b02
+				font-family: "DomkratBold", sans-serif
+				font-size: 30px
+				text-transform: lowercase
+				b
+					color: #da7119
+				&.small
+					padding: 0 10px 0
+		&.item_second
+			.owl-carousel
+				float: right
+			.description
+				margin-top: 23px
+				margin-left: 0
+				h3
+					color: #cd590c
+				ul
+					margin-top: 25px
+					margin-bottom: 5px
+					li
+						margin-bottom: 25px
+						color: #cd590c
+						span
+							display: block
+							color: #cd590c
+							font-family: "Totsam", sans-serif
+							font-size: 14px
+							line-height: 16px
+							text-transform: uppercase
+							i
+								font-size: 18px
+				i
+					color: #cd590c
+				span
+					color: #cd590c
+				.price
+					bottom: 70px
+					right: -150px
+					left: inherit
+				.add
+					position: absolute
+					top: 165px
+					right: -240px
+					left: inherit
+					z-index: 10
+		&.item_third
+			.owl-carousel
+				float: left
+			.description
+				margin-top: 30px
+				margin-left: 85px
+				h3
+					color: #890704
+				h4
+					color: #890704
+				ul
+					margin-top: 25px
+					margin-bottom: 5px
+					li
+						margin-bottom: 25px
+						color: #890704
+						span
+							display: block
+							color: #890704
+							font-family: "Totsam", sans-serif
+							font-size: 14px
+							line-height: 16px
+							text-transform: uppercase
+							i
+								font-size: 18px
+				i
+					color: #890704
+				span
+					color: #890704
+				.price
+					bottom: 0
+					left: -160px
+				.add
+					position: absolute
+					top: 200px
+					left: -218px
+					z-index: 10
+	.cloud-descr
+		width: 385px
+		height: 268px
+		margin-top: 70px
+		padding-top: 100px
+		padding-left: 0
+		background-image: url("../img/third-l-cloud.png")
+		background-repeat: no-repeat
+		color: #3f0101
+		font-family: "Sensei", sans-serif
+		font-size: 19px
+		text-transform: uppercase
+		&.second
+			float: right
+			width: 365px
+			height: 275px
+			padding-top: 95px
+			padding-right: 5px
+			background-image: url("../img/third-r-cloud.png")
+			transform: rotate(7deg)
+			span
+				color: #e87e00
+				font-size: 20px
+			i
+				font-size: 17px
+				font-style: normal
+				text-transform: none
+				b
+					color: #e87e00
+				span
+					color: inherit
+					font-size: 17px
+					text-transform: uppercase
+		span
+			color: #7c34ad
+			font-size: 28px
+			text-transform: uppercase
+
+.target-audience
+	position: relative
+	padding-top: 60px
+	padding-bottom: 60px
+	&::before
+		content: ''
+		position: absolute
+		display: block
+		top: -85px
+		left: 0
+		width: 100%
+		height: 100px
+		background: url("../img/target-audience-top-bg.png") repeat-x center
+		z-index: 5
+	.center
+		position: absolute
+		top: 350px
+		left: 540px
+		z-index: 3
+	h2
+		margin-top: 30px
+		color: #fc9003
+		font-size: 46px
+		&::before,
+		&::after
+			content: ''
+			position: absolute
+			display: block
+			top: 24px
+			width: 21px
+			height: 39px
+			background: url("../img/h3-bg.png") no-repeat
+		&::before
+			left: -38px
+			transform: scale(1.5)
+		&::after
+			right: -38px
+			transform: scale(-1.5, 1.5)
+		span
+			color: #4f3302
+		i
+			font-family: "Sensei", sans-serif
+			font-size: 56px
+			text-transform: uppercase
+			font-style: normal
+	.item-wrap
+		i
+			font-family: "Sensei", sans-serif
+			font-size: 35px
+			text-transform: uppercase
+			font-style: normal
+		.item
+			position: relative
+			display: inline-block
+			width: 463px
+			height: 404px
+			top: 80px
+			left: 30px
+			background-image: url("../img/target-audience-1-bg.png")
+			background-repeat: no-repeat
+			color: #fff
+			font-family: "Sensei", sans-serif
+			font-size: 19px
+			text-align: left
+			text-transform: uppercase
+			h3
+				position: absolute
+				top: 5px
+				left: 180px
+				font-family: "Totsam", sans-serif
+				font-size: 26px
+			ul
+				position: absolute
+				top: 100px
+				left: 185px
+		&:nth-child(2)
+			.item
+				width: 341px
+				height: 423px
+				top: 0
+				left: -90px
+				background-image: url("../img/target-audience-2-bg.png")
+				h3
+					left: 105px
+					color: #3dab07
+				ul
+					top: 155px
+					left: 70px
+		&:nth-child(3)
+			.item
+				width: 341px
+				height: 340px
+				top: 30px
+				left: 90px
+				background-image: url("../img/target-audience-3-bg.png")
+				h3
+					left: 105px
+					color: #632003
+				ul
+					top: 180px
+					left: 115px
+					color: #320505
+		&:nth-child(4)
+			.item
+				width: 461px
+				height: 410px
+				top: -30px
+				left: -15px
+				background-image: url("../img/target-audience-4-bg.png")
+				h3
+					top: 95px
+					left: 180px
+				ul
+					top: 200px
+					left: 180px
+					color: #6c0303
+
+
+.advantages
+	position: relative
+	padding-top: 140px
+	background-image: url("../img/advantages-bg.png")
+	background-size: auto
+	overflow: hidden
+	&::before
+		content: ''
+		position: absolute
+		display: block
+		top: 0
+		left: 0
+		width: 100%
+		height: 117px
+		background: url("../img/advantages-top-bg.png") repeat-x left
+		z-index: 5
+	&::after
+		content: ""
+		position: absolute
+		display: block
+		top: 0
+		left: 0
+		width: 100%
+		height: 83px
+		background-color: #FFF
+	h2
+		margin-bottom: 30px
+		color: #a52d03
+		font-size: 36px
+		&::before,
+		&::after
+			content: ''
+			position: absolute
+			display: block
+			width: 21px
+			height: 39px
+			background: url("../img/h3-bg.png") no-repeat
+		&::before
+			top: 30px
+			left: -35px
+		&::after
+			top: 5px
+			right: -35px
+			transform: scale(-1, 1)
+		span
+			color: #da7e02
+	.item-wrap
+		.item
+			float: right
+			position: relative
+			display: inline-block
+			width: 355px
+			height: 240px
+			margin-bottom: 10px
+			padding-top: 45px
+			background-image: url("../img/advantages-item1.png")
+			background-repeat: no-repeat
+			color: #570101
+			font-family: "SegoePrintRegular", sans-serif
+			font-size: 19px
+			text-transform: uppercase
+			span
+				display: block
+				color: #fff
+		&:nth-child(2n)
+			.item
+				margin-left: -210px
+		&:nth-child(2)
+			.item
+				float: left
+				width: 360px
+				height: 265px
+				margin-left: -10px
+				padding-top: 30px
+				background-image: url("../img/advantages-item2.png")
+		&:nth-child(3)
+			.item
+				width: 360px
+				height: 260px
+				padding-top: 30px
+				background-image: url("../img/advantages-item3.png")
+		&:nth-child(4)
+			.item
+				float: left
+				width: 335px
+				height: 240px
+				margin-left: -10px
+				padding-top: 30px
+				background-image: url("../img/advantages-item4.png")
+	.line
+		position: absolute
+		top: 100px
+		width: 650px
+		z-index: -1
+		&.line1,
+		&.line3
+			left: -600px
+		&.line2,
+		&.line4
+			right: -600px
+
+
+	footer
+		position: relative
+		margin-top: 100px
+		padding-top: 70px
+		padding-bottom: 80px
+		text-align: center
+		background-color: #4d301a
+		border-top: 20px solid #106b2b
+		&::before,
+		&::after
+			content: ''
+			position: absolute
+			display: block
+			background-repeat: no-repeat
+			background-position: bottom
+		&::before
+			top: -200px
+			left: 0
+			width: 300px
+			height: 180px
+			background-image: url("../img/footer-t-l-bg.png")
+		&::after
+			top: -180px
+			right: 0
+			width: 350px
+			height: 160px
+			background-image: url("../img/footer-t-r-bg.png")
+		h2
+			margin-bottom: 40px
+			color: #f4cf05
+			font-size: 36px
+			&::before,
+			&::after
+				top: 0
+				width: 48px
+				height: 88px
+				background-image: url("../img/h2-bg.png")
+				background-repeat: no-repeat
+				background-size: cover
+			&::before
+				left: -65px
+				transform: none
+			&::after
+				right: -65px
+			span
+				display: block
+				color: #fefc78
+				font-family: "SegoePrintRegular", sans-serif
+				font-size: 22px
+				line-height: 10px
+		.btn
+			display: block
+			width: 265px
+			height: 70px
+			margin: 0 auto
+			padding: 20px 0
+			&::after
+				display: none
+
+@import "media"

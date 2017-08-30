@@ -1,0 +1,388 @@
+@media only screen and (max-width : 2300px)
+  #meal
+    .gallery
+      .item
+        width: 25%
+
+@media only screen and (max-width : 1600px)
+    #meal
+      .gallery
+        .item
+          width: 33.33333333%
+
+@media only screen and (max-width : 1199px)
+  .slick-slider
+    .slick-arrow
+      &.icon-right-open-3
+        right: calc(50% - 410px)
+      &.icon-left-open-3
+        left: calc(50% - 410px)
+
+
+  .carousel
+    .slide
+      position: relative
+      figure
+        width: rem(645)
+        height: rem(330)
+
+
+  #about-me
+    article
+      h2
+        font-size: rem(50)
+
+
+  #meal
+    .gallery
+      .item
+        width: 50%
+
+
+  #feedback
+    .slick-slider
+      .slick-arrow
+        &.icon-right-open-3
+          right: calc(50% - 480px)
+        &.icon-left-open-3
+          left: calc(50% - 480px)
+@media (max-width: 991px)
+  .slick-slider
+    .slick-arrow
+      &.icon-right-open-3
+        right: calc(50% - 310px)
+      &.icon-left-open-3
+        left: calc(50% - 310px)
+
+
+  .carousel
+    .slide
+      position: relative
+      figure
+        width: rem(500)
+        height: rem(256)
+      p
+        bottom: rem(-20)
+        font-size: rem(22)
+        padding-left: rem(30)
+        padding-right: rem(30)
+
+
+  main
+    height: rem(900)
+    background-position: center top
+    nav
+      position: fixed
+      top: -150%
+      display: flex
+      justify-content: space-between
+      width: 100%
+      background-color: rgba(0,0,0,.4)
+      transition: 300ms
+      z-index: 9999
+      &.on
+        top: 0
+      .logo
+        width: rem(150)
+        margin-left: rem(15)
+      button
+        border-radius: 50%
+        width: rem(40)
+        height: rem(40)
+        margin-top: auto
+        margin-bottom: auto
+        margin-right: rem(10)
+        border: none
+        background-color: transparent
+        transition: 200ms background-color
+        cursor: pointer
+        &:hover
+          background-color: rgba(255,255,255,.2)
+        &:active
+          background-color: rgba(255,255,255,.4)
+        &:focus
+          outline: none
+        i
+          position: relative
+          display: inline-block
+          top: rem(-2.5)
+          border-radius: 50%
+          background-color: #fff
+          width: rem(5)
+          height: rem(5)
+          &::before,
+          &::after
+            content: ''
+            position: absolute
+            top: rem(8)
+            left: 0
+            width: inherit
+            height: inherit
+            background-color: inherit
+            border-radius: inherit
+          &::after
+            top: rem(-8)
+      ul
+        position: absolute
+        left: -150%
+        max-width: rem(250)
+        height: 100vh
+        padding: rem(15) 0
+        background-color: #fff
+        transition: 300ms
+        &::after
+          content: ''
+          position: absolute
+          top: 0
+          left: 0
+          width: 100vw
+          height: 100vh
+          background-color: #000
+          opacity: 0
+          transition-duration: 300ms
+          transition-delay: 300ms
+        &.on
+          left: 0
+          &::after
+            opacity: .7
+            z-index: -1
+        li
+          padding-left: rem(30)
+          padding-right: rem(30)
+          border-bottom: rem(1) solid $accent
+          a
+            padding-top: rem(10)
+            padding-bottom: rem(10)
+            color: #000
+            line-height: rem(20)
+            text-transform: uppercase
+    .main-center
+      h1
+        font-size: rem(80)
+
+
+  #about-me
+    article
+      h2
+        font-size: rem(36)
+        line-height: rem(40)
+      h3
+        margin-bottom: rem(10)
+        font-size: rem(50)
+      p
+        font-size: rem(18)
+
+
+  #meal
+    .section-header
+      margin-bottom: rem(30)
+      line-height: rem(30)
+
+
+  #feedback
+    .slick-slider
+      .slick-arrow
+        &.icon-right-open-3
+          right: calc(50% - 350px)
+        &.icon-left-open-3
+          left: calc(50% - 350px)
+
+
+  #contact
+    article
+      text-align: center
+    .contacts
+      margin-bottom: rem(20)
+@media (max-width: 767px)
+  main
+    height: auto
+    .overlay
+      display: none
+    header
+      .social
+        display: flex
+        flex-direction: column-reverse
+        .messangers
+          margin-top: rem(10)
+    .main-center
+      position: initial
+      margin-top: rem(30)
+      padding-top: 0
+      transform: none
+      strong
+        display: inline-block
+        margin-bottom: rem(20)
+        font-size: rem(26)
+      h1
+        line-height: rem(86)
+      p
+        width: auto
+      .btn
+        margin-bottom: rem(30)
+      .btn-play
+        margin-bottom: rem(30)
+
+
+  #about-me
+    padding-top: rem(30)
+    article
+      text-align: left
+      h2
+        font-size: rem(36)
+        line-height: rem(40)
+      h3
+        margin-bottom: rem(10)
+        font-size: rem(50)
+      p
+        margin-bottom: rem(40)
+        font-size: rem(18)
+
+  .your-choice
+    .slider-header-alt
+      padding-left: rem(15)
+      padding-right: rem(15)
+      h3
+        margin-bottom: rem(20)
+        font-size: rem(16)
+        line-height: rem(24)
+        span
+          display: block
+
+
+  #meal
+    .gallery
+      .item
+        width: 100%
+        margin-bottom: rem(15)
+
+
+  #feedback
+    .section-header
+      width: 100%
+      h3
+        margin-bottom: rem(20)
+        line-height: rem(38)
+      p
+        line-height: rem(32)
+    .carousel
+      .feedback-slide
+        .author
+          figure
+            width: rem(280)
+            margin-left: auto
+            margin-right: auto
+
+
+  #contact
+    form
+      padding: rem(40) rem(50) rem(60)
+@media (max-width: 575px)
+  .likes
+    text-align: center
+    p
+      display: inline-block
+      margin-right: rem(10)
+      font-size: rem(18)
+    span
+      button
+        width: rem(24)
+        height: rem(24)
+
+
+  .approval
+    input
+      vertical-align: top
+    p
+      a
+        display: block
+
+
+  .carousel
+    .slide
+      position: relative
+      margin-bottom: rem(50)
+      figure
+        width: rem(300)
+        height: rem(153)
+      p
+        font-size: rem(16)
+        padding-left: rem(10)
+        padding-right: rem(10)
+
+
+  main
+    header
+      text-align: center
+      .social
+        text-align: center
+    .main-center
+      strong
+        font-size: rem(22)
+        line-height: rem(30)
+      h1
+        font-size: rem(60)
+        line-height: rem(66)
+      p
+        font-size: rem(16)
+      .btn
+        padding-left: rem(30)
+        padding-right: rem(30)
+
+
+  #about-me
+    padding-bottom: rem(90)
+
+
+  .your-choice
+    padding-top: rem(80)
+    padding-bottom: rem(80)
+    .slider-header
+      strong
+        font-size: rem(18)
+        line-height: rem(22)
+      h3
+        font-size: rem(46)
+    .btn
+      padding-left: rem(20)
+      padding-right: rem(20)
+      font-size: rem(16)
+
+
+  #meal
+    padding-top: rem(80)
+    padding-bottom: rem(90)
+    .section-header
+      font-size: rem(18)
+      line-height: rem(30)
+
+
+  #feedback
+    padding-top: rem(90)
+    padding-bottom: rem(90)
+    .section-header
+      h3
+        margin-bottom: rem(20)
+        font-size: rem(22)
+        line-height: rem(30)
+      p
+        font-size: rem(28)
+    .carousel
+      margin-top: rem(30)
+      .feedback-slide
+    .btn
+      margin-top: rem(10)
+      padding-left: rem(20)
+      padding-right: rem(20)
+
+
+  #contact
+    padding-top: rem(90)
+    .contacts
+      .wrapper
+        a
+          font-size: rem(20)
+    form
+      padding: rem(40) rem(15) rem(60)
+      .btn
+        padding-left: rem(30)
+        padding-right: rem(30)

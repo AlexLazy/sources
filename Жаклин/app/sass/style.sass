@@ -1,0 +1,466 @@
+@import "vars"
+@import "base"
+@import "vendors"
+@import "fonts"
+@import "sprite"
+@import "shared"
+
+
+main
+  position: relative
+  height: 100vh
+  min-height: rem(780)
+  background-size: cover
+  background-attachment: fixed
+  background-repeat: no-repeat
+  z-index: 1
+  nav
+    display: none
+  .overlay
+    position: absolute
+    top: calc(50% - 280px)
+    left: calc(50% - 340px)
+    width: rem(680)
+    height: rem(500)
+    background: inherit
+    overflow: hidden
+    z-index: -1
+    &::before
+      content: ''
+      position: absolute
+      left: rem(-10)
+      top: 0
+      width: rem(700)
+      height: rem(520)
+      background: inherit
+      background-color: rgba(255,255,255,.1)
+      background-blend-mode: lighten
+      filter: blur(5px)
+  .container
+    height: 100%
+  header
+    padding-top: rem(15)
+    .social
+      position: relative
+      padding-top: rem(10)
+      text-align: right
+      z-index: 5
+      .messangers
+        display: inline-block
+        vertical-align: top
+        a
+          transition: 300ms
+          &:hover
+            opacity: .8
+        .i-viber
+          @include sprite($viber-icon)
+        .i-whatsapp
+          @include sprite($whatsapp-icon)
+      .contacts
+        display: inline-block
+        padding-top: rem(5)
+        a
+          display: block
+          color: #fff
+          font-size: rem(18)
+          font-weight: 200
+          line-height: rem(24)
+          letter-spacing: rem(.8)
+  .main-center
+    position: relative
+    top: calc(50% - 470px)
+    padding-top: rem(170)
+    text-align: center
+    strong
+      color: $accent
+      font-size: rem(31)
+      font-weight: 900
+      letter-spacing: rem(2)
+      text-transform: uppercase
+      text-shadow: 2px 3px 8px rgba(0,0,0,.4)
+    h1
+      margin-bottom: rem(5)
+      color: #fff
+      font-family: 'GreatVibes'
+      font-size: rem(118)
+      font-weight: 400
+      letter-spacing: rem(4.5)
+      line-height: rem(130)
+    p
+      width: rem(620)
+      margin: 0 auto
+      color: #fff
+      font-size: rem(20)
+      font-weight: 200
+      letter-spacing: rem(1)
+      line-height: rem(30)
+    .btn
+      margin-top: rem(40)
+      margin-bottom: rem(95)
+    i
+      display: block
+      color: #dbdbdb
+      font-size: rem(14)
+      letter-spacing: rem(.6)
+      font-style: normal
+    .btn-play
+      margin-top: rem(20)
+      animation: pulse 1s infinite ease-out
+
+
+
+
+#about-me
+  position: relative
+  padding-top: rem(135)
+  padding-bottom: rem(140)
+  &-bg
+    position: absolute
+    bottom: 0
+    z-index: -1
+  article
+    padding-top: rem(40)
+    text-align: right
+    h2
+      font-size: rem(62)
+      font-weight: 900
+      line-height: rem(90)
+      letter-spacing: rem(2)
+    h3
+      margin-bottom: rem(30)
+      color: $accent
+      font-family: 'GreatVibes'
+      font-size: rem(97)
+      font-weight: 400
+      line-height: rem(90)
+      letter-spacing: rem(3)
+    p
+      font-size: rem(22)
+      font-weight: 200
+      letter-spacing: rem(.9)
+  figure
+    padding: rem(10)
+    box-shadow: 0px 5px 67.89px 5.11px rgba(0, 0, 0, 0.24)
+    background-color: #fff
+    transition: 300ms
+    &:hover
+      transform: rotate(3deg) scale(1.03)
+    img
+      width: 100%
+    p
+      padding-right: rem(5)
+      padding-top: rem(10)
+      padding-bottom: rem(10)
+      text-align: right
+      color: #2a1f25
+      font-family: 'Homemade-Apple'
+      font-size: rem(20)
+      letter-spacing: rem(1)
+
+
+
+
+.your-choice
+  padding-top: rem(120)
+  padding-bottom: rem(130)
+  text-align: center
+  .slider-header
+    text-align: center
+    strong
+      font-size: rem(20)
+      font-weight: 900
+      letter-spacing: rem(.8)
+    h3
+      color: $accent
+      font-family: 'GreatVibes'
+      font-size: rem(61)
+      line-height: rem(75)
+      letter-spacing: rem(2.5)
+      font-weight: 400
+  .slider-header-alt
+    margin-bottom: rem(40)
+    h3
+      font-size: rem(20)
+      letter-spacing: rem(.8)
+      line-height: rem(38)
+      font-weight: 400
+      span
+        color: $accent
+        font-weight: 900
+        text-transform: uppercase
+  article
+    margin-top: rem(65)
+    margin-bottom: rem(50)
+    text-align: left
+  .btn
+    margin-top: rem(35)
+    padding: rem(20) rem(70)
+#carousel-2
+  padding-top: rem(100)
+  background-color: #fcfcfc
+
+
+
+
+#meal
+  padding-top: rem(100)
+  padding-bottom: rem(130)
+  background-color: #f8f8f8
+  .section-header
+    margin-bottom: rem(60)
+    text-align: center
+    font-size: rem(20)
+    line-height: rem(38)
+    letter-spacing: rem(.8)
+    font-weight: 900
+  .header-photo
+    width: 100%
+    margin-bottom: rem(50)
+    border: rem(10) solid #fff
+    box-shadow: 0px 17px 29.759999999999998px 2.24px rgba(0, 0, 0, 0.14)
+  .gallery
+    display: flex
+    flex-wrap: wrap
+    margin-top: rem(20)
+    margin-bottom: rem(65)
+    .item
+      position: relative
+      width: 20%
+      color: #fff
+      overflow: hidden
+      &:hover
+        .header
+          bottom: -100%
+        .description
+          opacity: 1
+          &::before
+            left: 18px
+            top: 18px
+            width: calc(100% - 36px)
+            height: calc(100% - 36px)
+      img
+        width: 100%
+        vertical-align: middle
+      .header
+        position: absolute
+        bottom: 0
+        left: 0
+        width: 100%
+        padding-top: rem(5)
+        text-align: center
+        font-family: 'GreatVibes'
+        font-size: rem(36)
+        letter-spacing: rem(1.2)
+        font-weight: 200
+        background-color: rgba(0,0,0,.5)
+        transition: 600ms
+      .description
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        padding: rem(40) rem(30)
+        background-color: rgba(0,0,0,.75)
+        opacity: 0
+        transition: 300ms opacity
+        transition-delay: 300ms
+        &::before
+          content: ''
+          position: absolute
+          left: 0
+          top: 0
+          width: 100%
+          height: 100%
+          border: rem(1) solid $accent
+          transition: 300ms
+          transition-delay: 300ms
+        p
+          position: relative
+          height: 100%
+          font-size: rem(14)
+          line-height: rem(22)
+          letter-spacing: rem(.6)
+          overflow-y: auto
+          z-index: 5
+  .btn
+    margin-top: rem(40)
+
+
+
+
+#feedback
+  padding-top: rem(100)
+  padding-bottom: rem(140)
+  text-align: center
+  .section-header
+    width: rem(700)
+    margin-left: auto
+    margin-right: auto
+    h3
+      font-size: rem(29)
+      line-height: rem(43)
+      letter-spacing: rem(1.2)
+      font-weight: 900
+      text-transform: uppercase
+    p
+      color: $accent
+      font-family: 'GreatVibes'
+      font-size: rem(34)
+      letter-spacing: rem(1.4)
+  .carousel
+    margin-top: rem(70)
+    margin-bottom: rem(45)
+    .feedback-slide
+      .author
+        figure
+          margin-bottom: rem(25)
+          border-radius: 50%
+          overflow: hidden
+          img
+            width: 100%
+        p,
+        span
+          font-size: rem(16)
+          line-height: rem(22)
+          letter-spacing: rem(.8)
+        span
+          color: #9a9a9a
+      article
+        position: relative
+        margin-top: rem(50)
+        text-align: left
+        &::before
+          content: '\eafe'
+          position: absolute
+          top: rem(-75)
+          left: 0
+          color: #c5c5c5
+          font-family: "Fontello"
+          font-size: rem(46)
+        strong
+          font-size: rem(18)
+          line-height: rem(40)
+          letter-spacing: rem(.7)
+          font-weight: 900
+        p
+          font-size: rem(16)
+          line-height: rem(28)
+          letter-spacing: rem(.6)
+          font-weight: 200
+      time
+        float: right
+        color: #a9a4a7
+        letter-spacing: rem(.8)
+        font-weight: 200
+  .feedback-image
+    margin-bottom: rem(30)
+    .hidden
+      visibility: hidden
+    iframe
+      position: absolute
+      left: 15px
+      top: 0
+      width: calc(100% - 30px)
+      height: 100%
+    img
+      width: 100%
+      height: 100%
+      vertical-align: middle
+  .btn
+    margin-top: rem(50)
+
+
+
+
+#contact
+  padding-top: rem(105)
+  padding-bottom: rem(40)
+  background-size: cover
+  article
+    p
+      margin-bottom: rem(15)
+      font-size: rem(18)
+      letter-spacing: rem(.65)
+  .contacts
+    text-align: center
+    h4
+      margin-bottom: rem(20)
+      color: $accent
+      font-size: rem(24)
+      letter-spacing: rem(1)
+      font-weight: 900
+      text-transform: uppercase
+    .wrapper
+      a
+        vertical-align: top
+        display: inline-block
+        color: #000
+        font-size: rem(24)
+        letter-spacing: rem(1)
+        line-height: rem(50)
+        font-weight: 900
+        transition: 300ms
+        &:hover
+          opacity: .8
+        &:last-child
+          margin-left: rem(5)
+      .i-viber
+        @include sprite($f-viber-icon)
+      .i-whatsapp
+        @include sprite($f-whatsapp-icon)
+      .i-mail
+        @include sprite($mail-icon)
+  form
+    width: 100%
+    margin-top: rem(50)
+    margin-bottom: rem(70)
+    padding: rem(40) rem(100) rem(60)
+    text-align: center
+    background-color: #fff
+    box-shadow: 0px 6px 22.8px 1.2px rgba(162, 162, 162, 0.15)
+    header
+      margin-bottom: rem(35)
+      h4
+        font-size: rem(27)
+        line-height: rem(40)
+        letter-spacing: rem(1)
+        font-weight: 900
+        text-transform: uppercase
+      p
+        font-size: rem(20)
+        letter-spacing: rem(.8)
+        font-weight: 200
+    .form-group
+      margin-bottom: rem(10)
+      text-align: left
+      label
+        font-size: rem(14)
+        letter-spacing: rem(1)
+        font-weight: 200
+        span
+          color: #e2001a
+    .approval
+      margin-top: rem(-10)
+    .btn
+      margin-top: rem(30)
+      padding-left: rem(60)
+      padding-right: rem(60)
+  footer
+    text-align: center
+    p
+      color: #7c7b7c
+      font-size: rem(14)
+      letter-spacing: rem(.7)
+      font-weight: 600
+    a
+      color: #868686
+      font-size: rem(12)
+      letter-spacing: rem(.6)
+      font-weight: 200
+      text-decoration: underline
+      &:hover
+        text-decoration: none
+
+
+@import "media"

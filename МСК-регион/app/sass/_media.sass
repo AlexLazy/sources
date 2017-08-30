@@ -1,0 +1,319 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1700px)
+	#arguments
+		background-image: none
+@media only screen and (max-width : 1200px)
+	#advantages
+		figure
+			transform: scale(.8)
+
+	#arguments
+		.item
+			margin-left: -10px
+
+	#feedback
+		.owl-carousel
+			width: 720px
+		.item
+			article
+				p
+					line-height: em(20px)
+
+	#to-top
+		right: 30px
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	#advantages
+		.section-header
+			margin-right: -40px
+			span
+				display: block
+		article
+			width: 570px
+			margin-left: auto
+			padding-right: 60px
+			padding-left: 0
+			&::before
+				right: 0
+		h3
+			width: 100%
+			padding: 3px 60px
+			font-size: em(28px)
+		ul
+			width: 330px
+	#arguments
+		article
+			width: calc(100% - 140px)
+		.item
+			height: 70px
+			padding-top: 15px
+			margin-left: 30px
+			.top-frame,
+			.bottom-frame
+				width: 150px
+				height: 15px
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	#about
+		height: auto
+		background-position: center!important
+		.container
+			padding: 0
+		article
+			position: relative
+			top: 0
+			left: 0
+			width: 100%
+			height: auto
+			padding-bottom: 100px
+
+	#advantages
+		ul
+			width: 100%
+		h3
+			padding: 3px
+			background-color: transparent
+
+	#arguments
+		.section-header
+			width: 100%
+			padding-left: 0
+			border: none
+			text-align: center
+			h2
+				font-size: em(36px)
+		article
+			width: 100%
+			padding: 30px 20px
+			&::before,
+			&::after
+				display: none
+		.item
+			height: 65px
+			margin-left: auto
+			margin-right: auto
+			b
+				margin-right: 5px
+			p
+				margin-left: 5px
+				font-size: em(14px)
+
+
+	#feedback
+		.owl-carousel
+			width: 100%
+		.item
+			.img-wrap
+				display: none
+			article
+				flex: 0 0 100%
+				max-width: 100%
+				padding-top: 30px
+				b
+					display: inline-block
+					margin-bottom: 20px
+					color: #959595
+					font-size: em(14px)
+					text-transform: uppercase
+
+	#contacts
+		height: auto
+		address
+			display: none
+		.map
+			display: none
+		.static-map
+			display: block!important
+			width: 100%
+
+@media only screen and (max-width : 700px)
+	footer
+		padding-top: 40px
+		padding-bottom: 30px
+		text-align: center
+		.col-sm-8,
+		.col-sm-4
+			flex: 0 0 100%
+			max-width: 100%
+			flex-wrap: wrap
+		.logo
+			flex: 0 0 100%
+			margin-bottom: 20px
+		p
+			flex: 0 0 100%
+			margin-left: 0
+			margin-bottom: 10px
+			line-height: em(24px)
+		.contacts
+			float: none
+			text-align: center
+			line-height: em(24px)
+
+	#to-top
+		bottom: 30px
+
+@media only screen and (max-width : 576px)
+	#about
+		text-align: center
+		.section-header
+		article
+			padding-left: 15px
+			padding-right: 15px
+			p,
+			span
+				margin-left: 0
+			ul
+				margin-left: 50px
+				text-align: left
+			.btn
+				margin-left: 0
+
+	#advantages
+		article
+			width: 100%
+			padding: 0
+			text-align: center
+			.section-header
+				margin-right: 0
+				margin-left: 0
+				padding: 0
+				border-right: none
+				text-align: center
+				h2
+					font-size: em(36px)
+					span
+						font-size: 26px
+		ul
+			width: 100%
+			margin-left: 0
+
+	#arguments
+		background-image: url("../img/arguments-mob-bg.png")
+		background-position: right
+		.section-header
+			width: 100%
+			padding-left: 0
+			border: none
+			text-align: center
+			h2
+				font-size: em(36px)
+		article
+			width: 100%
+			padding: 30px 20px
+			&::before,
+			&::after
+				display: none
+		.item
+			flex: 0 0 100%
+			height: 70px
+			b
+				margin-right: 5px
+			p
+				margin-left: 5px
+				font-size: em(16px)
+
+	#feedback
+		.section-header
+			border: none
+			text-align: center
+			h2
+				font-size: em(36px)
+		.item
+			article
+				text-align: center
+		.btn
+			margin-top: 70px
+
+	#gratitude.modal,
+	#callback.modal,
+	#feedback-modal.modal
+		width: 420px
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	#about
+		.section-header
+			padding: 0
+			border: none
+			h2
+				font-size: em(36px)
+		article
+			ul
+				margin-right: 0
+			.btn
+				padding-left: 40px
+				padding-right: 40px
+
+	#advantages
+		h3
+			margin-top: 60px
+			margin-bottom: 17px
+			font-size: em(24px)
+		ul
+			li
+				i
+					margin-right: 20px
+		.btn
+			width: 100%
+			padding-left: 0
+			padding-right: 0
+
+	#arguments,
+	#feedback
+		.btn
+			display: block
+			width: 260px
+			padding-left: 0
+			padding-right: 0
+
+	#feedback
+		.item
+			article
+				padding-left: 20px
+				padding-right: 20px
+				padding-bottom: 20px
+
+	#gratitude.modal,
+	#callback.modal,
+	#feedback-modal.modal
+		width: calc(100% - 30px)
+		form
+			.overlay
+				padding: 50px 15px
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/

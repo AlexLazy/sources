@@ -1,0 +1,370 @@
+@keyframes pulse
+  from
+    opacity: .75
+    transform: scale(0.9,0.9)
+  50%
+    opacity: 1.0
+    transform: scale(1,1)
+  to
+    opacity: .75
+    transform: scale(0.9,0.9)
+
+.text-center
+  text-align: center
+
+
+.capital-letter
+  font: 70px/60px 'GreatVibes'
+
+
+article
+  p
+    margin-bottom: rem(15)
+    font-size: rem(18)
+    line-height: rem(38)
+    letter-spacing: rem(.75)
+    font-weight: 200
+
+
+.likes
+  text-align: center
+  p
+    display: inline-block
+    margin-right: rem(20)
+    font-size: rem(24)
+    line-height: rem(30)
+    letter-spacing: rem(1)
+  span
+    display: inline-block
+    padding-left: rem(3)
+    padding-right: rem(5)
+    background-color: #ecf0f1
+    vertical-align: top
+    button
+      width: rem(24)
+      height: rem(24)
+      border: none
+      vertical-align: middle
+      cursor: pointer
+      background-color: transparent
+      background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA0xJREFUeNq0VU1oE0EU/mY2SZs0trUYxeol1FMNtaAoUqQetHgoeBH0ohf/wIu99ea9B6EKXjwIRREFvfUgqGApKkIFkXpQ1Hiw1ioWKcmmuzs/vtndbhOyaZqDL7xM8ubN98178+YN01qDMQYj5z/yFOO4BIZT9PcwNFJoJsFSl3xfkz5SArfv9CvXGH3sNYJz83wXDdNkH8ykO9DenqG1rDk+uWj6VFZt2HaZQPFOK4zeHVALEcHZD4mU9PCW/AvbenIgh0A1NkVg9sE5DRbD7z+/AIV5nsT+ewXhcuNUKeOy56LQ3ZWD61C8jobnagiPxlAv7ZjCrb5FjHSORTZ/3g3UCdd1d+ZoDoVVwjTYPoFTwtlUMuODC6EhJY0qUBnqvuyIv+OTufHIFvmQvxSGFEQGGCyDafwT5ksxDCaSaQipg7Q0SY2QDQ5baT9lBktxezAi8BSSHrFEZxpDYMsVZKxO/7cXtwEdkvgbZHAJs4qAUaisSTWuz98f+Fk3/3BxAo+XJquiDPx5GEFTTVtbNtzA6Z10NlRFxteVwZrqFEUGI9f2TOFgd3Coo3M7MX1gsQ7Q2Oui5OvlXUtA4XhyPQVr4GtzcRJHemKuF1qGBOG62AhqKgabF8EZlKdjIjB5U4htDG4D4iMve+vKdIMUBYY4gkaRzQ79qLMdftXbgEAzv1TjCATjm0+RxSHNJVEBZkQgCMMTQZhWppZGdcQf8sDMLh/Iz45lCj7wUzK4bIJXRSBTTHhSJ5hxaueYsZ9hOHMsWNBlxRK8H16os/XP7varSCkFmWSV6KJRw/pUpk5nbp/nMlz5dgGFr3ns/ZynBsZQKOYx4zzfMD03l65DUYpMR7Cp41HvK0YROAv6idhj9ydZBmKZtrBc81ohkbNw0bkA3saCFdVZow6qqV2rsvLTo+k2r3Ab8rN+4kOYB8fK8762G21PkUE+l6YHZ5Vq2dFoRViKiiRND07lN3VGFJ2rznFZVF/WnkzOj1qjibHkpCHpyGaRzXa0RFAqlVEulXxwMemNqRdymrAVq3r029DDDrHx5BmWZ0PoYgMtMazoef1Vz+oJ7wGW9RuT+ZpHPxRz6LtJt5NuRWvyl3SJ9DvCAo4I/qf8E2AAXQzSKWO1TFoAAAAASUVORK5CYII=)
+      &:hover,
+      &.active
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyxJREFUeNq0Vc1LVFEUP+e+N19i0pCZjLWooU2IGC6koqUrBTcVEkgRVNAiWrToj2jhuqICIcIiwqyEFi0kooXUwlURLkroS0cDnTfz3r2nc+5785xpxmZm0YHjG8+99/c7X/dcJCJARBAZf6KS/PMSIZzif48hQRKaCIVHy7z3LRA8NhpuzZ42Zbsm2BWC0RnVx7Y51sF0Og2pZBoQsBk+iG+GkUslDzzPE9MHMjD2YsKsxASjj5ykDmCRF/t3d2XBGD5I4gG0RCBRyFc5CIX1NTbAErow9PKMLivZ5BXhcuBD/67OLPgcnPYJAlYd8DfSc8MFmBlftd+Kza7LPrsf+CyBYAQB9JcZU7Atgb8Fkwk3HYJrPqABAhOqjnS011iP5VuxxXt4f+gMWCKLxZiy35U/BmHQYaM2FKalSWq0aZQrWSCbKsEyyhuMCdiLhHgS17QJQdBonaLzkYM+Y24TcJW0VKqFoorMT6zV2Z5/UzD1OlsVZeitiiJoqs1EamMU2r2+3j7jVkKuBrkxUoiLenJ6DyxMrtYBir2uDIpraMJEVNIYEmhhxhpv4nybxpetEenx6e6QgELMHSOo6RhoXTSnyDBYfQSSN4KGg8Hfgfjo3e66NkUM25zo7xpEhcRWW5Ll/YVfdbaBe1UpqomAW1S0EYFG1UaKlL3RYELMmEDqIddcGJx0LY1JNwY7fHuvBQq7Rxo+PGd0eNGiGkejIoFBYMhF2ZRCe2kqnUSdTkOCTxd/1tkO3emxKTI8jo2Lxe2LRvCxyJNOS7v6CFcX9kF+Ngf5pzmODCH/LGdJ/yWybnhcyw32eOJxQpbjCPwfNK8PeEdc5IG3YcDfqBpgLE5WwZU3vYDyvjlQ2w2MRDxBqche87AjXt9UHpgvNG8h5MFx+lQ+cT3xCtJwMJvKApXIHmpHkEcbcnoLpQI/MLDs3/RH9Ir5XHkylRpSY85Zd0pIMpkOyHRk2iIobhWhWNyy4PpBcM0smjnGNlj16KegC4fxvDuBOTwBnTDQFsMmLNEKLdD94CH8pndsKdU8+pFIJfez9rBm20sSrLN+Z/0KUQPHBP9T/ggwAHvQz167qU6DAAAAAElFTkSuQmCC)
+      &:focus
+        outline: none
+    i
+      margin-left: rem(3)
+      font-style: normal
+
+.icon
+  font-family: "Fontello"
+  font-style: normal
+  font-weight: normal
+  speak: none
+  display: inline-block
+  text-decoration: inherit
+  width: 1em
+  margin-right: .2em
+  text-align: center
+  font-variant: normal
+  text-transform: none
+  line-height: 1em
+  margin-left: .2em
+  -webkit-font-smoothing: antialiased
+
+
+input,
+textarea
+  width: 100%
+  height: rem(55)
+  padding-left: rem(20)
+  border: none
+  background-color: #f4f4f4
+  font-size: rem(18)
+  &:focus
+    outline: none
+  &::placeholder
+    color: #cacaca
+    font-size: rem(16)
+    font-weight: 200
+    font-style: italic
+
+
+textarea
+  height: rem(100)
+  padding-top: rem(20)
+  resize: none
+
+
+.approval
+  text-align: left
+  input
+    display: inline-block
+    width: rem(17)
+    height: rem(17)
+  p
+    display: inline-block
+    font-size: rem(12)
+    letter-spacing: rem(.8)
+    font-weight: 200
+    a
+      color: #b8b8b8
+      letter-spacing: rem(.4)
+      text-decoration: underline
+      &:hover
+        text-decoration: none
+
+
+.btn
+  display: inline-block
+  padding: rem(17) rem(50)
+  border-radius: rem(40)
+  border-width: 0
+  background-image: linear-gradient(to bottom, #f0ca5e, #9d763e)
+  color: #fff
+  font-size: rem(18)
+  font-weight: 900
+  letter-spacing: rem(0.6)
+  cursor: pointer
+  &:hover
+    background-image: linear-gradient(to bottom, #ffd850, #ba8c48)
+  &:active
+    background-image: linear-gradient(to top, #f0ca5e, #9d763e)
+  &:focus
+    outline: none
+  &:disabled
+    cursor: no-drop
+    color: $baseFontColor
+    background-image: linear-gradient(to top, #ccc, #fff)
+
+
+.slick-slider
+  .slick-arrow
+    position: absolute
+    top: 50%
+    color: #c5c5c5
+    font-size: rem(30)
+    transform: translateY(-50%)
+    cursor: pointer
+    transition: 300ms opacity
+    z-index: 5
+    &:hover
+      opacity: .7
+    &.icon-right-open-3
+      right: calc(50% - 570px)
+    &.icon-left-open-3
+      left: calc(50% - 570px)
+
+
+.slick-dots
+  position: absolute
+  bottom: 0
+  width: 100%
+  text-align: center
+  li
+    position: relative
+    display: inline-block
+    width: rem(13)
+    height: rem(13)
+    margin: 0 rem(4)
+    padding: 0
+    border: rem(1) solid #5e585b
+    border-radius: 50%
+    cursor: pointer
+    &.slick-active
+      background-color: #5e585b
+    button
+      font-size: 0
+      line-height: 0
+      display: block
+      width: rem(13)
+      height: rem(13)
+      padding: rem(5)
+      cursor: pointer
+      color: transparent
+      border: 0
+      outline: none
+      background: transparent
+
+
+.carousel
+  .slide
+    position: relative
+    margin: rem(20) rem(30) rem(70)
+    box-shadow: 0px 17px 30px 2.24px rgba(0, 0, 0, 0.12)
+    border: rem(10) solid #fff
+    vertical-align: middle
+    transform: scale(.8)
+    transition: 300ms
+    &:hover
+      &::before
+        background-color: rgba(0,0,0,.4)!important
+        z-index: 1
+      &::after
+        opacity: .9
+      img,
+      iframe
+        transform: scale(1.1)
+    figure
+      width: rem(945)
+      height: rem(483)
+      overflow: hidden
+    img,
+    iframe
+      display: block
+      width: 100%
+      height: 100%
+      transition: 300ms
+    p
+      position: absolute
+      left: 50%
+      bottom: rem(-30)
+      transform: translateX(-50%)
+      padding-left: rem(100)
+      padding-right: rem(100)
+      color: $accent
+      background-color: #fff
+      font-family: 'GreatVibes'
+      font-size: rem(30)
+      letter-spacing: rem(1.2)
+      font-weight: 400
+      white-space: nowrap
+      box-shadow: 0px 3px 6.58px 0.42px rgba(102, 102, 102, 0.15)
+      opacity: 0
+      transition: 300ms
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background-color: rgba(0,0,0,.4)
+      transition: 300ms
+    &::after
+      content: '\ebb3'
+      position: absolute
+      top: 50%
+      left: 50%
+      font-family: 'Fontello'
+      color: #fff
+      font-size: rem(40)
+      opacity: 0
+      transform: translate(-50%, -50%)
+      transition: 300ms opacity
+      z-index: 2
+    &.slick-center
+      transform: scale(1)
+      p
+        opacity: 1
+        z-index: 2
+      &::before
+        background-color: transparent
+
+
+.fancybox-thumbs
+  top: auto
+  width: auto
+  bottom: 0
+  left: 0
+  right : 0
+  height: 95px
+  padding: 10px
+  text-align: center
+  box-sizing: border-box
+  background: rgba(0, 0, 0, 0.3)
+  ul
+    display: inline-block
+    width: auto
+    text-align: center
+.fancybox-show-thumbs
+  .fancybox-inner
+    right: 0
+    bottom: 95px
+
+
+#callback
+  position: relative
+  top: rem(20)
+  width: rem(410)
+  padding: rem(60) rem(17) rem(40)
+  border: rem(2) solid #d0cecf
+  color: #313131
+  z-index: 1
+  &::after
+    content: ''
+    position: absolute
+    top: rem(-35)
+    left: rem(-35)
+    width: calc(100% + 70px)
+    height: calc(100% + 70px)
+    border: rem(12) solid $accent
+    z-index: -1
+  .form-header
+    text-align: center
+    h3
+      font-size: rem(30)
+      font-weight: 900
+      letter-spacing: rem(1.8)
+      text-transform: uppercase
+      line-height: rem(36)
+    p
+      display: inline-block
+      width: rem(300)
+      font-size: rem(18)
+      letter-spacing: rem(1)
+      line-height: rem(22)
+  form
+    margin-top: rem(35)
+    label
+      color: #989898
+      font-size: rem(18)
+      font-weight: 500
+      letter-spacing: rem(.6)
+    input[type="tel"]
+      margin-top: rem(20)
+  .btn
+    display: block
+    margin: rem(40) auto
+
+
+#success
+  position: relative
+  top: rem(20)
+  width: rem(750)
+  max-width: none
+  padding: rem(60) rem(17) rem(80)
+  border: rem(2) solid #d0cecf
+  color: #313131
+  text-align: center
+  z-index: 1
+  &::after
+    content: ''
+    position: absolute
+    top: rem(-35)
+    left: rem(-35)
+    width: calc(100% + 70px)
+    height: calc(100% + 70px)
+    border: rem(12) solid $accent
+    z-index: -1
+  h3
+    margin-top: rem(20)
+    color: #444444
+    font-size: rem(38)
+    font-weight: 700
+    letter-spacing: rem(1.8)
+    text-transform: uppercase
+    line-height: rem(36)
+  p
+    display: inline-block
+    margin-top: rem(20)
+    font-size: rem(24)
+    letter-spacing: rem(1)
+    line-height: rem(22)
+
+
+#privacy-policy
+  article
+    margin-top: rem(30)
+    padding-bottom: rem(20)

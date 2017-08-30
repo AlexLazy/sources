@@ -1,0 +1,408 @@
+article
+  overflow-x: auto
+  -webkit-overflow-scrolling: touch
+
+#menu,
+#menu-btn
+  display: none
+  z-index: 999
+
+#menu
+  position: fixed
+  top: 0
+  left: -200%
+  height: 100%
+  padding-top: rem(80)
+  display: inline-block
+  text-align: center
+  background-color: rgba(0,0,0, .6)
+  overflow-y: auto
+  transition: 300ms
+  li
+    padding-top: rem(10)
+    padding-bottom: rem(10)
+    padding-left: rem(30)
+    padding-right: rem(30)
+    border-bottom: rem(1) solid rgba(255,255,255,.6)
+  a
+    color: #fff
+    font-size: rem(16)
+    font-weight: 700
+    text-transform: uppercase
+
+.error
+  border-color: red!important
+
+.text-right
+  text-align: right
+
+.lSAction,
+.lSPager.lSpg
+  display: none
+
+.contacts-phones,
+.contacts-mail
+  font-size: rem(24)
+  &::before
+    content: ''
+    display: inline-block
+    margin-right: rem(7)
+    vertical-align: middle
+
+.contacts-phones
+  color: #1e1e1e
+  font-weight: 900
+  &::before
+    @include sprite($phone)
+
+.contacts-mail
+  color: #313131
+  font-weight: 700
+  line-height: rem(21)
+  &::before
+    @include sprite($mail)
+
+input
+  width: calc(100% - 20px)
+  border: none
+  border-bottom: rem(1) solid #000
+  transition: 300ms border
+  font-size: rem(18)
+  &:focus
+    outline: none
+    border-bottom: rem(1) solid $accent
+  &::placeholder
+    color: #cacaca
+    font-size: rem(16)
+    font-weight: 200
+    font-style: italic
+
+.approval
+  display: flex
+  align-items: center
+  margin-top: rem(25)
+  color: #585858
+  font-size: rem(12)
+  font-weight: 300
+  line-height: rem(12)
+  a
+    color: #aaaaaa
+    text-decoration: underline
+  .checkbox
+    position: relative
+    label
+      display: inline-block
+      width: rem(18)
+      height: rem(18)
+      outline: rem(1) solid #000
+      cursor: pointer
+    input[type=checkbox]
+      position: absolute
+      left: 0
+      top: 0
+      visibility: hidden
+      &:checked + label::after
+        content: ''
+        position: absolute
+        top: rem(4)
+        left: rem(3)
+        @include sprite($check)
+  p
+    padding-left: rem(15)
+
+.btn
+  position: relative
+  display: inline-block
+  padding: rem(13) rem(55)
+  border-radius: rem(30)
+  border: rem(1) solid #ffa802
+  background-image: linear-gradient(to top, #f4a024, #fdd926)
+  color: #313131
+  font-size: rem(16)
+  font-weight: 900
+  cursor: pointer
+  text-transform: uppercase
+  box-shadow: 0 rem(4) 0 #965f1c
+  &::after
+    content: ''
+    position: absolute
+    left: 0
+    bottom: 0
+    width: 100%
+    height: rem(10)
+    border-radius: 50%
+    box-shadow: 0 30px 25px rgba(0,0,0,.2)
+  &:hover
+    background-image: linear-gradient(to top, #f8b148, #f6e400)
+  &:active
+    top: rem(2)
+    background-image: linear-gradient(to bottom, #f4a024, #fdd926)
+    box-shadow: 0 0 0 #965f1c
+    &::after
+      box-shadow: 0 27px 25px rgba(0,0,0,.2)
+  &:focus
+    outline: none
+  &:disabled
+    background-image: linear-gradient(to top, #ccc, #fff)
+
+
+.modal
+  position: relative
+  border-radius: 0
+  z-index: 9999
+  &.technology
+    min-width: 1100px
+  a.close-modal
+    @include sprite($cross)
+    top: rem(25)
+    right: rem(15)
+
+
+.technology
+  padding: rem(50) rem(50) rem(80)
+  h3
+    margin-bottom: rem(20)
+    color: #0e0e0e
+    font-size: rem(26)
+    font-weight: 500
+  article
+    &::after
+      content: ''
+      display: table
+      clear: both
+    figure
+      float: left
+      width: rem(385)
+      height: rem(355)
+      margin-top: rem(5)
+      margin-right: rem(60)
+      border: rem(5) solid $accent
+      text-align: center
+      img
+        width: 100%
+    p
+      margin-bottom: rem(20)
+  .gallery
+    margin-top: rem(50)
+    h4
+      margin-bottom: rem(20)
+      color: #0e0e0e
+      font-size: rem(20)
+      font-weight: 500
+    a
+      img
+        width: 100%
+        margin-bottom: rem(20)
+
+
+.prj-modal.modal
+  max-width: rem(1200)
+  padding-top: rem(45)
+  padding-bottom: rem(70)
+  text-align: center
+  .prev,
+  .next
+    position: absolute
+    top: rem(230)
+    box-shadow: 0 0 0 rem(10) rgba(0,0,0,.4)
+    background-color: transparent
+    border: none
+    background-color: rgba(0,0,0,.4)
+    transition: 300ms
+    &:hover
+      cursor: pointer
+      opacity: .8
+    &:focus
+      outline: none
+  .prev
+    @include sprite($arrow-left)
+    left: rem(28)
+  .next
+    @include sprite($arrow-right)
+    right: rem(60)
+  a.close-modal
+    top: rem(35)
+    right: rem(33)
+  h3
+    margin-bottom: rem(20)
+    font-size: rem(26)
+    letter-spacing: rem(1.8)
+    text-align: left
+  .projects-slider
+    text-align: left
+  aside
+    padding: rem(30) rem(45)
+    border: rem(5) solid $accent
+    text-align: left
+    p
+      color: #0e0e0e
+      font-size: rem(18)
+      font-weight: 300
+      line-height: rem(28)
+      letter-spacing: rem(.6)
+    span
+      display: inline-block
+      margin-bottom: rem(5)
+      font-size: rem(29)
+      font-weight: 700
+      letter-spacing: rem(1.8)
+      &.floor,
+      &.bedroom
+        position: relative
+        &::after
+          content: ''
+          position: absolute
+      &.floor::after
+        @include sprite($floor)
+        top: rem(7)
+        right: rem(-32)
+      &.bedroom::after
+        @include sprite($bedroom)
+        top: rem(13)
+        right: rem(-45)
+      &.price
+        color: $accent
+  .btn
+    margin-top: rem(40)
+    padding-left: rem(70)
+    padding-right: rem(70)
+  .count
+    margin-top: rem(7)
+    p
+      display: inline-block
+  h4
+    margin-top: rem(35)
+    margin-bottom: rem(20)
+    text-align: left
+    font-size: rem(20)
+  .gallery
+    text-align: left
+    a
+      display: inline-block
+      margin-right: rem(25)
+      margin-bottom: rem(20)
+  article
+    &::after
+      content: ''
+      display: table
+      clear: both
+  ol
+    margin-bottom: rem(10)
+    text-align: left
+    font-size: rem(18)
+    list-style-position: inside
+  p
+    margin-bottom: rem(5)
+    text-align: left
+    letter-spacing: rem(.4)
+
+
+#callback
+  position: relative
+  top: rem(20)
+  width: rem(410)
+  padding: rem(60) rem(17) rem(40)
+  border: rem(2) solid #d0cecf
+  color: #313131
+  z-index: 1
+  &::after
+    content: ''
+    position: absolute
+    top: rem(-35)
+    left: rem(-35)
+    width: calc(100% + 70px)
+    height: calc(100% + 70px)
+    border: rem(12) solid $accent
+    z-index: -1
+  .form-header
+    text-align: center
+    h3
+      font-size: rem(30)
+      font-weight: 900
+      letter-spacing: rem(1.8)
+      text-transform: uppercase
+      line-height: rem(36)
+    p
+      display: inline-block
+      width: rem(300)
+      font-size: rem(18)
+      letter-spacing: rem(1)
+      line-height: rem(22)
+  form
+    margin-top: rem(35)
+    label
+      color: #989898
+      font-size: rem(18)
+      font-weight: 500
+      letter-spacing: rem(.6)
+    input[type="tel"]
+      margin-top: rem(20)
+  .btn
+    display: block
+    margin: rem(40) auto
+
+
+#success
+  position: relative
+  top: rem(20)
+  width: rem(750)
+  max-width: none
+  padding: rem(60) rem(17) rem(80)
+  border: rem(2) solid #d0cecf
+  color: #313131
+  text-align: center
+  z-index: 1
+  &::after
+    content: ''
+    position: absolute
+    top: rem(-35)
+    left: rem(-35)
+    width: calc(100% + 70px)
+    height: calc(100% + 70px)
+    border: rem(12) solid $accent
+    z-index: -1
+  h3
+    margin-top: rem(20)
+    color: #444444
+    font-size: rem(38)
+    font-weight: 700
+    letter-spacing: rem(1.8)
+    text-transform: uppercase
+    line-height: rem(36)
+  p
+    display: inline-block
+    margin-top: rem(20)
+    font-size: rem(24)
+    letter-spacing: rem(1)
+    line-height: rem(22)
+
+
+#privacy-policy
+  article
+    margin-top: rem(30)
+    padding-bottom: rem(20)
+
+
+.section-header
+  position: relative
+  &::before
+    content: ''
+    position: absolute
+    top: 10px
+    left: 0
+    width: rem(100)
+    height: rem(6)
+    background-color: $accent
+  h2
+    padding-top: rem(65)
+    color: #999999
+    font-size: rem(20)
+    font-weight: 900
+    text-transform: uppercase
+    letter-spacing: rem(20)
+    span
+      display: block
+      color: #313131
+      font-size: rem(36)
+      line-height: rem(40)
+      letter-spacing: rem(2.8)

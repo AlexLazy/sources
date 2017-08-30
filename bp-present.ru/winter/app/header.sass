@@ -1,0 +1,183 @@
+@import "bourbon"
+@import "sass/vars"
+@import "sass/base"
+
+#to-top
+	position: fixed
+	bottom: 30px
+	right: 30px
+	width: 50px
+	height: 50px
+	cursor: pointer
+	border-radius: 5px
+	background-color: rgba(219, 111, 98, .8)
+	&:hover
+		transition: background-color .3s
+		background-color: rgba(219, 111, 98, 1)
+	&::before,
+	&::after
+		content: ''
+		position: absolute
+		bottom: 25px
+		width: 20px
+		height: 1px
+		background-color: #FFF
+	&::before
+		right: 8px
+		transform: rotate(45deg)
+	&::after
+		left: 8px
+		transform: rotate(-45deg)
+
+
+.i
+	display: inline-block
+	background: url("img/main-sprite.png") no-repeat
+	width: 36px
+	height: 50px
+	margin-right: 10px
+	vertical-align: top
+
+.i-phone
+	background-position: -10px -90px
+.i-mail
+	width: 46px
+	background-position: 0 -45px
+.i-instagram
+	background-position: -10px 0
+
+
+.modal
+	form
+		width: 470px
+		margin: 0 auto
+	.i
+		width: 46px!important
+		background-image: url("img/sprite.png")
+	.i-user
+		background-position: 0 0
+	.i-phone
+		background-position: 0 -45px
+	.i-mail
+		background-position: 0 -90px
+	.i-pen
+		background-position: -5px -130px
+	.form-group
+		position: relative
+		label.error
+			position: absolute
+			top: -15px
+			right: 0
+			padding: 0 5px
+			background-color: #fff
+			box-shadow: 0 2px 5px rgba(0,0,0,.6)
+			z-index: 5
+#gratitude
+	width: 595px
+	font-size: 18px
+	background-image: url("img/gratitude-bg.png")
+	background-repeat: no-repeat
+	background-position: center
+	background-size: contain
+	h4
+		color: #ff7200
+		font-family: "SegoePrintRegular", sans-serif
+		text-transform: uppercase
+	p
+		color: #0e9903
+		font-family: "Totsam", sans-serif
+
+
+
+.first-screen
+	padding-top: 20px
+	padding-bottom: 40px
+	color: #f56302
+	font-family: "DomkratBold", sans-serif
+	font-size: 26px
+	background-image: url("img/first-screen-bg.png")
+	background-size: cover
+	.sets,
+	.spruce
+		position: absolute
+	.sets
+		top: 130px
+		left: 0
+	.spruce
+		top: 0
+		right: 0
+	header
+		text-shadow: 2px 1px 0 #fff
+		.contacts
+			display: inline-block
+			margin: 15px 0
+			&:first-child
+				margin-right: 20px
+			li
+				line-height: 48px
+				display: inline-block
+				&+li
+					margin-left: 20px
+				i
+					margin-right: 7px
+				&.phone
+					color: #fa3d03
+					font-size: 32px
+				&:not(.phone)
+					letter-spacing: 1px
+	.offer
+		text-align: center
+		h1
+			position: relative
+			margin-top: 90px
+			margin-bottom: 10px
+			color: #8a0404
+			font-family: "Totsam", sans-serif
+			font-size: 65px
+			line-height: 80px
+			text-shadow: 2px 1px 0 #fff
+			&::before
+				content: ""
+				position: absolute
+				width: 370px
+				height: 37px
+				top: -40px
+				left: 50%
+				transform: translateX(-50%)
+				background-image: url("img/h1-top-bg.png")
+				background-repeat: no-repeat
+
+			span
+				display: block
+				color: #ef8104
+		.descr
+			margin-top: 60px
+			margin-bottom: 45px
+			color: #3b0b02
+			font-family: "Arial", sans-serif
+			font-weight: 700
+			font-size: 30px
+			letter-spacing: 1px
+			text-transform: uppercase
+			b
+				display: block
+				margin-top: 10px
+				font-size: 30px
+				text-transform: none
+				&:last-child
+					margin-top: 18px
+					font-size: 16px
+					text-transform: uppercase
+			span
+				display: inline-block
+				padding-left: 5px
+				padding-right: 5px
+				color: #d5100e
+				font-size: 50px
+				font-weight: 700
+				line-height: 50px
+				border: 1px solid #624126
+		.clock
+			right: 50px
+			width: 120%
+			transform: scale(.75)

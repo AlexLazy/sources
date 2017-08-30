@@ -1,0 +1,610 @@
+@import "bourbon"
+@import "vars"
+@import "libs"
+
+.modal
+	max-width: 770px
+	padding: 60px 0
+	background-color: #fff
+	border-radius: 0
+	box-shadow: none
+	text-align: center
+	a.close-modal
+		top: -20px
+		right: 0
+		background-image: none
+		&::before,
+		&::after
+			content: ''
+			position: absolute
+			display: block
+			background-color: #FFF
+			width: 24px
+			height: 8px
+			transition: .3s
+		&::before
+			transform: rotate(45deg)
+		&::after
+			transform: rotate(-45deg)
+		&:hover::before,
+		&:hover::after
+			background-color: #e87e00
+	input,
+	textarea
+		width: 400px
+		height: 50px
+		margin-bottom: 15px
+		border: 1px solid rgba(0,0,0,.1)
+		box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.15)
+		text-indent: 10px
+		vertical-align: middle
+		&::placeholder
+			color: #a8a6a6
+		&:focus
+			outline: 1px solid rgba(0,0,0,.3)
+			box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.15)
+	textarea
+		height: 60px
+		padding: 8px 10px
+		text-indent: 0
+		resize: none
+	.btn
+		&:hover
+			&::before
+				transform: scale(1.1, 1)
+			&::after
+				transform: scale(-1.1, 1)
+		&::before,
+		&::after
+			transition: .2s
+			content: ''
+			position: absolute
+			display: block
+			top: -10px
+			width: 44px
+			height: 82px
+			background: url("../img/btn-bg.png") no-repeat
+		&::before
+			left: -60px
+		&::after
+			right: -60px
+			transform: scale(-1, 1)
+.btn
+	position: relative
+	display: inline-block
+	margin-top: 30px
+	padding: 20px 70px
+	background-color: $accent
+	color: #fff!important
+	border: none
+	outline: none
+	border-radius: 5px
+	box-shadow: 0 2px 3px rgba(0,0,0,.2)
+	font-family: "SegoePrintRegular", sans-serif
+	font-size: 19px
+	text-transform: uppercase
+	transition: .2s background-color
+	&:hover
+		background-color: lighten($accent, 5%)
+	&:active
+		background-color: darken($accent, 5%)
+		outline: none
+		box-shadow: 0 0 0 rgba(0,0,0,.5)
+
+
+.blocker
+	background-color: rgba(0,0,0,.6)
+
+h2
+	position: relative
+	display: inline-block
+	margin: 0
+	color: #92123c
+	font-family: "Totsam", sans-serif
+	font-size: 46px
+	&::before,
+	&::after
+		content: ''
+		position: absolute
+		display: inline-block
+		top: 5px
+		width: 32px
+		height: 59px
+		background-image: url("../img/h2-bg.png")
+		background-repeat: no-repeat
+	&::before
+		left: -45px
+	&::after
+		right: -45px
+		transform: scale(-1, 1)
+.kits
+	position: relative
+	padding-bottom: 90px
+	background-image: url("../img/kits-bg.png")
+	background-size: cover
+	background-position: 100% 100%
+	&::before,
+	&::after
+		content: ''
+		position: absolute
+		display: block
+		left: 0
+		width: 100%
+	&::before
+		top: 0
+		height: 97px
+		background: url("../img/kits-top-bg.png") no-repeat top center
+	&::after
+		bottom: 510px
+		height: 177px
+		background: url("../img/kits-bottom-bg.png") no-repeat top center
+	ul
+		li
+			position: relative
+			&::before
+				content: '-'
+				position: absolute
+				top: 0
+				left: -20px
+	h2
+		margin-bottom: 20px
+	.item
+		margin-top: 30px
+		text-align: left
+		img
+			width: 100%
+		.description
+			position: relative
+			display: inline-block
+			margin-top: 75px
+			margin-left: 150px
+			transform: rotate(7deg)
+			font-family: "Sensei", sans-serif
+			text-transform: uppercase
+			text-shadow: 2px 1px 0 #fff
+			h3
+				position: relative
+				display: inline-block
+				margin: 0 0 0 40px
+				color: #e5b802
+				font-size: 42px
+				&::before,
+				&::after
+					content: ''
+					position: absolute
+					display: block
+					width: 21px
+					height: 39px
+					background: url("../img/h3-bg.png") no-repeat
+				&::before
+					top: 30px
+					left: -35px
+					transform: rotate(-7deg)
+				&::after
+					top: 5px
+					right: -35px
+					transform: scale(-1, 1) rotate(7deg)
+			ul
+				margin-top: 5px
+				margin-bottom: 5px
+				li
+					color: #3e1d01
+					font-size: 30px
+					line-height: 42px
+			p
+				margin-top: 0
+				margin-left: -20px
+				color: #3e1d01
+				font-family: "DomkratBold", sans-serif
+				font-size: 28px
+				text-transform: none
+			.price
+				position: absolute
+				display: inline-table
+				bottom: -75px
+				left: -110px
+				padding: 4px 8px 0
+				transform: rotate(-7deg)
+				background-image: url("../img/price-wrap.png")
+				background-size: cover
+				background-position: center
+				color: #3b0b02
+				font-family: "DomkratBold", sans-serif
+				font-size: 30px
+				text-transform: lowercase
+				b
+					color: #da7119
+				&.small
+					padding: 0 10px 0
+		&.second
+			margin-top: 10px
+			.description
+				margin-left: 110px
+				transform: rotate(-7deg)
+				h3
+					color: #d45204
+					font-size: 34px
+					&::before
+						top: 0
+						transform: rotate(14deg)
+					&::after
+						top: 20px
+						transform: scale(-1, 1) rotate(-7deg)
+				ul
+					li
+						color: #6d3100
+						font-size: 28px
+						line-height: 38px
+				p
+					color: #6d3100
+				.price
+					bottom: -50px
+					left: inherit
+					right: -70px
+					transform: rotate(7deg)
+	.cloud-descr
+		width: 417px
+		height: 268px
+		margin-top: 140px
+		padding-top: 70px
+		padding-left: 20px
+		background-image: url("../img/cloud.png")
+		background-repeat: no-repeat
+		color: #3f0101
+		font-family: "Sensei", sans-serif
+		font-size: 19px
+		text-transform: uppercase
+		&.second
+			float: right
+			width: 378px
+			height: 242px
+			padding-top: 50px
+			padding-right: 40px
+			background-image: url("../img/cloud-second.png")
+			span
+				color: #e87e00
+				font-size: 26px
+			i
+				font-size: 17px
+				font-style: normal
+				text-transform: none
+				b
+					color: #e87e00
+				span
+					color: inherit
+					font-size: 17px
+					text-transform: uppercase
+		span
+			color: #ed4c06
+	.btn
+		margin-top: 35px
+
+.presents
+	position: relative
+	padding-top: 70px
+	padding-bottom: 80px
+	background-image: url("../img/presents-bg.png")
+	background-position: center
+	background-attachment: fixed
+	&::before
+		content: ''
+		position: absolute
+		display: block
+		top: 0
+		left: 0
+		width: 100%
+		height: 78px
+		background: url("../img/presents-top-bg.png") repeat-x center
+	h2
+		margin-bottom: 20px
+	.item
+		margin-top: 30px
+		text-align: left
+		img
+			width: 100%
+		.description
+			position: relative
+			display: inline-block
+			margin-top: 50px
+			padding-left: 30px
+			font-family: "Totsam", sans-serif
+			text-transform: uppercase
+			&.first
+				margin-top: 0
+			h3
+				display: inline-block
+				margin: 0 0 15px 10px
+				color: #4d2800
+				text-align: center
+				font-family: "Chocolate", sans-serif
+				font-size: 28px
+				line-height: 32px
+				span
+					position: relative
+					display: block
+					&::before,
+					&::after
+						content: ''
+						position: absolute
+						display: block
+						top: 0
+						width: 21px
+						height: 39px
+						background: url("../img/h3-bg.png") no-repeat
+					&::before
+						left: -30px
+					&::after
+						right: -30px
+						transform: scale(-1, 1)
+			ul
+				margin-top: 5px
+				margin-bottom: 5px
+				li
+					position: relative
+					color: #4d2800
+					font-size: 28px
+					&:before
+						content: "-"
+						position: absolute
+						top: 0
+						left: -30px
+			p
+				margin-top: 0
+				margin-left: -30px
+				color: #4d2800
+				font-family: "DomkratBold", sans-serif
+				font-size: 28px
+				text-transform: none
+			&.second
+				h3,
+				ul li
+					color: #a13602
+				p
+					color: #a13602
+			&.last
+				h3,
+				ul li
+					color: #202a21
+				p
+					color: #202a21
+		.price
+			display: inline-block
+			margin-top: 540px
+			padding: 4px 8px 0
+			background-image: url("../img/price-wrap.png")
+			background-position: center
+			background-size: cover
+			color: #3b0b02
+			font-family: "DomkratBold", sans-serif
+			font-size: 30px
+			text-transform: lowercase
+			b
+				color: #da7119
+		&.first
+			.price
+				margin-top: 495px
+		&.last
+			.price
+				margin-top: 510px
+	.cloud-descr
+		display: inline-block
+		margin-top: 60px
+		margin-left: -110px
+		padding: 70px 45px
+		background-image: url("../img/presents-cloud.png")
+		background-position: center
+		background-size: cover
+		color: #460c02
+		font-family: "Gagalin", sans-serif
+		font-size: 19px
+		line-height: 25px
+		transform: rotate(-6deg)
+		span
+			color: #df5003
+		&.second
+			margin-left: 110px
+			padding: 58px 45px
+			transform: rotate(6deg)
+			span
+				color: #da7119
+	.btn
+		margin-top: 100px
+
+.target-audience
+	position: relative
+	padding-top: 60px
+	padding-bottom: 60px
+	background-image: url("../img/target-audience-bg.png")
+	background-position: center
+	&::before
+		content: ''
+		position: absolute
+		display: block
+		top: -10px
+		left: 0
+		width: 100%
+		height: 100px
+		background: url("../img/target-audience-top-bg.png") repeat-x center
+	.center
+		position: absolute
+		top: 350px
+		left: 540px
+		z-index: 3
+	h2
+		margin-top: 30px
+		color: #fc9003
+		span
+			color: #4f3302
+	.item-wrap
+		.item
+			position: relative
+			display: inline-block
+			width: 463px
+			height: 404px
+			top: 80px
+			left: 30px
+			background-image: url("../img/target-audience-1-bg.png")
+			background-repeat: no-repeat
+			color: #fff
+			font-family: "Sensei", sans-serif
+			font-size: 19px
+			text-align: left
+			text-transform: uppercase
+			h3
+				position: absolute
+				top: 5px
+				left: 180px
+				font-family: "Totsam", sans-serif
+				font-size: 26px
+			ul
+				position: absolute
+				top: 100px
+				left: 185px
+		&:nth-child(2)
+			.item
+				width: 341px
+				height: 423px
+				top: 0
+				left: -90px
+				background-image: url("../img/target-audience-2-bg.png")
+				h3
+					left: 105px
+					color: #3dab07
+				ul
+					top: 155px
+					left: 70px
+		&:nth-child(3)
+			.item
+				width: 341px
+				height: 340px
+				top: 30px
+				left: 90px
+				background-image: url("../img/target-audience-3-bg.png")
+				h3
+					left: 105px
+					color: #632003
+				ul
+					top: 180px
+					left: 115px
+					color: #320505
+		&:nth-child(4)
+			.item
+				width: 461px
+				height: 410px
+				top: -30px
+				left: -15px
+				background-image: url("../img/target-audience-4-bg.png")
+				h3
+					top: 95px
+					left: 180px
+				ul
+					top: 200px
+					left: 180px
+					color: #6c0303
+
+
+.advantages
+	position: relative
+	padding-top: 70px
+	background-image: url("../img/advantages-bg.png")
+	background-position: center
+	background-size: cover
+	&::before
+		content: ''
+		position: absolute
+		display: block
+		top: -50px
+		left: 0
+		width: 100%
+		height: 83px
+		background: url("../img/advantages-top-bg.png") repeat-x center
+	h2
+		margin-bottom: 30px
+		color: #51000f
+		font-size: 36px
+		&::before,
+		&::after
+			top: 0
+		span
+			color: #975201
+	.item-wrap
+		.item
+			display: inline-block
+			width: 291px
+			height: 246px
+			margin-bottom: 10px
+			margin-left: 210px
+			padding-top: 45px
+			background-image: url("../img/advantages-item1.png")
+			background-repeat: no-repeat
+			color: #570101
+			font-family: "SegoePrintRegular", sans-serif
+			font-size: 19px
+			text-transform: uppercase
+			span
+				display: block
+				color: #1f880a
+		&:nth-child(2n)
+			.item
+				margin-left: -210px	
+		&:nth-child(2)
+			.item
+				width: 320px
+				height: 249px
+				padding-top: 30px
+				background-image: url("../img/advantages-item2.png")
+				span
+					color: #eb8104
+		&:nth-child(3)
+			.item
+				width: 320px
+				height: 250px
+				padding-top: 30px
+				background-image: url("../img/advantages-item3.png")
+				span
+					color: #eb8104
+		&:nth-child(4)
+			.item
+				width: 313px
+				height: 246px
+				padding-top: 30px
+				background-image: url("../img/advantages-item4.png")
+				span
+					color: #1f880a
+
+	footer
+		margin-top: 100px
+		padding-top: 70px
+		padding-bottom: 80px
+		text-align: center
+		background-color: rgba(42,27,0,.9)
+		h2
+			margin-bottom: 40px
+			color: #f4cf05
+			font-size: 36px
+			&::before,
+			&::after
+				top: 0
+				width: 48px
+				height: 88px
+				background-image: url("../img/h2-bg.png")
+				background-repeat: no-repeat
+				background-size: cover
+			&::before
+				left: -65px
+			&::after
+				right: -65px
+			span
+				display: block
+				color: #fefc78
+				font-family: "SegoePrintRegular", sans-serif
+				font-size: 22px
+				line-height: 10px
+		.btn
+			display: block
+			width: 265px
+			height: 70px
+			margin: 0 auto
+			padding: 20px 0
+
+@import "media"
