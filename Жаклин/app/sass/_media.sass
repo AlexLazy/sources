@@ -1,16 +1,12 @@
-@media only screen and (max-width : 2300px)
+@media only screen and (max-width : 1199px)
   #meal
     .gallery
-      .item
-        width: 25%
+      .fancybox-stage,
+      .fancybox-caption-wrap
+        left: calc(50% - 465px)
+        width: rem(930)
 
-@media only screen and (max-width : 1600px)
-    #meal
-      .gallery
-        .item
-          width: 33.33333333%
 
-@media only screen and (max-width : 1199px)
   .slick-slider
     .slick-arrow
       &.icon-right-open-3
@@ -33,12 +29,6 @@
         font-size: rem(50)
 
 
-  #meal
-    .gallery
-      .item
-        width: 50%
-
-
   #feedback
     .slick-slider
       .slick-arrow
@@ -47,6 +37,14 @@
         &.icon-left-open-3
           left: calc(50% - 480px)
 @media (max-width: 991px)
+  #meal
+    .gallery
+      .fancybox-stage,
+      .fancybox-caption-wrap
+        left: calc(50% - 345px)
+        width: rem(690)
+
+
   .slick-slider
     .slick-arrow
       &.icon-right-open-3
@@ -71,13 +69,15 @@
   main
     height: rem(900)
     background-position: center top
+    .overlay
+      display: none
     nav
       position: fixed
       top: -150%
       display: flex
       justify-content: space-between
       width: 100%
-      background-color: rgba(0,0,0,.4)
+      background-color: rgba(0,0,0,.2)
       transition: 300ms
       z-index: 9999
       &.on
@@ -130,7 +130,7 @@
         padding: rem(15) 0
         background-color: #fff
         transition: 300ms
-        &::after
+        &::before
           content: ''
           position: absolute
           top: 0
@@ -143,7 +143,7 @@
           transition-delay: 300ms
         &.on
           left: 0
-          &::after
+          &::before
             opacity: .7
             z-index: -1
         li
@@ -193,11 +193,21 @@
       text-align: center
     .contacts
       margin-bottom: rem(20)
+
+
+  #privacy-policy
+    width: 100%
 @media (max-width: 767px)
+  #meal
+    .gallery
+      .fancybox-stage,
+      .fancybox-caption-wrap
+        left: calc(50% - 255px)
+        width: rem(510)
+
+
   main
     height: auto
-    .overlay
-      display: none
     header
       .social
         display: flex
@@ -249,13 +259,6 @@
           display: block
 
 
-  #meal
-    .gallery
-      .item
-        width: 100%
-        margin-bottom: rem(15)
-
-
   #feedback
     .section-header
       width: 100%
@@ -276,7 +279,27 @@
   #contact
     form
       padding: rem(40) rem(50) rem(60)
+
+
+  #callback,
+  #feedback-modal
+    width: 100%
+    form
+      padding: 0
+
+
+  #privacy-policy
+    article
+      padding: rem(10) rem(10) rem(40)
 @media (max-width: 575px)
+  #meal
+    .gallery
+      .fancybox-stage,
+      .fancybox-caption-wrap
+        left: 0
+        width: 100%
+
+
   .likes
     text-align: center
     p
@@ -315,6 +338,13 @@
       text-align: center
       .social
         text-align: center
+        .messangers
+          margin-top: rem(20)
+          .i-viber,
+          .i-whatsapp,
+            transform: scale(1.5)
+          .i-whatsapp
+            margin-left: rem(20)
     .main-center
       strong
         font-size: rem(22)
@@ -379,6 +409,12 @@
     padding-top: rem(90)
     .contacts
       .wrapper
+        .i-viber,
+        .i-whatsapp,
+        .i-mail
+          transform: scale(1.2)
+        .i-viber
+          margin-right: rem(20)
         a
           font-size: rem(20)
     form
@@ -386,3 +422,28 @@
       .btn
         padding-left: rem(30)
         padding-right: rem(30)
+
+
+  #callback,
+  #feedback-modal
+    form
+      header
+        h4
+          margin-top: rem(10)
+          margin-bottom: rem(10)
+          font-size: rem(22)
+          line-height: rem(22)
+        p
+          font-size: rem(16)
+          line-height: rem(16)
+      .btn
+        padding-left: rem(15)
+        padding-right: rem(15)
+
+
+  #privacy-policy
+    article
+      header
+        h4
+          font-size: rem(22)
+          line-height: rem(28)

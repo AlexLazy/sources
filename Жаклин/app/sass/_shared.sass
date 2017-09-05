@@ -148,7 +148,7 @@ textarea
     transform: translateY(-50%)
     cursor: pointer
     transition: 300ms opacity
-    z-index: 5
+    z-index: 1
     &:hover
       opacity: .7
     &.icon-right-open-3
@@ -243,7 +243,7 @@ textarea
       background-color: rgba(0,0,0,.4)
       transition: 300ms
     &::after
-      content: '\ebb3'
+      content: '\e868'
       position: absolute
       top: 50%
       left: 50%
@@ -261,6 +261,88 @@ textarea
         z-index: 2
       &::before
         background-color: transparent
+
+
+form
+  width: 100%
+  margin-top: rem(50)
+  margin-bottom: rem(70)
+  padding: rem(40) rem(100) rem(60)
+  text-align: center
+  background-color: #fff
+  box-shadow: 0px 6px 22.8px 1.2px rgba(162, 162, 162, 0.15)
+  header
+    margin-bottom: rem(35)
+    h4
+      font-size: rem(27)
+      line-height: rem(40)
+      letter-spacing: rem(1)
+      font-weight: 900
+      text-transform: uppercase
+    p
+      font-size: rem(20)
+      letter-spacing: rem(.8)
+      font-weight: 200
+  .form-group
+    margin-bottom: rem(10)
+    text-align: left
+    label
+      font-size: rem(14)
+      letter-spacing: rem(1)
+      font-weight: 200
+      span
+        color: #e2001a
+    input,
+    textarea
+      &.error
+        border: rem(1) solid brown
+    &.file
+      margin-top: rem(25)
+      margin-bottom: rem(30)
+      span
+        display: block
+        margin-bottom: rem(10)
+        font-size: rem(14)
+        letter-spacing: rem(1)
+        font-weight: 200
+      input
+        position: absolute
+        width: rem(.1)
+        height: rem(.1)
+        opacity: 0
+        z-index: -1
+        & + label
+          display: inline-block
+          padding: rem(10) rem(20)
+          cursor: pointer
+          color: $accent
+          font-size: rem(16)
+          border: rem(1) solid $accent
+          border-radius: rem(40)
+          transition: 300ms opacity
+          &:hover
+            opacity: .7
+      ul
+        display: inline-block
+        margin-top: rem(15)
+        margin-left: rem(20)
+        vertical-align: top
+        list-style: none
+        &.empty
+          li
+            color: #b8b8b8
+        li
+          font-size: rem(12)
+          letter-spacing: rem(.5)
+          font-weight: 200
+
+
+  .approval
+    margin-top: rem(-10)
+  .btn
+    margin-top: rem(30)
+    padding-left: rem(60)
+    padding-right: rem(60)
 
 
 .fancybox-thumbs
@@ -283,88 +365,63 @@ textarea
     right: 0
     bottom: 95px
 
+.jquery-modal
+  z-index: 999999
 
-#callback
+.modal
   position: relative
   top: rem(20)
-  width: rem(410)
-  padding: rem(60) rem(17) rem(40)
-  border: rem(2) solid #d0cecf
+  max-width: rem(750)
+  padding: rem(45) rem(17) 0
   color: #313131
-  z-index: 1
-  &::after
-    content: ''
-    position: absolute
-    top: rem(-35)
-    left: rem(-35)
-    width: calc(100% + 70px)
-    height: calc(100% + 70px)
-    border: rem(12) solid $accent
-    z-index: -1
-  .form-header
-    text-align: center
-    h3
-      font-size: rem(30)
-      font-weight: 900
-      letter-spacing: rem(1.8)
-      text-transform: uppercase
-      line-height: rem(36)
-    p
-      display: inline-block
-      width: rem(300)
-      font-size: rem(18)
-      letter-spacing: rem(1)
-      line-height: rem(22)
+  box-shadow: 0px 6px 22.8px 1.2px rgba(162, 162, 162, 0.15)
+  border-radius: 0
+  &.technology
+    min-width: 1100px
+  a.close-modal
+    top: rem(35)
+    right: rem(10)
+    background: none
+    &::before,
+    &::after
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      width: rem(20)
+      height: rem(3)
+      background-color: #cacaca
+      transition: 500ms
+    &::before
+      transform: rotate(45deg)
+    &::after
+      transform: rotate(-45deg)
+    &:hover
+      &::before
+        transform: rotate(-45deg)
+      &::after
+        transform: rotate(45deg)
   form
-    margin-top: rem(35)
-    label
-      color: #989898
-      font-size: rem(18)
-      font-weight: 500
-      letter-spacing: rem(.6)
-    input[type="tel"]
-      margin-top: rem(20)
-  .btn
-    display: block
-    margin: rem(40) auto
-
-
-#success
-  position: relative
-  top: rem(20)
-  width: rem(750)
-  max-width: none
-  padding: rem(60) rem(17) rem(80)
-  border: rem(2) solid #d0cecf
-  color: #313131
-  text-align: center
-  z-index: 1
-  &::after
-    content: ''
-    position: absolute
-    top: rem(-35)
-    left: rem(-35)
-    width: calc(100% + 70px)
-    height: calc(100% + 70px)
-    border: rem(12) solid $accent
-    z-index: -1
-  h3
-    margin-top: rem(20)
-    color: #444444
-    font-size: rem(38)
-    font-weight: 700
-    letter-spacing: rem(1.8)
-    text-transform: uppercase
-    line-height: rem(36)
-  p
-    display: inline-block
-    margin-top: rem(20)
-    font-size: rem(24)
-    letter-spacing: rem(1)
-    line-height: rem(22)
+    margin-top: 0
+    padding: 0 rem(80)
+    box-shadow: none
 
 
 #privacy-policy
+  max-width: rem(945)
   article
-    margin-top: rem(30)
-    padding-bottom: rem(20)
+    padding: 0 rem(85) rem(80)
+    header
+      margin-bottom: rem(30)
+      text-align: center
+      h4
+        font-size: rem(27)
+        line-height: rem(40)
+        letter-spacing: rem(1)
+        font-weight: 900
+        text-transform: uppercase
+    p
+      margin-bottom: rem(25)
+      font-size: rem(12)
+      line-height: rem(25)
+      letter-spacing: rem(.5)

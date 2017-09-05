@@ -36,7 +36,7 @@ gulp.task('vendors', () =>
 		'app/vendors/jquery/dist/jquery.min.js',
 		'app/vendors/simpleParallax/simpleParallax.js',
 		'app/vendors/jquery.fancybox/jquery.fancybox.min.js',
-		// 'app/vendors/owl.carousel/owl.carousel.min.js',
+		'app/vendors/jquery.modal/jquery.modal.min.js',
 		'app/vendors/slick/slick.min.js',
 		])
 		.pipe(concat('vendors.js'))

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="fr">
 
 <head>
 
@@ -21,7 +21,7 @@
 </head>
 
 <body>
-	<main style="background-image: url(./img/main-bg2.jpg)">
+	<main style="background-image: url(./img/main-bg.jpg)">
 		<div class="overlay"></div>
 		<nav>
 			<img src="img/logo.svg" alt="" class="logo">
@@ -59,7 +59,7 @@
 				<strong>Votre guide francophone</strong>
 				<h1>à Saint-Pétersbourg</h1>
 				<p>Location, accueil, organisation du programme culturel à Saint-Pétersbourg et ses environs </p>
-				<a href="#" class="btn">Écrivez votre question</a>
+				<a href="#callback" class="btn" rel="modal:open">Écrivez votre question</a>
 				<i>Guide touristique diplômée en Russie et à Saint-Pétersbourg</i>
 				<a class="btn-play" data-fancybox="" href="https://www.youtube.com/watch?v=_sI_Ps7JSEk&amp;autoplay=1&amp;rel=0&amp;controls=0&amp;showinfo=0"><img src="data:image/png;base64,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" alt=""></a>
 			</div>
@@ -107,7 +107,7 @@
 			</a>
 			<a href="https://www.youtube.com/embed/_sI_Ps7JSEk" class="slide"  data-fancybox="gallery-1">
 				<figure>
-					<iframe src="https://www.youtube.com/embed/_sI_Ps7JSEk" frameborder="0" allowfullscreen></iframe>
+					<img src="img/feedback-image.jpg" alt="">
 				</figure>
 				<p>Cathédrale Notre-Dame de Kazan</p>
 			</a>
@@ -159,7 +159,7 @@
 			</a>
 			<a href="https://www.youtube.com/embed/_sI_Ps7JSEk" class="slide"  data-fancybox="gallery-2">
 				<figure>
-					<iframe src="https://www.youtube.com/embed/_sI_Ps7JSEk" frameborder="0" allowfullscreen></iframe>
+					<img src="img/feedback-image.jpg" alt="">
 				</figure>
 				<p>Cathédrale Notre-Dame de Kazan</p>
 			</a>
@@ -201,57 +201,62 @@
 			<p class="section-header">Savourez des spécialités typiques de la cuisine russe!<br>
 				... La gastronomie russe comme façon de profiter de la vie!</p>
 			<div class="row">
-				<div class="col-lg-6">
+				<div class="col-lg-12">
 					<img src="img/header-photo.jpg" alt="" class="header-photo">
 				</div>
-				<div class="col-lg-6">
+				<div class="col-lg-12">
 					<article>
 						<p><span style="font:70px/60px 'GreatVibes'">L</span>a cuisine russe est née dans les rudes conditions nordiques et les principales exigences des plats étaient leur haute valeur énergétique, une bonne assimilation et la simplicité de préparation. On appréciait sa valeur nutritive, son goût naturel que l'on essayait de souligner, et non d'étouffer, par des épices. Ces traits restent aujourd'hui encore la principale caractéristique de la cuisine russe.</p>
 					</article>
 				</div>
 			</div>
-		</div>
-		<div class="gallery">
-			<a href="img/meal1.jpg" class="item" alt="Les blinis" data-fancybox="images" data-caption="Le caviar (œufs de différentes espèces d'esturgeons) depuis très longtemps était considéré comme un produit très nutritif et d'un goût très fin. Le meilleur caviar est celui dont les œufs sont gros et clairs. Les plus appréciés sont ceux des esturgeons beluga, ossetra, sevruga et sterlets qui vivent dans les eaux des bassins de la mer Noire et Caspienne, dans les rivières de la Sibérie et de l'Oural et dans le lac Baïkal.">
-				<img src="img/meal1.jpg" alt="Les blinis">
-				<h4 class="header">Les blinis</h4>
-				<article class="description"><p>Le caviar (œufs de différentes espèces d'esturgeons) depuis très longtemps était considéré comme un produit très nutritif et d'un goût très fin. Le meilleur caviar est celui dont les œufs sont gros et clairs. Les plus appréciés sont ceux des esturgeons beluga, ossetra, sevruga et sterlets qui vivent dans les eaux des bassins de la mer Noire et Caspienne, dans les rivières de la Sibérie et de l'Oural et dans le lac Baïkal.</p></article>
-			</a>
-			<a href="img/meal1.jpg" class="item" alt="Les blinis" data-fancybox="images" data-caption="Le caviar (œufs de différentes espèces d'esturgeons) depuis très longtemps était considéré comme un produit très nutritif et d'un goût très fin. Le meilleur caviar est celui dont les œufs sont gros et clairs. Les plus appréciés sont ceux des esturgeons beluga, ossetra, sevruga et sterlets qui vivent dans les eaux des bassins de la mer Noire et Caspienne, dans les rivières de la Sibérie et de l'Oural et dans le lac Baïkal.">
-				<img src="img/meal1.jpg" alt="Les blinis">
-				<h4 class="header">Les blinis</h4>
-				<article class="description"><p>Le caviar (œufs de différentes espèces d'esturgeons) depuis très longtemps était considéré comme un produit très nutritif et d'un goût très fin. Le meilleur caviar est celui dont les œufs sont gros et clairs. Les plus appréciés sont ceux des esturgeons beluga, ossetra, sevruga et sterlets qui vivent dans les eaux des bassins de la mer Noire et Caspienne, dans les rivières de la Sibérie et de l'Oural et dans le lac Baïkal.</p></article>
-			</a>
-			<a href="img/meal1.jpg" class="item" alt="Les blinis" data-fancybox="images" data-caption="Le caviar (œufs de différentes espèces d'esturgeons) depuis très longtemps était considéré comme un produit très nutritif et d'un goût très fin. Le meilleur caviar est celui dont les œufs sont gros et clairs. Les plus appréciés sont ceux des esturgeons beluga, ossetra, sevruga et sterlets qui vivent dans les eaux des bassins de la mer Noire et Caspienne, dans les rivières de la Sibérie et de l'Oural et dans le lac Baïkal.">
-				<img src="img/meal1.jpg" alt="Les blinis">
-				<h4 class="header">Les blinis</h4>
-				<article class="description"><p>Le caviar (œufs de différentes espèces d'esturgeons) depuis très longtemps était considéré comme un produit très nutritif et d'un goût très fin. Le meilleur caviar est celui dont les œufs sont gros et clairs. Les plus appréciés sont ceux des esturgeons beluga, ossetra, sevruga et sterlets qui vivent dans les eaux des bassins de la mer Noire et Caspienne, dans les rivières de la Sibérie et de l'Oural et dans le lac Baïkal.</p></article>
-			</a>
-			<a href="img/meal1.jpg" class="item" alt="Les blinis" data-fancybox="images" data-caption="Le caviar (œufs de différentes espèces d'esturgeons) depuis très longtemps était considéré comme un produit très nutritif et d'un goût très fin. Le meilleur caviar est celui dont les œufs sont gros et clairs. Les plus appréciés sont ceux des esturgeons beluga, ossetra, sevruga et sterlets qui vivent dans les eaux des bassins de la mer Noire et Caspienne, dans les rivières de la Sibérie et de l'Oural et dans le lac Baïkal.">
-				<img src="img/meal1.jpg" alt="Les blinis">
-				<h4 class="header">Les blinis</h4>
-				<article class="description"><p>Le caviar (œufs de différentes espèces d'esturgeons) depuis très longtemps était considéré comme un produit très nutritif et d'un goût très fin. Le meilleur caviar est celui dont les œufs sont gros et clairs. Les plus appréciés sont ceux des esturgeons beluga, ossetra, sevruga et sterlets qui vivent dans les eaux des bassins de la mer Noire et Caspienne, dans les rivières de la Sibérie et de l'Oural et dans le lac Baïkal.</p></article>
-			</a>
-			<a href="img/meal1.jpg" class="item" alt="Les blinis" data-fancybox="images" data-caption="Le caviar (œufs de différentes espèces d'esturgeons) depuis très longtemps était considéré comme un produit très nutritif et d'un goût très fin. Le meilleur caviar est celui dont les œufs sont gros et clairs. Les plus appréciés sont ceux des esturgeons beluga, ossetra, sevruga et sterlets qui vivent dans les eaux des bassins de la mer Noire et Caspienne, dans les rivières de la Sibérie et de l'Oural et dans le lac Baïkal.">
-				<img src="img/meal1.jpg" alt="Les blinis">
-				<h4 class="header">Les blinis</h4>
-				<article class="description"><p>Le caviar (œufs de différentes espèces d'esturgeons) depuis très longtemps était considéré comme un produit très nutritif et d'un goût très fin. Le meilleur caviar est celui dont les œufs sont gros et clairs. Les plus appréciés sont ceux des esturgeons beluga, ossetra, sevruga et sterlets qui vivent dans les eaux des bassins de la mer Noire et Caspienne, dans les rivières de la Sibérie et de l'Oural et dans le lac Baïkal.</p></article>
-			</a>
-			<a href="img/meal1.jpg" class="item" alt="Les blinis" data-fancybox="images" data-caption="Le caviar (œufs de différentes espèces d'esturgeons) depuis très longtemps était considéré comme un produit très nutritif et d'un goût très fin. Le meilleur caviar est celui dont les œufs sont gros et clairs. Les plus appréciés sont ceux des esturgeons beluga, ossetra, sevruga et sterlets qui vivent dans les eaux des bassins de la mer Noire et Caspienne, dans les rivières de la Sibérie et de l'Oural et dans le lac Baïkal.">
-				<img src="img/meal1.jpg" alt="Les blinis">
-				<h4 class="header">Les blinis</h4>
-				<article class="description"><p>Le caviar (œufs de différentes espèces d'esturgeons) depuis très longtemps était considéré comme un produit très nutritif et d'un goût très fin. Le meilleur caviar est celui dont les œufs sont gros et clairs. Les plus appréciés sont ceux des esturgeons beluga, ossetra, sevruga et sterlets qui vivent dans les eaux des bassins de la mer Noire et Caspienne, dans les rivières de la Sibérie et de l'Oural et dans le lac Baïkal.</p></article>
-			</a>
-			<a href="img/meal1.jpg" class="item" alt="Les blinis" data-fancybox="images" data-caption="Le caviar (œufs de différentes espèces d'esturgeons) depuis très longtemps était considéré comme un produit très nutritif et d'un goût très fin. Le meilleur caviar est celui dont les œufs sont gros et clairs. Les plus appréciés sont ceux des esturgeons beluga, ossetra, sevruga et sterlets qui vivent dans les eaux des bassins de la mer Noire et Caspienne, dans les rivières de la Sibérie et de l'Oural et dans le lac Baïkal.">
-				<img src="img/meal1.jpg" alt="Les blinis">
-				<h4 class="header">Les blinis</h4>
-				<article class="description"><p>Le caviar (œufs de différentes espèces d'esturgeons) depuis très longtemps était considéré comme un produit très nutritif et d'un goût très fin. Le meilleur caviar est celui dont les œufs sont gros et clairs. Les plus appréciés sont ceux des esturgeons beluga, ossetra, sevruga et sterlets qui vivent dans les eaux des bassins de la mer Noire et Caspienne, dans les rivières de la Sibérie et de l'Oural et dans le lac Baïkal.</p></article>
-			</a>
-			<a href="img/meal1.jpg" class="item" alt="Les blinis" data-fancybox="images" data-caption="Le caviar (œufs de différentes espèces d'esturgeons) depuis très longtemps était considéré comme un produit très nutritif et d'un goût très fin. Le meilleur caviar est celui dont les œufs sont gros et clairs. Les plus appréciés sont ceux des esturgeons beluga, ossetra, sevruga et sterlets qui vivent dans les eaux des bassins de la mer Noire et Caspienne, dans les rivières de la Sibérie et de l'Oural et dans le lac Baïkal.">
-				<img src="img/meal1.jpg" alt="Les blinis">
-				<h4 class="header">Les blinis</h4>
-				<article class="description"><p>Le caviar (œufs de différentes espèces d'esturgeons) depuis très longtemps était considéré comme un produit très nutritif et d'un goût très fin. Le meilleur caviar est celui dont les œufs sont gros et clairs. Les plus appréciés sont ceux des esturgeons beluga, ossetra, sevruga et sterlets qui vivent dans les eaux des bassins de la mer Noire et Caspienne, dans les rivières de la Sibérie et de l'Oural et dans le lac Baïkal.</p></article>
-			</a>
+			<h3>Nos plats nationaux</h3>
+			<div class="gallery">
+				<div class="row">
+					<div class="col-lg-6">
+						<a href="img/meal2.jpg" class="item" alt="Les blinis" data-fancybox="images" data-caption="<h4>Les blinis</h4>Le caviar (œufs de différentes espèces d'esturgeons) depuis très longtemps était considéré comme un produit très nutritif et d'un goût très fin. Le meilleur caviar est celui dont les œufs sont gros et clairs. Les plus appréciés sont ceux des esturgeons beluga, ossetra, sevruga et sterlets qui vivent dans les eaux des bassins de la mer Noire et Caspienne, dans les rivières de la Sibérie et de l'Oural et dans le lac Baïkal.">
+							<img src="img/meal2.jpg" alt="Les blinis">
+							<h4 class="header">Les blinis</h4>
+							<article class="description"><p>Le caviar (œufs de différentes espèces d'esturgeons) depuis très longtemps était considéré comme un produit très nutritif et d'un goût très fin. Le meilleur caviar est celui dont les œufs sont gros et clairs. Les plus appréciés sont ceux des esturgeons beluga, ossetra, sevruga et sterlets qui vivent dans les eaux des bassins de la mer Noire et Caspienne, dans les rivières de la Sibérie et de l'Oural et dans le lac Baïkal.</p></article>
+						</a>
+					</div>
+					<div class="col-lg-6">
+						<a href="img/meal1.jpg" class="item" alt="Les blinis" data-fancybox="images" data-caption="Le caviar (œufs de différentes espèces d'esturgeons) depuis très longtemps était considéré comme un produit très nutritif et d'un goût très fin. Le meilleur caviar est celui dont les œufs sont gros et clairs. Les plus appréciés sont ceux des esturgeons beluga, ossetra, sevruga et sterlets qui vivent dans les eaux des bassins de la mer Noire et Caspienne, dans les rivières de la Sibérie et de l'Oural et dans le lac Baïkal.">
+							<img src="img/meal1.jpg" alt="Les blinis">
+							<h4 class="header">Les blinis</h4>
+							<article class="description"><p>Le caviar (œufs de différentes espèces d'esturgeons) depuis très longtemps était considéré comme un produit très nutritif et d'un goût très fin. Le meilleur caviar est celui dont les œufs sont gros et clairs. Les plus appréciés sont ceux des esturgeons beluga, ossetra, sevruga et sterlets qui vivent dans les eaux des bassins de la mer Noire et Caspienne, dans les rivières de la Sibérie et de l'Oural et dans le lac Baïkal.</p></article>
+						</a>
+					</div>
+					<div class="col-lg-6">
+						<a href="img/meal1.jpg" class="item" alt="Les blinis" data-fancybox="images" data-caption="Le caviar (œufs de différentes espèces d'esturgeons) depuis très longtemps était considéré comme un produit très nutritif et d'un goût très fin. Le meilleur caviar est celui dont les œufs sont gros et clairs. Les plus appréciés sont ceux des esturgeons beluga, ossetra, sevruga et sterlets qui vivent dans les eaux des bassins de la mer Noire et Caspienne, dans les rivières de la Sibérie et de l'Oural et dans le lac Baïkal.">
+							<img src="img/meal1.jpg" alt="Les blinis">
+							<h4 class="header">Les blinis</h4>
+							<article class="description"><p>Le caviar (œufs de différentes espèces d'esturgeons) depuis très longtemps était considéré comme un produit très nutritif et d'un goût très fin. Le meilleur caviar est celui dont les œufs sont gros et clairs. Les plus appréciés sont ceux des esturgeons beluga, ossetra, sevruga et sterlets qui vivent dans les eaux des bassins de la mer Noire et Caspienne, dans les rivières de la Sibérie et de l'Oural et dans le lac Baïkal.</p></article>
+						</a>
+					</div>
+					<div class="col-lg-6">
+						<a href="img/meal1.jpg" class="item" alt="Les blinis" data-fancybox="images" data-caption="Le caviar (œufs de différentes espèces d'esturgeons) depuis très longtemps était considéré comme un produit très nutritif et d'un goût très fin. Le meilleur caviar est celui dont les œufs sont gros et clairs. Les plus appréciés sont ceux des esturgeons beluga, ossetra, sevruga et sterlets qui vivent dans les eaux des bassins de la mer Noire et Caspienne, dans les rivières de la Sibérie et de l'Oural et dans le lac Baïkal.">
+							<img src="img/meal1.jpg" alt="Les blinis">
+							<h4 class="header">Les blinis</h4>
+							<article class="description"><p>Le caviar (œufs de différentes espèces d'esturgeons) depuis très longtemps était considéré comme un produit très nutritif et d'un goût très fin. Le meilleur caviar est celui dont les œufs sont gros et clairs. Les plus appréciés sont ceux des esturgeons beluga, ossetra, sevruga et sterlets qui vivent dans les eaux des bassins de la mer Noire et Caspienne, dans les rivières de la Sibérie et de l'Oural et dans le lac Baïkal.</p></article>
+						</a>
+					</div>
+					<div class="col-lg-6">
+						<a href="img/meal1.jpg" class="item" alt="Les blinis" data-fancybox="images" data-caption="Le caviar (œufs de différentes espèces d'esturgeons) depuis très longtemps était considéré comme un produit très nutritif et d'un goût très fin. Le meilleur caviar est celui dont les œufs sont gros et clairs. Les plus appréciés sont ceux des esturgeons beluga, ossetra, sevruga et sterlets qui vivent dans les eaux des bassins de la mer Noire et Caspienne, dans les rivières de la Sibérie et de l'Oural et dans le lac Baïkal.">
+							<img src="img/meal1.jpg" alt="Les blinis">
+							<h4 class="header">Les blinis</h4>
+							<article class="description"><p>Le caviar (œufs de différentes espèces d'esturgeons) depuis très longtemps était considéré comme un produit très nutritif et d'un goût très fin. Le meilleur caviar est celui dont les œufs sont gros et clairs. Les plus appréciés sont ceux des esturgeons beluga, ossetra, sevruga et sterlets qui vivent dans les eaux des bassins de la mer Noire et Caspienne, dans les rivières de la Sibérie et de l'Oural et dans le lac Baïkal.</p></article>
+						</a>
+					</div>
+					<div class="col-lg-6">
+						<a href="img/meal1.jpg" class="item" alt="Les blinis" data-fancybox="images" data-caption="Le caviar (œufs de différentes espèces d'esturgeons) depuis très longtemps était considéré comme un produit très nutritif et d'un goût très fin. Le meilleur caviar est celui dont les œufs sont gros et clairs. Les plus appréciés sont ceux des esturgeons beluga, ossetra, sevruga et sterlets qui vivent dans les eaux des bassins de la mer Noire et Caspienne, dans les rivières de la Sibérie et de l'Oural et dans le lac Baïkal.">
+							<img src="img/meal1.jpg" alt="Les blinis">
+							<h4 class="header">Les blinis</h4>
+							<article class="description"><p>Le caviar (œufs de différentes espèces d'esturgeons) depuis très longtemps était considéré comme un produit très nutritif et d'un goût très fin. Le meilleur caviar est celui dont les œufs sont gros et clairs. Les plus appréciés sont ceux des esturgeons beluga, ossetra, sevruga et sterlets qui vivent dans les eaux des bassins de la mer Noire et Caspienne, dans les rivières de la Sibérie et de l'Oural et dans le lac Baïkal.</p></article>
+						</a>
+					</div>
+				</div>
+			</div>
 		</div>
 		<div class="container text-center">
 			<div class="likes">
@@ -281,7 +286,7 @@
 						</div>
 						<div class="col-md-7 col-lg-8 mr-md-auto">
 							<article>
-								<strong>La mode est un sujet très important en France</strong>
+								<strong>La mode est un sujet très important en FranceLa mode est un sujet très important en FranceLa mode est un sujet très important en France</strong>
 								<p>“La mode est un sujet très important en France. Des temps immémoriaux, ce pays est un arbitre des élégances. La mode française avait toujours une grande influence sur les vêtements dans les autres pays européens et les journaux de modes jouissaient d'une grande popularité auprès des élégantes. Il n'y a rien étonnant qu'en France travaillaient des couturiers mondialement connus. Le nom de ‘’Coco Chanel’’ est surtout connu parce </p>
 							</article>
 							<time datetime="20.06.2017">20.06.2017</time>
@@ -337,9 +342,21 @@
 						<a href="img/feedback-image.jpg" class="col-md-4 feedback-image" alt="" data-fancybox="gallery-3">
 							<img src="img/feedback-image.jpg" alt="">
 						</a>
+					</div>
+				</div>
+				<div>
+					<div class="row">
+						<a href="img/feedback-image.jpg" class="col-md-4 feedback-image" alt="" data-fancybox="gallery-3">
+							<img src="img/feedback-image.jpg" alt="1">
+						</a>
+						<a href="img/feedback-image.jpg" class="col-md-4 feedback-image" alt="" data-fancybox="gallery-3">
+							<img src="img/feedback-image.jpg" alt="">
+						</a>
 						<a href="https://www.youtube.com/embed/_sI_Ps7JSEk" class="col-md-4 feedback-image" alt="" data-fancybox="gallery-3">
-							<img class="hidden" src="img/feedback-image.jpg" alt="">
-							<iframe src="https://www.youtube.com/embed/_sI_Ps7JSEk" frameborder="0" allowfullscreen></iframe>
+							<img src="img/feedback-image.jpg" alt="">
+						</a>
+						<a href="img/feedback-image.jpg" class="col-md-4 feedback-image" alt="" data-fancybox="gallery-3">
+							<img src="img/feedback-image.jpg" alt="">
 						</a>
 					</div>
 				</div>
@@ -352,23 +369,7 @@
 							<img src="img/feedback-image.jpg" alt="">
 						</a>
 						<a href="https://www.youtube.com/embed/_sI_Ps7JSEk" class="col-md-4 feedback-image" alt="" data-fancybox="gallery-3">
-							<iframe src="https://www.youtube.com/embed/_sI_Ps7JSEk" frameborder="0" allowfullscreen></iframe>
-						</a>
-						<a href="img/feedback-image.jpg" class="col-md-4 feedback-image" alt="" data-fancybox="gallery-3">
 							<img src="img/feedback-image.jpg" alt="">
-						</a>
-					</div>
-				</div>
-				<div>
-					<div class="row">
-						<a href="img/feedback-image.jpg" class="col-md-4 feedback-image" alt="" data-fancybox="gallery-3">
-							<img src="img/feedback-image.jpg" alt="1">
-						</a>
-						<a href="img/feedback-image.jpg" class="col-md-4 feedback-image" alt="" data-fancybox="gallery-3">
-							<img src="img/feedback-image.jpg" alt="">
-						</a>
-						<a href="https://www.youtube.com/embed/_sI_Ps7JSEk" class="col-md-4 feedback-image" alt="" data-fancybox="gallery-3">
-							<iframe src="https://www.youtube.com/embed/_sI_Ps7JSEk" frameborder="0" allowfullscreen></iframe>
 						</a>
 						<a href="img/feedback-image.jpg" class="col-md-4 feedback-image" alt="" data-fancybox="gallery-3">
 							<img src="img/feedback-image.jpg" alt="">
@@ -376,7 +377,7 @@
 					</div>
 				</div>
 			</div>
-			<a href="" class="btn">Ajouter une évaluation</a>
+			<a href="#feedback-modal" class="btn" rel="modal:open">Ajouter une évaluation</a>
 		</div>
 	</section>
 
@@ -406,7 +407,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<form action="">
+				<form>
 					<header>
 						<h4>Que vous soyez seul en famille</h4>
 						<p>Je vous ferais découvrir la capitale culturelle</p>
@@ -441,9 +442,103 @@
 		</div>
 		<footer>
 			<p><i class="icon icon-copyright"></i> Jacqueline Kocher, 2017</p>
-			<a href="#">Conditions générales</a>
+			<a href="#privacy-policy" rel="modal:open">Conditions générales</a>
 		</footer>
 	</section>
+
+
+	<div id="callback" style="display:none">
+		<form>
+			<header>
+				<h4>ÉCRIVEZ-MOI IMMÉDIATEMENT</h4>
+				<p>Je vous ferais découvrir la capitale culturelle</p>
+			</header>
+			<div class="form-group">
+				<label for="">Votre nom <span>*</span></label>
+				<input type="text">
+			</div>
+			<div class="form-group">
+				<label for="">Votre mél <span>*</span></label>
+				<input type="text">
+			</div>
+			<div class="form-group">
+				<label for="">Message <span>*</span></label>
+				<textarea name="name"></textarea>
+			</div>
+			<div class="approval">
+				<input type="checkbox" checked="">
+				<p>J'accepte les <a href="#privacy-policy" rel="modal:open">conditions générales d'utilisation</a></p>
+			</div>
+			<button class="btn">Envoyer un message</button>
+		</form>
+	</div>
+
+
+	<div id="feedback-modal" style="display:none">
+		<form>
+			<header>
+				<h4>Écrivez votre avis</h4>
+			</header>
+			<div class="form-group">
+				<label for="">Votre nom <span>*</span></label>
+				<input type="text">
+			</div>
+			<div class="form-group">
+				<label for="">Votre mél <span>*</span></label>
+				<input type="text">
+			</div>
+			<div class="form-group">
+				<label for="">Votre ville <span>*</span></label>
+				<input type="text">
+			</div>
+			<div class="form-group">
+				<label for="">Titre de l'examen <span>*</span></label>
+				<input type="text">
+			</div>
+			<div class="form-group">
+				<label for="">Votre avis <span>*</span></label>
+				<textarea name="name"></textarea>
+			</div>
+			<div class="form-group file">
+				<span>Upload avatar</span>
+				<input id="f-avatar" type="file">
+				<label for="f-avatar">Sélectionnez le fichier</label>
+				<ul class="empty">
+					<li>Fichier non sélectionné</li>
+				</ul>
+			</div>
+			<div class="form-group file">
+				<span>Envoyer une photo à la galerie</span>
+				<input id="f-files" type="file" multiple>
+				<label for="f-files">Sélectionnez le fichier</label>
+				<ul class="empty">
+					<li>Fichier non sélectionné</li>
+				</ul>
+			</div>
+			<div class="approval">
+				<input type="checkbox" checked="">
+				<p>J'accepte les <a href="#privacy-policy" rel="modal:open">conditions générales d'utilisation</a></p>
+			</div>
+			<button class="btn">Envoyer un message</button>
+		</form>
+	</div>
+
+	<div id="privacy-policy" style="display:none">
+		<article>
+			<header>
+				<h4>Politique de confidentialité</h4>
+			</header>
+				<p>La Politique de confidentialité des données personnelles (ci-après — Politique) est appliquée à toutes les données concernant l'Utilisateur qui peuvent être accumulées pendant l'utilisation du service ХХХХ (ci-après — Service). L'utilisation du Service par l'Utilisateur signifie qu'il accepte entièrement la Politique de confidentialité et les conditions de traitement de ses données personnelles indiquées dans la Politique; en cas de désaccord l'Utilisateur doit de s'abstenir d'utiliser le Service.</p>
+				<p><strong>1. Données personnelles des Utilisateurs traitées par le Service ХХХХ</strong><br>1.1. Dans le cadre de la présente Politique sous les «données personnelles de l'Utilisateur» il faut comprendre:<br>1.1.1. Les informations personnelles que l'Utilisateur annonce lui-même en faisant l'enregistrement (en créant le compte) sur le site (Service) ou pendant l'utilisation du Service, y compris des données personnelles de l'Utilisateur. Les données obligatoires que l'Utilisateur doit indiquer sont marquées d'une manière spéciale.<br>1.1.2. Les données transmises automatiquement au Service pendant son utilisation à l'aide du logiciel installé sur l'ordinateur de l'Utilisateur, y compris l'adresse IP, des données des fichiers cookie, des informations sur le navigateur de l'Utilisateur (ou d'un autre programme assurant l'accès au Service), des caractéristiques techniques de l'équipement et du logiciel utilisés par l'Utilisateur, la date et l'heure d'accès au Service, les adresses des pages appelées et d'autres informations similaires.<br>1.2. La présente Politique n'est appliquée qu'aux informations traitées pendant l'utilisation du Service. Le Service ХХХХ n'effectue pas le contrôle et n'assume pas de responsabilité du traitement de données par les sites des tiers que l'Utilisateur peut visiter en utilisant des liens placés sur le site du Service.<br>1.3. Le Service ХХХХ ne vérifie pas la fiabilité des données personnelles présentées par l'Utilisateur, et n'a pas de possibilité d'apprécier sa capacité d'agir. Mais l'UptoCall suppose que l'Utilisateur présente des données personnelles fiables et exactes et qu'il assure l'actualité de ces données.</p>
+				<p><strong>2. Objectifs de traitement de données personnelles des Utilisateurs</strong><br>2.1. Le Service XХХХ accumule et conserve des données personnelles qui sont nécessaires pour présenter des services, excepté les cas où la législation prescrit la conservation obligatoire de données pendant un délai déterminé par la loi.<br>2.2. Le Service XXXX effectue le traitement de données personnelles de l'Utilisateur dans les buts suivants:<br>2.2.1. Identification de la Partie dans le cadre de prestation de services<br>2.2.2. Présentation de Services à l'Utilisateur, exécution des obligations contractuelles;<br>2.2.3. Communication avec l'Utilisateur, y compris envoi des notifications, des demandes et des informations relatives à l'utilisation du Service, exécution des obligations contractuelles et traitement des demandes de l'Utilisateur.<br>2.2.4. L'amélioration de la qualité du Service, du confort de son utilisation, conception de nouvelles fonctions;<br>2.2.5. Détermination de l'auditoire cible des publicités;<br>2.2.6. Recherches statistiques et d'autres recherches effectuées à la base de données rendues impersonnelles.</p>
+				<p><strong>3. Conditions de traitement de données personnelles de l'Utilisateur et leur transfert aux tiers</strong><br>3.1. Le Service XXXX conserve des données personnelles des utilisateurs en conformité avec les dispositions de la présente Politique de confidentialité, de la Convention d'utilisation et des Règlements intérieurs du Service ХХХХ.<br>3.2. En ce qui concerneles données personnelles de l'Utilisateur leur confidentialité est assurée, sauf les cas de présentation volontaire par l'Utilisateur des données personnelles qui peuvent être consultées par un cercle non restreint de personnes. En utilisant certaines fonctions du Service l'Utilisateur accepte ce fait qu'une partie de ses données personnelles deviennent publiques.<br>3.3. Le Service ХХХХ a le droit de transférer de données personnelles de l'Utilisateur au tiers dans les cas suivants:<br>3.3.1. L'Utilisateur a donné son accord;<br>3.3.2. Cette transmission est nécessaire pour exécuter les ordres de l'Utilisateur;<br>3.3.3. Cette transmission est prévue par la législation de la Fédération de Russie dans le cadre d'une procédure légale;<br>3.3.4. Dans le but d'assurer la possibilité de défendre les droits et intérêts légaux du Service ХХХХ ou des tiers, quand le Service ХХХХ a une raison suffisante de supposer que l'Utilisateur viole les dispositions de la Convention et/ou les exigences de la législation appliquée.<br>3.3.5. Cette transmission se fait également dans le cadre de vente ou de transfert du business (entière ou partiel), avec ce transfert l'Acheteur assume toutes les obligations relatives à l'observation des conditions de la présente Politique en matière des données personnelles transmises;<br>3.3.6. En résultat de traitement de données personnelles de l'Utilisateur au moyen de leur dépersonnalisation, des données statistiques dépersonnalisées sont reçues et transmises à un tiers pour la réalisation des recherches ou des travaux ou la prestation de services pour le compte de la société Yandex.<br>3.4. En traitant de données personnelles des Utilisateurs le Service ХХХХ se laisse guider par les dispositions de la Loi Fédérale «Sur la protection des données personnelles».</p>
+				<p><strong>4. Modification de données personnelles par l'Utilisateur</strong><br>4.1. L'Utilisateur peut à tout moment modifier (renouveler, ajouter) ou supprimer ses données personnelles conférées ou une partie de données en utilisant la fonction d'édition de données personnelles sur la page correspondante du Service.<br>4.2. Même si des données personnelles sur la page correspondante du Service sont supprimées par l'Utilisateur identifié, elles peuvent être conservées dans les bases de données du Service ХХХХ en conformité avec les exigences légales. Les données non personnifiées de l'Utilisateur sont conservées sur les serveurs du Service ХХХХ dans les buts prévus par la Convention d'utilisation. La suppression du compte peut amener à l'impossibilité d'utiliser le Service.<br>4.3. Les droits prévus par le p. 4. de la présente Politique peuvent être restreints en conformité avec les exigences légales. En particulier ces restrictions peuvent prévoir l'obligation du Service ХХХХ de conserver des données personnelles modifiées ou supprimées par l'Utilisateur pendant le délai prévu par la législation et de transmettre ces données en conformité avec la procédure légale à un organe public.</p>
+				<p><strong>5. Traitement de données personnelles à l'aide des fichiers Cookie et des compteurs</strong><br>5.1. Les fichiers cookie transmis du Service ХХХХ à l'équipement de l'Utilisateur et de l'équipement de l'Utilisateur au Service ХХХХ, peuvent être utilisés pour présenter à l'Utilisateur des services, pour la détermination de l'auditoire cible des publicités que l'Utilisateur voit, ainsi que pour ramasser des données statistiques et faire des recherches, pour améliorer le Service.<br>5.2. L'Utilisateur a pleine conscience du fait que l'équipement et le logiciel qu'il utilise pour visiter des sites dans le réseau Internet peuvent être dotés d'une fonction interdisant d'effectuer des opérations avec les fichiers cookie (pour tous les sites ou pour des sites concernés), ainsi que d'une fonction d'annulation des fichiers cookie reçus avant.<br>5.3. Le Service ХХХХ a le droit de définir les conditions de prestation de services qui exigent la réception des fichiers cookie par l'équipement de l'Utilisateur.<br>5.4. La structure du fichier cookie, son contenu et ses paramètres techniques sont définis par le Service ХХХХ et peuvent être modifiés sans avis préalable.<br>5.5. Les compteurs placés par le Service XХХХ sur les pages du site peuvent être utilisés pour l'analyse des fichiers cookie de l'Utilisateur, pour l'accumulation et le traitement de données statistiques relatives à l'utilisation du Service, pour assurer la capacité de fonctionnement du Service dans son ensemble ou de ses fonctions isolées en particulier. Les paramètres techniques de fonctionnement des compteurs sont définis par le Service ХХХХ et peuvent être modifiés sans avis préalable.</p>
+				<p><strong>6. Mesures prises pour protéger des données personnelles des Utilisateurs</strong><br>6.1. Le Service ХХХХ prend toutes les mesures techniques et organisationnelles nécessaires et suffisantes pour protéger des données personnelles de l'Utilisateur contre l'accès illégal ou occasionnel, contre la suppression, la modification, le blocage, la copie, la divulgation, ainsi que contre d'autres actions illégales des tiers.</p>
+				<p><strong>7. Modification de la Politique de confidentialité. Législation appliquée.</strong><br>7.1. Le Service ХХХХ a le droit d'apporter des modifications dans la présente Politique de confidentialité. En apportant des modifications dans la version actuelle la date de mise à jour est indiquée. La nouvelle version de la Politique entre en vigueur à compter de la date de son placement sur le site, si l'autre n'est pas prévu par la nouvelle version de la Politique. La version actuelle est constamment accessible sur la page à l'adresse https://XXXX.com/privacy_poiicy.<br>7.2. La législation concernée de la Fédération de Russie est appliquée à la Politique et aux relations entre l'Utilisateur et le Service ХХХХ surgissant en cas d'application de la Politique de confidentialité.</p>
+				<p><strong>8. Retour d'information. Questions et propositions</strong><br>8.1. L'Utilisateur peut adresser toutes les questions et propositions relatives à la présente Politique de confidentialité au Service d'assistance aux utilisateurs en utilisant le champ correspondant de l'espace personnel de l'Utilisateur ou à l'adresse support@ХХХХ</p>
+		</article>
+	</div>
 
 
 	<link rel="stylesheet" href="css/style.min.css">

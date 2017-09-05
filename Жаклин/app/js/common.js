@@ -38,6 +38,10 @@
     ]
   });
 
+  $('[data-fancybox="images"]').fancybox({
+    parentEl: '#meal .gallery',
+  });
+
   $('#feedback .carousel').slick({
     variableHeight: true,
     slidesToShow: 1,
@@ -65,6 +69,18 @@
   $('#feedback .carousel').on('afterChange', function(event, slick, currentSlide){
     $('#feedback .feedback-gallery').slick('slickGoTo', currentSlide);
   });
+
+  $('form input:file').on('change', function(){
+    var container = $(this).siblings('ul');
+    var files = this.files;
+
+    if(files.length > 0) {
+      container.html('').removeClass('empty');
+      [].forEach.call(files, function(item){
+        container.append('<li>' + item.name + '</li>');
+      })
+    }
+  })
 
   $('.approval input').on('change', function(){
     var btn = $(this).parents('form').find('.btn');
